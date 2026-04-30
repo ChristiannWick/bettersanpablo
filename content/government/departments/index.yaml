@@ -1,0 +1,10 @@
+# Department Pages
+# This file contains the pages/governments available under Departments.
+
+pages:
+  - name: 'Executive'
+    slug: 'executive'
+    description: "Find out about the Mayor and Vice Mayor of San Pablo City, including current roles, programs, events, and contact information."
+  - name: 'Legislative'
+    slug: 'legislative'
+    description: 'As of the 2025-2028 term, the Sangguniang Panlungsod of San Pablo City has 10 elected councilors, with the Vice Mayor as the presiding officer of the council.'

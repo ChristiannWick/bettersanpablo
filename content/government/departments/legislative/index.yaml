@@ -1,0 +1,27 @@
+# Legislative Department Pages
+# This file contains the elected San Pablo City councilors for the 2025-2028 term.
+
+layout: grid
+title: 'Sangguniang Panlungsod'
+description: 'San Pablo City councilors elected for the 2025-2028 term, based on 100% precincts reporting as of May 15, 2025, 2:41 PM in Comelec Media Server results reported by Rappler.'
+pages:
+  - name: 'Carmela A. Acebedo'
+    description: 'City Councilor, San Pablo City - 86,085 votes'
+  - name: 'Barbie Diaz'
+    description: 'City Councilor, San Pablo City - 81,183 votes'
+  - name: 'Gel Adriano'
+    description: 'City Councilor, San Pablo City - 61,628 votes'
+  - name: 'John Edgar C. Adajar'
+    description: 'City Councilor, San Pablo City - 60,557 votes'
+  - name: 'Leonardo C. Villanueva'
+    description: 'City Councilor, San Pablo City - 57,209 votes'
+  - name: 'Dandi Medina'
+    description: 'City Councilor, San Pablo City - 55,751 votes'
+  - name: 'Richard C. Pavico'
+    description: 'City Councilor, San Pablo City - 53,546 votes'
+  - name: 'Ambo Amante'
+    description: 'City Councilor, San Pablo City - 52,856 votes'
+  - name: 'Konsi Dok Ticzon'
+    description: 'City Councilor, San Pablo City - 47,943 votes'
+  - name: 'Francis Nap Calatraba'
+    description: 'City Councilor, San Pablo City - 45,700 votes'

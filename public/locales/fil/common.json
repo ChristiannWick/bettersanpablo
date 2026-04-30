@@ -1,0 +1,53 @@
+{
+  "site_name": "Portal ng Lungsod ng San Pablo",
+  "site_description": "Portal ng komunidad para sa Lungsod ng San Pablo, ang Lungsod ng Pitong Lawa",
+  "hero": {
+    "title": "Welcome to BetterSanPablo",
+    "subtitle": "Portal ng komunidad para sa mga serbisyo, opisina, Pitong Lawa, at pampublikong rekord ng Lungsod ng San Pablo",
+    "nationalId": "National ID",
+    "birthCertificate": "Birth Certificate",
+    "businessRegistration": "Business Registration"
+  },
+  "services": {
+    "title": "Mga Serbisyo at Impormasyon",
+    "governmentServices": "Mga Serbisyo ng Pamahalaan",
+    "description": "Mabilis na hanapin ang mga serbisyo ng lokal na pamahalaan para sa kalusugan, edukasyon, negosyo, kaligtasan, at iba pa.",
+    "viewAll": "Tingnan Lahat ng Serbisyo",
+    "viewAllCategory": "Tingnan Lahat"
+  },
+  "governmentActivity": {
+    "title": "Gawain ng Pamahalaan",
+    "description": "Subaybayan ang mga anunsyo at gawain ng lokal na pamahalaan."
+  },
+  "weather": {
+    "title": "Ulat Panahon"
+  },
+  "forex": {
+    "title": "Palitan ng Pera"
+  },
+  "news": {
+    "title": "Pinakabagong Balita at Anunsyo"
+  },
+  "footer": {
+    "copyright": "(c) 2026 BetterSanPablo. Public domain ang nilalaman maliban kung iba ang nakasaad."
+  },
+  "navbar": {
+    "government": "Pamahalaan",
+    "services": "Mga Serbisyo",
+    "hotlines": "Hotlines",
+    "holidays": "Holidays"
+  },
+  "joinUs": {
+    "stripTitle": "Sumali sa #CivicTech Revolution",
+    "stripSubtitle": "Tumulong bumuo ng mas bukas at mas mahusay na pamahalaan gamit ang teknolohiya",
+    "joinNow": "Sumali",
+    "discord": "Discord",
+    "bannerTitle": "Sumali sa #CivicTech Revolution",
+    "bannerSubtitle": "Tumulong bumuo ng mas bukas at mas mahusay na pamahalaan gamit ang teknolohiya.",
+    "bannerHighlight": "Volunteer-led. Open source. Community-driven.",
+    "joinMovement": "Sumali sa Kilusan",
+    "or": "o",
+    "joinDiscord": "Sumali sa Discord",
+    "features": "Infrastructure | Mentorship | Community | Office Space"
+  }
+}

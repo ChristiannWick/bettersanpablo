@@ -1,0 +1,65 @@
+# Government Services Data
+# This file contains all the service categories for the government portal
+# Each category's index.yaml file is automatically located at content/services/{slug}/index.yaml
+# Non-technical users can easily edit this file to add, remove, or modify service categories
+
+categories:
+  # Health Services
+  - category: 'Health Services'
+    slug: 'health-services'
+    description: 'San Pablo health centers, medical assistance, health insurance enrollment, hospitals, and emergency contacts.'
+    icon: 'Heart'
+
+  # Education Services
+  - category: 'Education'
+    slug: 'education'
+    description: 'DepEd San Pablo, PLSP, scholarships, educational assistance, daycare, and public school enrollment information.'
+    icon: 'GraduationCap'
+
+  # Business & Livelihood Services
+  - category: 'Business and Livelihood'
+    slug: 'business'
+    description: 'San Pablo BPLO, real property tax, eLGU services, business permits, renewals, and livelihood opportunities.'
+    icon: 'Building2'
+
+  # Social Welfare Services
+  - category: 'Social Welfare'
+    slug: 'social-welfare'
+    description: 'Senior citizen, PWD, solo parent, social amelioration, relief, and family welfare support for San Pablo residents.'
+    icon: 'Users'
+  
+  # Agriculture & Fisheries Services
+  - category: 'Agriculture & Fisheries'
+    slug: 'agriculture-fisheries'
+    description: 'Farm, fisheries, livestock, training, and lake-related livelihood support relevant to San Pablo barangays.'
+    icon: 'Wheat'
+  
+  # Infrastructure & Public Works Services
+  - category: 'Infrastructure & Public Works'
+    slug: 'infrastructure-public-works'
+    description: 'Roads, drainage, public facilities, markets, cemeteries, water service, and City Hall or SPCWD contact points.'
+    icon: 'Wrench'
+  
+  # Garbage and Waste Disposal Services
+  - category: 'Garbage and Waste Disposal'
+    slug: 'garbage-waste-disposal'
+    description: 'Barangay collection schedules, waste segregation, special waste, illegal dumping reports, and Seven Lakes protection.'
+    icon: 'Trash2'
+  
+  # Environment Services
+  - category: 'Environment'
+    slug: 'environment'
+    description: 'Clean-up drives, tree planting, Seven Lakes protection, and environmental violation reporting in San Pablo.'
+    icon: 'TreePine'
+  
+  # Disaster Preparedness Services
+  - category: 'Disaster Preparedness'
+    slug: 'disaster-preparedness'
+    description: 'CDRRMO emergency hotlines, evacuation planning, drills, early warning, and disaster response information.'
+    icon: 'Shield'
+  
+  # Housing & Land Use Services
+  - category: 'Housing & Land Use'
+    slug: 'housing-land-use'
+    description: 'Housing, relocation, zoning, building permits, planning, and urban development services for San Pablo residents.'
+    icon: 'Home'
