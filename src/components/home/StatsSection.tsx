@@ -14,7 +14,10 @@ export default function StatsSection() {
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {SAN_PABLO_CITY_STATS.map(stat => (
-          <Card key={stat.label} className="border-t-4 border-primary-500">
+          <Card
+            key={stat.label}
+            className="border border-gray-200 transition-transform duration-200 hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-sm"
+          >
             <CardContent className="p-6">
               <p className="text-3xl font-bold text-primary-700">{stat.value}</p>
               <p className="mt-2 text-sm text-gray-700">{stat.label}</p>

@@ -7,6 +7,8 @@ import ScrollToTop from './components/ui/ScrollToTop';
 import Services from './pages/Services';
 import Document from './pages/Document';
 import Government from './pages/Government';
+import About from './pages/About';
+import SearchPage from './pages/Search';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/services/:category" element={<Services />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/search" element={<SearchPage />} />
               <Route
                 path="/services/:category/:documentSlug"
                 element={<Document categoryType="service" />}

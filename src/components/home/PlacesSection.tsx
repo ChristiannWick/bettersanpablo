@@ -18,14 +18,14 @@ export default function PlacesSection() {
           <Card
             key={place.title}
             hoverable
-            className="h-full overflow-hidden border-t-4 border-primary-500 transition-transform duration-200 hover:-translate-y-0.5"
+            className="h-full overflow-hidden border border-gray-200 transition-transform duration-200 hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-md"
           >
             <CardContent className="p-0">
               <img
                 src={place.imageUrl}
                 alt={place.imageAlt}
                 loading="lazy"
-                className="h-44 w-full object-cover"
+                className="h-56 w-full object-cover"
               />
               <div className="p-5">
                 <h3 className="text-base font-semibold text-gray-900">

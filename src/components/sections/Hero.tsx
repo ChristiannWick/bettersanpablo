@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search } from 'lucide-react';
 
@@ -40,8 +40,19 @@ export default function Hero({
   quickAccessItems = DEFAULT_QUICK_ACCESS,
 }: HeroProps) {
   const [query, setQuery] = useState('');
+  const [heroReady, setHeroReady] = useState(false);
   const navigate = useNavigate();
   const hasQuickAccessItems = quickAccessItems.length > 0;
+
+  useEffect(() => {
+    const timerId = window.setTimeout(() => {
+      setHeroReady(true);
+    }, 320);
+
+    return () => {
+      window.clearTimeout(timerId);
+    };
+  }, []);
 
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -69,7 +80,11 @@ export default function Hero({
             {locationLabel}
           </span>
 
-          <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+          <h1
+            className={`mt-4 text-4xl font-extrabold leading-tight tracking-tight transition-opacity duration-500 sm:text-5xl lg:text-6xl ${
+              heroReady ? 'opacity-100' : 'animate-pulse opacity-70'
+            }`}
+          >
             {heading}
           </h1>
 
