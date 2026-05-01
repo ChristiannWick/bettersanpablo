@@ -35,7 +35,12 @@
     "government": "Government",
     "services": "Services",
     "hotlines": "Hotlines",
-    "holidays": "Holidays"
+    "holidays": "Holidays",
+    "departmentsandofficials": "Departments & Officials",
+    "legislativecitycouncil": "Legislative (City Council)",
+    "localofficialsdirectory": "Local Officials Directory",
+    "transparency": "Transparency",
+    "statistics": "Statistics"
   },
   "joinUs": {
     "stripTitle": "Join the #CivicTech Revolution",

@@ -4,13 +4,17 @@
 categories:
   - category: 'Departments'
     slug: 'departments'
-    description: 'Explore San Pablo City departments, elected offices, service offices, and public responsibilities for a 1st-class component city of 80 barangays.'
+    description: 'Explore San Pablo City departments, elected offices, service offices, and public responsibilities for a 1st-class component city of 80 barangays, including the legislative council and local officials directory.'
     icon: 'Building2'
     subcategories:
       - name: 'Executive Department'
         slug: 'executive'
       - name: 'Legislative Department'
         slug: 'legislative'
+      - name: 'City Departments & Offices'
+        slug: 'city-departments-and-local-offices'
+      - name: 'Local Officials Directory'
+        slug: 'local-officials-directory'
       - name: 'City Health Office'
         slug: 'city-health-office'
       - name: 'Business Permits and Licensing Office'

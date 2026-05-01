@@ -1,0 +1,19 @@
+# Reports and Statistics
+# This file contains demographic, statistical, and performance reports for San Pablo City.
+
+layout: list
+title: 'San Pablo City Reports and Statistics'
+description: 'Population data, demographic information, city statistics, and performance reports.'
+pages:
+  - name: 'Demographics and Population'
+    slug: 'demographics-and-population'
+    description: 'Population census data, barangay information, and demographic profile of San Pablo City.'
+  - name: 'Financial and Performance Reports'
+    slug: 'financial-and-performance-reports'
+    description: 'City government financial reports, program performance metrics, and annual accomplishment reports.'
+  - name: 'Development and Infrastructure Statistics'
+    slug: 'development-and-infrastructure-statistics'
+    description: 'Data on city development projects, infrastructure status, and public works accomplishments.'
+  - name: 'City Budget Summary'
+    slug: 'city-budget-summary'
+    description: 'High-level summary of the City of San Pablo annual budget and how to access detailed budget documents.'

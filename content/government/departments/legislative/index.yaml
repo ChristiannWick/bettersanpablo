@@ -1,9 +1,9 @@
 # Legislative Department Pages
-# This file contains the elected San Pablo City councilors for the 2025-2028 term.
+# This file contains the elected San Pablo City councilors and legislative directory for the 2025-2028 term.
 
 layout: grid
-title: 'Sangguniang Panlungsod'
-description: 'San Pablo City councilors elected for the 2025-2028 term, based on 100% precincts reporting as of May 15, 2025, 2:41 PM in Comelec Media Server results reported by Rappler.'
+title: 'San Pablo City Legislative Directory'
+description: 'A directory of the current Sangguniang Panlungsod members, the Vice Mayor as presiding officer, and the legislative offices that support local policy and community services.'
 pages:
   - name: 'Carmela A. Acebedo'
     description: 'City Councilor, San Pablo City - 86,085 votes'

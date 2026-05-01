@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import {
   X,
   Menu,
@@ -150,79 +150,125 @@ const Navbar: React.FC = () => {
 
   const weatherLabel = getWeatherLabel(weather.weatherCode);
 
+  // Marquee (auto-scroll) refs and logic for emergency hotlines
+  const marqueeRef = useRef<HTMLDivElement | null>(null);
+  const marqueePauseRef = useRef(false);
+
+  useEffect(() => {
+    const el = marqueeRef.current;
+    if (!el) return;
+
+    let rafId = 0;
+    let lastTime = performance.now();
+    const speed = 60; // pixels per second
+
+    const step = (time: number) => {
+      if (!el) return;
+      if (marqueePauseRef.current) {
+        lastTime = time;
+        rafId = requestAnimationFrame(step);
+        return;
+      }
+
+      const delta = time - lastTime;
+      lastTime = time;
+
+      // If content is not wide enough to scroll, skip movement
+      if (el.scrollWidth <= el.clientWidth) {
+        rafId = requestAnimationFrame(step);
+        return;
+      }
+
+      el.scrollLeft += (speed * delta) / 1000;
+
+      // When scrolled half (we duplicate content), wrap around
+      if (el.scrollLeft >= el.scrollWidth / 2) {
+        el.scrollLeft -= el.scrollWidth / 2;
+      }
+
+      rafId = requestAnimationFrame(step);
+    };
+
+    rafId = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
+
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
-      {/* Emergency hotline bar */}
+      {/* Emergency hotline bar (auto-scrolling marquee) */}
       <div className="bg-red-700 text-white">
         <div className="container mx-auto px-4 py-2.5">
-          <div className="flex flex-col gap-2 xl:flex-row xl:items-center xl:justify-between">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
-              <span className="inline-flex items-center font-semibold uppercase tracking-wide">
-                <Phone className="h-3.5 w-3.5 mr-1.5" />
-                San Pablo Emergency Hotlines
-              </span>
-              {EMERGENCY_HOTLINES.map(hotline => (
-                <a
-                  key={hotline.label}
-                  href={hotline.href}
-                  className="inline-flex items-center hover:text-red-100 transition-colors"
-                >
-                  <span className="font-medium">{hotline.label}:</span>
-                  <span className="ml-1">{hotline.number}</span>
-                </a>
-              ))}
-            </div>
+          <div className="flex items-center">
+            <div
+              ref={marqueeRef}
+              className="w-full overflow-hidden"
+              onMouseEnter={() => (marqueePauseRef.current = true)}
+              onMouseLeave={() => (marqueePauseRef.current = false)}
+              tabIndex={0}
+              onFocus={() => (marqueePauseRef.current = true)}
+              onBlur={() => (marqueePauseRef.current = false)}
+            >
+              <div className="inline-flex items-center gap-6 whitespace-nowrap">
+                <div className="inline-flex items-center gap-3">
+                  <span className="inline-flex items-center font-semibold uppercase tracking-wide shrink-0">
+                    <Phone className="h-3.5 w-3.5 mr-1.5" />
+                    San Pablo Emergency Hotlines
+                  </span>
+                  {EMERGENCY_HOTLINES.map(hotline => (
+                    <a
+                      key={hotline.label}
+                      href={hotline.href}
+                      className="inline-flex items-center hover:text-red-100 transition-colors shrink-0 ml-3"
+                    >
+                      <span className="font-medium">{hotline.label}:</span>
+                      <span className="ml-1">{hotline.number}</span>
+                    </a>
+                  ))}
+                </div>
 
-            <div className="inline-flex items-center self-start rounded-md border border-white/30 bg-black/20 px-3 py-1.5 text-xs xl:self-auto">
-              <CloudSun className="mr-1.5 h-3.5 w-3.5" />
-              <span className="mr-2 inline-flex items-center font-semibold">
-                <span className="mr-1.5 h-2 w-2 rounded-full bg-emerald-300 animate-pulse" />
-                Live Weather
-              </span>
-              {weather.loading ? (
-                <span className="inline-flex items-center">
-                  <Loader2 className="mr-1 h-3 w-3 animate-spin" />
-                  Updating...
-                </span>
-              ) : weather.temperature !== null ? (
-                <span>
-                  San Pablo: {Math.round(weather.temperature)} degC,{' '}
-                  {weatherLabel}
-                  {weather.windSpeed !== null && (
-                    <span> | {Math.round(weather.windSpeed)} km/h</span>
-                  )}
-                </span>
-              ) : (
-                <span>San Pablo weather unavailable</span>
-              )}
+                {/* duplicate content for seamless loop */}
+                <div className="inline-flex items-center gap-3" aria-hidden>
+                  <span className="inline-flex items-center font-semibold uppercase tracking-wide shrink-0">
+                    <Phone className="h-3.5 w-3.5 mr-1.5" />
+                    San Pablo Emergency Hotlines
+                  </span>
+                  {EMERGENCY_HOTLINES.map(hotline => (
+                    <span key={`${hotline.label}-dup`} className="inline-flex items-center ml-3">
+                      <span className="font-medium">{hotline.label}:</span>
+                      <span className="ml-1">{hotline.number}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Top bar with language switcher and additional links */}
-      <div className="border-b border-gray-200">
-        <div className="container mx-auto px-4 hidden md:flex justify-end items-center h-11">
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://bettergov.ph/join-us"
-              className="text-sm text-primary-600 hover:text-primary-700 font-semibold transition-colors"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Join Us
-            </a>
-            <a
-              href="https://www.gov.ph"
-              className="text-sm text-gray-800 hover:text-primary-600 transition-colors"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Official Gov.ph
-            </a>
+      {/* Weather strip (separate section) */}
+      <div className="bg-white border-b">
+        <div className="container mx-auto px-4 py-2 flex items-center justify-end">
+          <div className="inline-flex items-center gap-3 text-xs md:text-sm text-gray-700">
+            <CloudSun className="h-5 w-5 text-yellow-500" />
+            {weather.loading ? (
+              <span className="inline-flex items-center text-gray-700">
+                <Loader2 className="mr-1 h-4 w-4 animate-spin text-gray-500" />
+                Updating weather...
+              </span>
+            ) : weather.temperature !== null ? (
+              <span>
+                San Pablo: {Math.round(weather.temperature)}°C, {weatherLabel}
+                {weather.windSpeed !== null && (
+                  <span> | {Math.round(weather.windSpeed)} km/h</span>
+                )}
+              </span>
+            ) : (
+              <span>San Pablo weather unavailable</span>
+            )}
           </div>
         </div>
       </div>
+
 
       {/* Main navigation */}
       <div className="container mx-auto px-4">
@@ -253,7 +299,7 @@ const Navbar: React.FC = () => {
                   href={item.href}
                   className="flex items-center text-gray-700 hover:text-primary-600 font-medium text-base transition-colors"
                 >
-                  {t(`navbar.${item.label.replace(' ', '').toLowerCase()}`)}
+                  {t(`navbar.${item.label.replace(/\s+/g, '').toLowerCase()}`)}
                   {item.children && (
                     <ChevronDown className="ml-1 h-4 w-4 text-gray-800 group-hover:text-primary-600 transition-colors" />
                   )}
@@ -346,42 +392,45 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto px-2 pt-2 pb-4 space-y-1 border-t border-gray-200 bg-white">
           {mainNavigation.map(item => (
             <div key={item.label}>
-              <button
-                onClick={() => toggleSubmenu(item.label)}
-                className="w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
-              >
-                {t(`navbar.${item.label.toLowerCase()}`)}
-                {item.children && (
-                  <ChevronDown
-                    className={`h-5 w-5 transition-transform ${
-                      activeMenu === item.label ? 'transform rotate-180' : ''
-                    }`}
-                  />
-                )}
-              </button>
-              {item.children && activeMenu === item.label && (
-                <div className="pl-6 py-2 space-y-1 bg-gray-50">
-                  {item.children.map(child => (
-                    <Link
-                      key={child.label}
-                      to={child.href}
-                      onClick={closeMenu}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-500"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
-                </div>
+              {item.children ? (
+                <>
+                  <button
+                    onClick={() => toggleSubmenu(item.label)}
+                    className="w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
+                  >
+                    {t(`navbar.${item.label.toLowerCase()}`)}
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform ${
+                        activeMenu === item.label ? 'transform rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  {activeMenu === item.label && (
+                    <div className="pl-6 py-2 space-y-1 bg-gray-50">
+                      {item.children.map(child => (
+                        <Link
+                          key={child.label}
+                          to={child.href}
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-500"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <Link
+                  to={item.href}
+                  onClick={closeMenu}
+                  className="block w-full px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
+                >
+                  {t(`navbar.${item.label.toLowerCase()}`)}
+                </Link>
               )}
             </div>
           ))}
-          <Link
-            to="/join-us"
-            onClick={closeMenu}
-            className="block px-4 py-2 text-base font-semibold text-primary-600 hover:bg-primary-50 hover:text-primary-700"
-          >
-            Join Us
-          </Link>
           <Link
             to="/about"
             onClick={closeMenu}

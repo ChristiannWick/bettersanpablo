@@ -1,0 +1,31 @@
+# Transparency Documents
+# This file contains disclosure, transparency, and accountability resources for San Pablo City government.
+
+layout: list
+title: 'Transparency and Accountability Resources'
+description: 'Official government documents including ordinances, resolutions, executive orders, bids and awards, and financial records for San Pablo City.'
+pages:
+  - name: 'Ordinances and Resolutions'
+    slug: 'ordinances-and-resolutions'
+    description: 'Local legislation passed by the Sangguniang Panlungsod of San Pablo City, including ordinances, resolutions, and executive orders.'
+  - name: 'Executive Orders'
+    slug: 'executive-orders'
+    description: 'Official directives issued by the Mayor of San Pablo City on governance matters and city operations.'
+  - name: 'Bids and Awards'
+    slug: 'bids-and-awards'
+    description: 'Public procurement documents, bidding processes, and awards for city government projects and contracts.'
+  - name: 'Financial Records and Audit Reports'
+    slug: 'financial-records-and-audit-reports'
+    description: 'City budget documents, financial statements, and audit reports demonstrating fiscal responsibility and transparency.'
+  - name: 'Annual Budget'
+    slug: 'annual-budget'
+    description: 'San Pablo City annual budget documents, budget execution reports, and supporting annexes.'
+  - name: 'Full Disclosure Policy'
+    slug: 'full-disclosure-policy'
+    description: 'Local commitment and procedures for proactively publishing city documents and data.'
+  - name: 'SALN (Statement of Assets, Liabilities, Net Worth)'
+    slug: 'saln'
+    description: 'Guidance on SALN filings and how to request SALNs of public officers when available.'
+  - name: 'Freedom of Information (FOI)'
+    slug: 'freedom-of-information'
+    description: 'How residents can request public records and the city FOI contact points.'
