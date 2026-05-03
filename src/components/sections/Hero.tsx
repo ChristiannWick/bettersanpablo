@@ -44,7 +44,10 @@ export default function Hero({
   const [heroReady, setHeroReady] = useState(false);
   const navigate = useNavigate();
   const hasQuickAccessItems = quickAccessItems.length > 0;
-  const [ref, isInView] = useInView<HTMLDivElement>({ threshold: 0.15, once: false });
+  const [ref, isInView] = useInView<HTMLDivElement>({
+    threshold: 0.15,
+    once: false,
+  });
   const visible = isInView || heroReady;
 
   useEffect(() => {
@@ -133,7 +136,9 @@ export default function Hero({
           {hasQuickAccessItems && (
             <div
               className={`mt-6 flex flex-wrap gap-2 transition-all duration-700 ${
-                visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                visible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-4'
               }`}
               style={{ transitionDelay: visible ? '300ms' : '0ms' }}
             >

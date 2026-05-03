@@ -67,6 +67,9 @@ export default function ServicesSection({
                 className="h-full border border-gray-200 transition-transform duration-200 hover:-translate-y-0.5 hover:border-primary-400"
               >
                 <CardContent className="flex h-full flex-col p-5">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-100 text-primary-700">
+                    {getIcon(service.icon)}
+                  </div>
                   <h3 className="text-base font-semibold text-gray-900">
                     {service.title}
                   </h3>

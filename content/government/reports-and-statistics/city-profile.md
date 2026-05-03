@@ -1,107 +1,104 @@
-# San Pablo City Profile
+# City Profile — San Pablo City, Laguna
 
-San Pablo City is a **1st-class component city** in the province of Laguna, Region IV-A (CALABARZON), Philippines. Known as the **"City of Seven Lakes"**, it is one of the oldest chartered cities in the Philippines and a major urban center in Southern Luzon.
+San Pablo City, known as the **City of Seven Lakes**, is a 1st class component city in the province of Laguna, Philippines. It was chartered as a city in 1940 under Commonwealth Act No. 520 and inaugurated on March 30, 1941.
 
 ## City at a Glance
 
-| Detail | Information |
-| --- | --- |
-| **Official Name** | City of San Pablo |
-| **Province** | Laguna |
-| **Region** | Region IV-A (CALABARZON) |
-| **Income Classification** | 1st-class component city |
-| **Cityhood** | May 7, 1940 (Commonwealth Act No. 520) |
-| **Known As** | "City of Seven Lakes" |
-| **Land Area** | 197.56 km² |
-| **Barangays** | 80 barangays |
-| **Population** | 300,166 (2024 POPCEN) |
-| **Population Density** | ~1,520 persons per km² |
-| **City Mayor** | Hon. Arcadio "Najie" B. Gapangada Jr. (2025–2028) |
-| **City Vice Mayor** | Hon. Justin G. Colago (2025–2028) |
-| **Official Website** | https://www.sanpablocity.gov.ph |
-| **City Hall Address** | Quezon Avenue, San Pablo City, Laguna |
-| **City Hall Main Line** | (049) 562-1234 |
+| Fact                     | Detail                                     |
+| ------------------------ | ------------------------------------------ |
+| Official Name            | City of San Pablo                          |
+| Province                 | Laguna                                     |
+| Region                   | CALABARZON (Region IV-A)                   |
+| Classification           | 1st Class Component City                   |
+| Land Area                | 197.56 km²                                 |
+| Population (2024 POPCEN) | 300,166                                    |
+| No. of Barangays         | 80                                         |
+| City Charter             | Commonwealth Act No. 520 (May 7, 1940)     |
+| Patron Saint             | St. Paul the First Hermit                  |
+| Feast Day                | January 15                                 |
+| City Hall Address        | Quezon Avenue, San Pablo City, Laguna      |
+| City Hall Main Line      | (049) 503-4000                             |
+| Official Website         | www.sanpablocity.gov.ph                    |
+| Geographic Coordinates   | 14°4′N 121°19′E                            |
+| Altitude                 | 113 m above sea level (City Hall vicinity) |
 
 ## The Seven Lakes
 
-San Pablo City's most distinctive feature is its **seven natural freshwater crater lakes**, which are ecologically significant and central to the city's identity, tourism, and fisheries:
+San Pablo City is the only city in the Philippines with seven natural freshwater volcanic crater lakes within its boundaries.
 
-| Lake | Barangay | Notable Features |
-| --- | --- | --- |
-| **Sampaloc Lake** | Barangay II (City Center) | Largest of the seven; commercial fishpens; accessible from the city |
-| **Pandin Lake** | Sta. Maria Magdalena | Pristine deep waters; popular bamboo raft tours |
-| **Bunot Lake** | Concepcion | Scenic; surrounded by coconut trees |
-| **Inya Lake** | San Lorenzo | Quiet and serene; agricultural surroundings |
-| **Palakpakin Lake** | San Lorenzo | Largest of the outer lakes; community fishing |
-| **Calibato Lake** | Sta. Catalina | Community use and aquaculture |
-| **Mabini Lake** | Sto. Angel | Smallest of the seven lakes |
+| Lake       | Barangays               | Area (approx.)    | Key Feature                                      |
+| ---------- | ----------------------- | ----------------- | ------------------------------------------------ |
+| Sampaloc   | Poblacion, San Rafael   | Largest (100+ ha) | Most accessible; popular lakeside park           |
+| Pandin     | San Lorenzo             | 28 ha             | Clear spring-fed waters; bamboo-raft eco-tourism |
+| Yambo      | San Lorenzo             | 27 ha             | Twin lake to Pandin; quiet natural scenery       |
+| Bunot      | Concepcion              | 27 ha             | Scenic; community managed                        |
+| Inya       | San Lorenzo             | 14 ha             | Smallest of the seven; native fish habitat       |
+| Palakpakin | San Lorenzo, Sta. Maria | 40 ha             | Fishing community lake                           |
+| Calibato   | San Lorenzo             | 15 ha             | Remote; rich biodiversity                        |
 
 ## History
 
-San Pablo City was chartered as a city on **May 7, 1940** under Commonwealth Act No. 520, during the term of President Manuel L. Quezon. It is one of the oldest chartered cities in Luzon and has served as a key agricultural and commercial center in Laguna for decades.
-
-The city's name honors **San Pablo Apóstol (Saint Paul the Apostle)**, the patron saint of the city. The main cathedral — the Cathedral Parish of St. Paul the First Hermit — stands at the heart of the city center.
+- **Pre-colonial era** — Area known as _Sampalok_, a settlement of Tagalog people near the lake.
+- **1571** — Spanish forces under Captain Juan de Salcedo first contacted the settlement.
+- **1586** — _Sampalok_ became a separate parish, establishing its religious and civic identity.
+- **1647** — Separated as a municipality and renamed _San Pablo de los Montes_ in honor of St. Paul the First Hermit.
+- **1940** — Commonwealth Act No. 520 granted San Pablo its city charter, signed on May 7, 1940.
+- **1941** — San Pablo City inaugurated on March 30, 1941.
+- **Present** — San Pablo is one of the oldest chartered cities in the Philippines, now a leading economic and tourism hub in Laguna.
 
 ## Geography
 
-San Pablo City sits at the foot of **Mount Banahaw** and the **Banahaw-San Cristobal Protected Landscape**, a national park straddling the borders of Laguna and Quezon. The city's terrain ranges from urban lowlands and lake basins to agricultural slopes and forested upland areas.
+San Pablo City lies at the foot of Mt. Banahaw and Mt. San Cristobal, two dormant volcanoes that contributed to the formation of its seven crater lakes. The city sits in the southeastern part of Laguna province, bordering:
 
-**Location:** approximately 100 km south of Manila, accessible via SLEX (South Luzon Expressway) through the San Pablo City exit.
+- **North:** Alaminos and Calauan (Laguna)
+- **East:** Dolores and Tiaong (Quezon)
+- **South:** Dolores and Nagcarlan (Quezon/Laguna)
+- **West:** Nagcarlan and Rizal (Laguna)
 
-**Neighboring municipalities:** Santa Cruz (provincial capital), Nagcarlan, Rizal, Alaminos, San Antonio, and the Quezon province municipalities of Dolores and Tayabas.
+The city's terrain ranges from flat urban lowlands to forested highland areas near the mountains.
 
 ## Economy
 
-San Pablo City's economy is driven by:
+San Pablo City has a diversified local economy:
 
-- **Agriculture and fisheries** — Rice, coconut, vegetables, and lake fisheries (tilapia, bangus)
-- **Commerce and trade** — Retail, wholesale, and market activities at the central public market and commercial areas
-- **Manufacturing** — Light industries and agro-processing
-- **Tourism** — Seven Lakes eco-tourism, resorts, heritage tourism, and agri-tourism
-- **Education and services** — Government services, healthcare, and schools
-
-Key commercial areas are concentrated along **Quezon Avenue**, **Rizal Avenue**, and surrounding the **San Pablo City Public Market**.
+- **Coconut and agriculture** — San Pablo is one of the Philippines' top coconut-producing cities; it hosts the annual **Coco Festival** each January.
+- **Trade and commerce** — Established commercial districts, public markets, shopping centers, and banking institutions serve the city and nearby municipalities.
+- **Tourism** — The Seven Lakes are the primary tourism draw; eco-tourism activities (bamboo-raft rides, lake trekking, heritage tours) support local livelihoods.
+- **Small and medium enterprises** — Coconut-based products, handicrafts, food processing, and agri-based industries are major livelihood sources.
+- **Services** — Education, healthcare, and government services form a substantial part of the local economy.
 
 ## Education
 
-San Pablo City has a strong education profile with:
+San Pablo City has a robust network of educational institutions at all levels:
 
-- **Public schools** — Elementary and secondary schools under DepEd San Pablo City Division
-- **Pamantasan ng Lungsod ng San Pablo (PLSP)** — The city's own public university, located in Barangay San Jose (https://plsp.edu.ph)
-- **Private schools and colleges** — Several private institutions offering pre-school through tertiary education
-- **TESDA accredited centers** — Technical-vocational training for skills development
-
-**DepEd San Pablo City Division:** https://www.depedsanpablo.com | Hotline: (049) 521-0645
+| Level                | Notable Institutions                                            |
+| -------------------- | --------------------------------------------------------------- |
+| State University     | Laguna State Polytechnic University – San Pablo City Campus     |
+| Higher Education     | San Pablo Colleges (SPC), De La Salle – Zobel San Pablo         |
+| Technical-Vocational | TESDA Training Centers                                          |
+| Public High Schools  | San Pablo City National High School and 14+ public high schools |
+| Public Elementary    | 50+ public elementary schools across 80 barangays               |
 
 ## Health Facilities
 
-- **San Pablo City General Hospital** — Government hospital
-- **Laguna Provincial Hospital — San Pablo City District Hospital** — Government Level 1 hospital
-- **Private hospitals and clinics** — Community General Hospital, Immaculate Conception Hospital, and others
-- **Barangay Health Centers** — 80 health centers across all barangays, managed by the City Health Office
+| Facility                        | Type                                                 |
+| ------------------------------- | ---------------------------------------------------- |
+| San Pablo City General Hospital | Government hospital (100+ beds)                      |
+| Rural Health Units (RHUs)       | City-operated primary health centers                 |
+| Barangay Health Centers         | 80 barangay-level health stations                    |
+| Private Hospitals               | Several accredited private hospitals within the city |
+| Lying-in Clinics                | Distributed across urban and rural barangays         |
 
-## Awards and Recognition
+## Key Contacts
 
-San Pablo City has received recognition in areas including:
-
-- Environmental management and lake conservation
-- Local governance and public service delivery
-- Business-friendly environment and investment promotion
-
-For official awards and citations, refer to the City Mayor's Office or city website.
-
-## Key City Hall Contacts
-
-| Office | Contact |
-| --- | --- |
-| City Hall Main Line | (049) 562-1234 |
-| City Information Office | (049) 561-1483 |
-| City Admin's Office | (049) 521-0307 |
-| CDRRMO Emergency | 0998 540 7171 |
-| Official Website | https://www.sanpablocity.gov.ph |
-
-## Data Sources
-
-- Philippine Statistics Authority (PSA) — 2024 POPCEN
-- PSA PSGC: https://psa.gov.ph/classification/psgc/barangays/0403424000
-- San Pablo City official website: https://www.sanpablocity.gov.ph
+| Office                | Contact                  |
+| --------------------- | ------------------------ |
+| City Hall Main Line   | (049) 503-4000           |
+| CDRRMO Emergency      | 0998 540 7171            |
+| PNP (Police HQ)       | (049) 562-8765           |
+| BFP (Fire Department) | (049) 562-4321           |
+| Emergency / Ambulance | 911                      |
+| City Health Office    | (049) 503-4000 local 201 |
+| City Social Welfare   | (049) 503-4000 local 301 |
+| Tourism Office        | (049) 503-4000 local 401 |
+| Official Website      | www.sanpablocity.gov.ph  |
