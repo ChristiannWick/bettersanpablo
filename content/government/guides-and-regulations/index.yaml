@@ -1,0 +1,14 @@
+# Guides and Regulations
+# Step-by-step guides and local regulations for San Pablo City residents.
+
+layout: list
+title: 'San Pablo City Guides and Regulations'
+description: 'Citizen guides for common government transactions and local regulations in San Pablo City.'
+pages:
+  - name: 'Citizen Guides'
+    slug: 'guides'
+    description: 'Step-by-step instructions for common transactions at San Pablo City Hall and government offices — permits, certificates, registrations, and more.'
+
+  - name: 'Local Regulations'
+    slug: 'regulations'
+    description: 'Local ordinances, regulations, and rules that residents and businesses in San Pablo City need to know.'

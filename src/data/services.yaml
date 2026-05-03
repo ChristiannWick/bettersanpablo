@@ -63,3 +63,9 @@ categories:
     slug: 'housing-land-use'
     description: 'Housing, relocation, zoning, building permits, planning, and urban development services for San Pablo residents.'
     icon: 'Home'
+
+  # Tourism Services
+  - category: 'Tourism'
+    slug: 'tourism'
+    description: 'Explore the City of Seven Lakes — Sampaloc, Pandin, Bunot, Inya, Palakpakin, Calibato, and Mabini. Discover resorts, heritage sites, festivals, and tourism permits.'
+    icon: 'MapPin'

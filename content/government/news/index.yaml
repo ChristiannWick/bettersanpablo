@@ -1,0 +1,14 @@
+# News and Announcements
+# Official updates, advisories, and city announcements from the City Government of San Pablo.
+
+layout: list
+title: 'San Pablo City News and Announcements'
+description: 'Stay informed with official news, public advisories, and announcements from the City Government of San Pablo, Laguna.'
+pages:
+  - name: 'City News and Updates'
+    slug: 'news'
+    description: 'Official news releases, project updates, and city government activities from San Pablo City.'
+
+  - name: 'Public Announcements and Advisories'
+    slug: 'announcements'
+    description: 'Public advisories, service schedules, emergency notices, and important reminders from the City Government of San Pablo.'

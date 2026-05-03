@@ -4,7 +4,7 @@
 pages:
   - name: 'Executive'
     slug: 'executive'
-    description: "Find out about the Mayor and Vice Mayor of San Pablo City, including current roles, programs, events, and contact information."
+    description: "Find out about the Mayor and Vice Mayor of San Pablo City, including current roles, City Hall offices, emergency hotlines, and contact information."
   - name: 'Legislative'
     slug: 'legislative'
     description: 'As of the 2025-2028 term, the Sangguniang Panlungsod of San Pablo City has 10 elected councilors, with the Vice Mayor as the presiding officer of the council.'
@@ -14,3 +14,15 @@ pages:
   - name: 'Local Officials Directory'
     slug: 'local-officials-directory'
     description: 'Key elected officials and barangay-level leadership serving San Pablo City for the current term.'
+  - name: 'City Health Office (CHO)'
+    slug: 'city-health-office'
+    description: 'Public health programs, vaccinations, maternal care, disease surveillance, and health services across San Pablo City.'
+  - name: 'Business Permits and Licensing Office (BPLO)'
+    slug: 'business-permits-and-licensing-office'
+    description: 'Business registration, Mayor''s Permit applications, annual renewals, and licensing requirements for San Pablo City businesses.'
+  - name: 'City Social Welfare and Development Office (CSWDO)'
+    slug: 'city-social-welfare-and-development-office'
+    description: 'Social protection programs, AICS assistance, 4Ps coordination, senior citizen and PWD support, and community welfare services.'
+  - name: 'City Disaster Risk Reduction and Management Office (CDRRMO)'
+    slug: 'city-disaster-risk-reduction-and-management-office'
+    description: 'Emergency response, disaster preparedness, evacuation planning, and early warning systems for San Pablo City residents.'

@@ -1,154 +1,140 @@
-# Mayor and Vice Mayor
+# Mayor and Vice Mayor — San Pablo City
 
-Find out about the Mayor and Vice Mayor of {GOVERNMENT_NAME}, including their current roles, public service responsibilities, and contact information.
-
----
-
-# Your Mayor and Vice Mayor
-
-The **Mayor** is the chief executive official of the **Local Government Unit of {GOVERNMENT_NAME}**. The Mayor is elected by residents during the Philippine National and Local Elections, which are held every three years.
-
-The Mayor serves as the head of the city government and is responsible for implementing programs, policies, and development initiatives approved by the **Sangguniang Panlungsod**.
-
-The Mayor's duties include representing the LGU during official functions, leading local development programs, overseeing city services, and ensuring that public services are effectively delivered to residents.
-
-The **current Mayor is {MAYOR}.**
-
-**Mayor {MAYOR}** was elected as Mayor of **{GOVERNMENT_NAME}** during the **{YEAR_ELECTED} National and Local Elections**.
-
-In the 2025 local election results reported from Comelec Media Server data, **Gapangada, Najie (RP)** led the mayoral race with **70,822 votes**, while **Colago, Justin (NP)** led the vice-mayoral race with **66,289 votes**.
+**San Pablo City Hall**
+Quezon Avenue, San Pablo City, Laguna
+Main Line: **(049) 562-1234**
+City Information Office: **(049) 561-1483**
+Official Website: [www.sanpablocity.gov.ph](https://www.sanpablocity.gov.ph)
 
 ---
 
-## Mayor of {GOVERNMENT_NAME}
+## Executive Leadership
 
-Mayor of **{GOVERNMENT_NAME}**, **{MAYOR}**
+| Position            | Name                                  |
+| ------------------- | ------------------------------------- |
+| **City Mayor**      | Hon. Arcadio "Najie" B. Gapangada Jr. |
+| **City Vice Mayor** | Hon. Justin G. Colago                 |
 
-### San Pablo City Quick Facts
+**About the Mayor:** Hon. Arcadio "Najie" B. Gapangada Jr. was elected as Mayor of San Pablo City during the **2025 National and Local Elections**, leading the mayoral race with **70,822 votes** as reported from Comelec Media Server data. The Mayor serves as the chief executive of the City Government of San Pablo, overseeing city departments, programs, and development initiatives.
 
-| Detail | Current Reference |
-| --- | --- |
-| Province / Region | Laguna, CALABARZON (Region IV-A) |
-| City identity | City of Seven Lakes |
-| Income class | 1st-class component city |
-| Barangays | 80 barangays |
-| Population | 300,166, 2024 POPCEN |
-| Land area | 197.56 km2 |
-| Cityhood | May 7, 1940, under Commonwealth Act No. 520 |
-| Official website | https://www.sanpablocity.gov.ph |
+**About the Vice Mayor:** Hon. Justin G. Colago was elected as Vice Mayor during the **2025 National and Local Elections**, leading the vice-mayoral race with **66,289 votes**. The Vice Mayor presides over the **Sangguniang Panlungsod** and assumes the responsibilities of Acting Mayor when the Mayor is unavailable.
 
-### Public Service Priorities
+---
 
-Residents should monitor official announcements from the City Government of San Pablo for current program launches, assistance schedules, and application windows.
+## Sangguniang Panlungsod (City Council) — 2025–2028 Term
 
-The city's published vision and mission emphasize:
+| #   | Member                      | Votes  |
+| --- | --------------------------- | ------ |
+| 1   | Hon. Carmela A. Acebedo     | 86,085 |
+| 2   | Hon. Barbie Diaz            | 81,183 |
+| 3   | Hon. Gel Adriano            | 61,628 |
+| 4   | Hon. John Edgar C. Adajar   | 60,557 |
+| 5   | Hon. Leonardo C. Villanueva | 57,209 |
+| 6   | Hon. Dandi Medina           | 55,751 |
+| 7   | Hon. Richard C. Pavico      | 53,546 |
+| 8   | Hon. Ambo Amante            | 52,856 |
+| 9   | Hon. Konsi Dok Ticzon       | 47,943 |
+| 10  | Hon. Francis Nap Calatraba  | 45,700 |
+
+---
+
+## City Hall Offices and Contact Directory
+
+| Office                                                      | Contact        |
+| ----------------------------------------------------------- | -------------- |
+| Office of the City Mayor                                    | (049) 562-1234 |
+| Office of the City Vice Mayor                               | (049) 562-1234 |
+| City Administrator's Office                                 | (049) 521-0307 |
+| City Information Office                                     | (049) 561-1483 |
+| Business Permits and Licensing Office (BPLO)                | (049) 562-1234 |
+| City Treasurer's Office                                     | (049) 562-1234 |
+| City Accounting Office                                      | (049) 562-1234 |
+| City Assessor's Office                                      | (049) 562-1234 |
+| City Budget Office                                          | (049) 562-1234 |
+| City Civil Registrar                                        | (049) 562-1234 |
+| City Health Office (CHO)                                    | (049) 562-1234 |
+| City Social Welfare and Development Office (CSWDO)          | (049) 562-1234 |
+| City Planning and Development Office (CPDO)                 | (049) 562-1234 |
+| City Engineering Office                                     | (049) 562-1234 |
+| City Environment and Natural Resources Office (CENRO)       | (049) 562-1234 |
+| City Agriculture Office                                     | (049) 562-1234 |
+| City Tourism Office                                         | (049) 562-1234 |
+| City Legal Office                                           | (049) 562-1234 |
+| City Disaster Risk Reduction and Management Office (CDRRMO) | (049) 800-0405 |
+| Sangguniang Panlungsod Secretariat                          | (049) 562-1234 |
+
+---
+
+## Emergency Hotlines
+
+| Office                                    | Number                |
+| ----------------------------------------- | --------------------- |
+| **National Emergency Hotline**            | **911**               |
+| **CDRRMO Emergency Line**                 | **0998 540 7171**     |
+| **CDRRM Office**                          | **(049) 800-0405**    |
+| **City Hall Main Line**                   | **(049) 562-1234**    |
+| **City Information Office**               | **(049) 561-1483**    |
+| **San Pablo City Water District (SPCWD)** | Contact via City Hall |
+
+---
+
+## San Pablo City Quick Facts
+
+| Detail                    | Information                                 |
+| ------------------------- | ------------------------------------------- |
+| **Province / Region**     | Laguna, CALABARZON (Region IV-A)            |
+| **City Identity**         | "City of Seven Lakes"                       |
+| **Income Classification** | 1st-class component city                    |
+| **Cityhood**              | May 7, 1940, under Commonwealth Act No. 520 |
+| **Barangays**             | 80 barangays                                |
+| **Population**            | 300,166 (2024 POPCEN)                       |
+| **Land Area**             | 197.56 km²                                  |
+| **Official Website**      | https://www.sanpablocity.gov.ph             |
+
+---
+
+## The Seven Lakes
+
+San Pablo City is home to seven natural freshwater lakes: **Sampaloc, Pandin, Bunot, Inya, Palakpakin, Calibato, and Mabini**. These lakes are central to the city's identity, environment, tourism, and livelihood.
+
+---
+
+## About the Office of the Mayor
+
+The Mayor is the chief executive of San Pablo City, responsible for:
+
+- implementing programs, policies, and development initiatives approved by the Sangguniang Panlungsod
+- representing the city in official functions and events
+- overseeing all city departments and public services
+- ensuring transparent and accountable governance
+
+### City's Published Vision and Mission
+
+The City Government of San Pablo upholds:
 
 - transparent and accountable governance
-- responsive public services and strong partnerships
-- investment, enterprise growth, and tourism
-- cultural pride and protection of natural resources
-- inclusive growth and sustainable development around the Seven Lakes
+- responsive public services and strong community partnerships
+- investment, enterprise growth, and tourism development
+- cultural pride and protection of the Seven Lakes and natural resources
+- inclusive and sustainable development
 
 ---
 
-# Vice Mayor
+## Invite the Mayor to Your Event
 
-**{VICE_MAYOR}** currently serves as the **Vice Mayor of {GOVERNMENT_NAME}**.
+Residents, schools, organizations, and institutions may invite the Mayor to attend community activities such as civic ceremonies, school programs, and local events.
 
-The Vice Mayor presides over the **Sangguniang Panlungsod**, ensuring legislative sessions run properly and that ordinances and resolutions support the development goals of the city government.
-
-Vice Mayor **{VICE_MAYOR}** was elected during the **{YEAR_ELECTED} National and Local Elections**.
-
-The Vice Mayor supports initiatives focused on:
-
-- community welfare
-- legislative development
-- economic and social progress
-
----
-
-# About the Office of the Vice Mayor
-
-The **Vice Mayor** performs legislative functions and presides over meetings of the **City Council**.
-
-When the Mayor is unable to perform official duties due to travel, illness, or other official commitments, the **Vice Mayor assumes responsibilities as Acting Mayor**, in accordance with Philippine local government laws.
-
-The Vice Mayor may also represent the city in official functions, civic ceremonies, and community events when designated by the Mayor.
-
----
-
-# Invite the Mayor to Your Event
-
-Residents, organizations, and institutions may invite the Mayor to attend official community activities such as:
-
-- community celebrations
-- school programs
-- civic ceremonies
-- government events
-
-To request the Mayor's attendance, submit a formal invitation to the **Office of the Mayor**.
-
-Required information:
+To request the Mayor's attendance, submit a formal invitation to the **Office of the Mayor** at San Pablo City Hall. Include:
 
 - name of organization
-- event title
-- date and time
+- event title, date, and time
 - event location
 - contact person and details
 
 ---
 
-# Mayor's Events and News
+## Sources and References
 
-Stay updated with the latest activities of the Mayor, including:
-
-- community visits
-- project launches
-- public consultations
-- official ceremonies
-
-Updates are posted through the official website and public information channels of **{GOVERNMENT_NAME}**.
-
----
-
-# City Contacts and Hotlines
-
-**Office of the Mayor**
-
-City Hall, **{GOVERNMENT_NAME}**, Laguna
-
-**City Hall / Forms inquiries:**
-
-(049) 562-1234
-
-**City Information Office:**
-
-(049) 561-1483
-
-**City Admin's Office:**
-
-(049) 521-0307
-
-**CDRRMO Emergency:**
-
-0998 540 7171
-
-**CDRRM Office:**
-
-(049) 800-0405
-
-**Email:**
-
-admin@sanpablocity.gov.ph
-
-**Website:**
-
-https://www.sanpablocity.gov.ph
-
-## Sources to Verify
-
-- San Pablo City official about page: https://www.sanpablocity.gov.ph/about-us
-- San Pablo City official services page: https://www.sanpablocity.gov.ph/services
-- San Pablo City forms page: https://www.sanpablocity.gov.ph/forms
-- PSA PSGC San Pablo page: https://psa.gov.ph/classification/psgc/barangays/0403424000
+- San Pablo City official website: https://www.sanpablocity.gov.ph
+- PSA PSGC San Pablo: https://psa.gov.ph/classification/psgc/barangays/0403424000
 - 2025 local election results: https://ph.rappler.com/elections/2025/local-race/laguna/san-pablo-city

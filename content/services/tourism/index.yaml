@@ -1,0 +1,23 @@
+# Tourism Category Pages
+# San Pablo City - City of Seven Lakes tourism guide
+
+pages:
+  - name: 'Visit the Seven Lakes'
+    slug: 'visit-the-seven-lakes'
+    description: 'Discover the seven natural freshwater lakes of San Pablo City — Sampaloc, Pandin, Bunot, Inya, Palakpakin, Calibato, and Mabini. Activities, directions, and entrance information.'
+
+  - name: 'Find local resorts and accommodations'
+    slug: 'find-local-resorts-and-accommodations'
+    description: 'Hotels, private resorts, eco-parks, and camping spots in and around San Pablo City for your visit or weekend getaway.'
+
+  - name: 'Explore San Pablo heritage and culture'
+    slug: 'explore-san-pablo-heritage-and-culture'
+    description: 'Heritage sites, churches, festivals, local cuisine, and the cultural highlights that make San Pablo City unique in Laguna.'
+
+  - name: 'Get tourism permits and event clearances'
+    slug: 'get-tourism-permits-and-event-clearances'
+    description: 'How to apply for tourism business permits, event clearances, lake activity permits, and accreditation from the City Tourism Office.'
+
+  - name: 'Visitor safety and emergency hotlines'
+    slug: 'visitor-safety-and-emergency-hotlines'
+    description: 'Emergency contacts, lake safety reminders, weather advisories, and important numbers for visitors to San Pablo City.'
