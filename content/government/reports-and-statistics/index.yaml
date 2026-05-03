@@ -5,6 +5,9 @@ layout: list
 title: 'San Pablo City Reports and Statistics'
 description: 'Population data, demographic information, city statistics, and performance reports.'
 pages:
+  - name: 'City Profile'
+    slug: 'city-profile'
+    description: 'Overview of San Pablo City — the City of Seven Lakes — including history, geography, economy, education, health facilities, and key city facts.'
   - name: 'Demographics and Population'
     slug: 'demographics-and-population'
     description: 'Population census data, barangay information, and demographic profile of San Pablo City.'

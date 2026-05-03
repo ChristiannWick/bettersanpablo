@@ -2,6 +2,7 @@ export interface QuickServiceItem {
   title: string;
   description: string;
   href: string;
+  icon: string;
 }
 
 export interface HighlightItem {
@@ -59,31 +60,37 @@ export const SAN_PABLO_QUICK_SERVICES: QuickServiceItem[] = [
     title: 'National ID',
     description: 'Check requirements and local assistance points for PhilSys.',
     href: '/services?q=National%20ID',
+    icon: 'IdCard',
   },
   {
     title: 'Birth Certificate',
     description: 'Find guidance for civil registry document requests.',
     href: '/services?q=Birth%20Certificate',
+    icon: 'FileText',
   },
   {
     title: 'Business Permit',
     description: 'Start or renew your local business permit process.',
     href: '/services/business/apply-for-barangay-clearance-and-mayors-business-permits',
+    icon: 'Building2',
   },
   {
     title: 'Business Registration',
     description: 'Access permit and tax steps for business compliance.',
     href: '/services/business/renew-permits-and-pay-local-business-taxes',
+    icon: 'Briefcase',
   },
   {
     title: 'Health Assistance',
     description: 'Locate free check-ups, medicines, and health services.',
     href: '/services/health-services/get-free-check-ups-basic-medicines-and-vaccines',
+    icon: 'HeartPulse',
   },
   {
     title: 'Senior and PWD Support',
     description: 'View available social welfare assistance programs.',
     href: '/services/social-welfare/apply-for-senior-citizen-solo-parent-or-pwd-assistance',
+    icon: 'Users',
   },
 ];
 
@@ -147,10 +154,11 @@ export const SAN_PABLO_FEATURED_HIGHLIGHTS: HighlightItem[] = [
   {
     title: 'Coco Festival Tradition',
     description:
-      'San Pablo\'s Coco Festival celebrates local culture, coconut-based livelihood, and community creativity each year.',
+      "San Pablo's Coco Festival celebrates local culture, coconut-based livelihood, and community creativity each year.",
     imageUrl:
       'https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pablo%20City%20Coco%20Festival.jpg',
-    imageAlt: 'Official poster for a recent San Pablo City Coco Festival edition',
+    imageAlt:
+      'Official poster for a recent San Pablo City Coco Festival edition',
   },
 ];
 
@@ -170,7 +178,7 @@ export const SAN_PABLO_HISTORY_TIMELINE: HistoryTimelineEntry[] = [
     year: '1586',
     title: 'Parish Establishment',
     description:
-      'Sampalok became a separate parish, helping shape the city\'s religious and civic core.',
+      "Sampalok became a separate parish, helping shape the city's religious and civic core.",
   },
   {
     year: '1647',
@@ -232,7 +240,7 @@ export const SAN_PABLO_TOP_PLACES: PlaceToVisitItem[] = [
   {
     title: 'Museo ng San Pablo',
     description:
-      'A local museum that highlights the city\'s history, institutions, and cultural identity.',
+      "A local museum that highlights the city's history, institutions, and cultural identity.",
     imageUrl:
       'https://commons.wikimedia.org/wiki/Special:FilePath/MuseoSanPablojf7215%2002.JPG',
     imageAlt: 'Museo ng San Pablo in Laguna',
@@ -240,15 +248,18 @@ export const SAN_PABLO_TOP_PLACES: PlaceToVisitItem[] = [
 ];
 
 export const SAN_PABLO_CITY_STATS: CityStat[] = [
-  { value: '~285K+', label: 'Population' },
+  { value: '300,166', label: 'Population (2024 POPCEN)' },
+  { value: '80', label: 'Barangays' },
+  { value: '7', label: 'Crater Lakes' },
+  { value: '197.56 km²', label: 'Land Area' },
   { value: '1940', label: 'Year of Cityhood' },
-  { value: '7', label: 'Number of Lakes' },
+  { value: '1st Class', label: 'City Classification' },
 ];
 
 export const SAN_PABLO_COCONUT_FESTIVAL: CoconutFestivalInfo = {
   title: 'Coco Festival of San Pablo',
   description:
-    'The Coco Festival is one of San Pablo City\'s signature cultural events, celebrating local heritage and the coconut industry.',
+    "The Coco Festival is one of San Pablo City's signature cultural events, celebrating local heritage and the coconut industry.",
   highlights: [
     'The 30th Coco Festival formally opened in January 2025 with a city trade fair.',
     'Festival activities highlight local products, entrepreneurship, and community participation.',
