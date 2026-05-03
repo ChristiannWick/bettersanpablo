@@ -1,5 +1,9 @@
 import type { NavigationItem } from '../types';
-import { serviceCategories as servicesData } from './yamlLoader';
+import {
+  serviceCategories as servicesData,
+  transparencyDocumentPages,
+  reportsStatisticsPages,
+} from './yamlLoader';
 
 interface Subcategory {
   name: string;
@@ -42,10 +46,18 @@ export const mainNavigation: NavigationItem[] = [
   {
     label: 'Transparency',
     href: '/government/transparency-documents',
+    children: transparencyDocumentPages.map(page => ({
+      label: page.name,
+      href: `/government/transparency-documents/${page.slug}`,
+    })),
   },
   {
     label: 'Statistics',
     href: '/government/reports-and-statistics',
+    children: reportsStatisticsPages.map(page => ({
+      label: page.name,
+      href: `/government/reports-and-statistics/${page.slug}`,
+    })),
   },
 ];
 
@@ -95,7 +107,5 @@ export const footerNavigation = {
       ],
     },
   ],
-  socialLinks: [
-    { label: 'Facebook', href: 'https://www.facebook.com/ciospc' },
-  ],
+  socialLinks: [{ label: 'Facebook', href: 'https://www.facebook.com/ciospc' }],
 };

@@ -82,6 +82,24 @@ export const governmentCategories: CategoryData = yaml.load(
   governmentActivitiesYamlContent
 ) as CategoryData;
 
+// Synchronously parsed nav-index exports — used by navigation.ts for dropdowns.
+// Updating the corresponding index.yaml automatically updates the navbar.
+function parsePagesSync(raw: string): Subcategory[] {
+  try {
+    const data = yaml.load(raw) as CategoryIndexData;
+    return data?.pages ?? [];
+  } catch {
+    return [];
+  }
+}
+
+export const transparencyDocumentPages: Subcategory[] = parsePagesSync(
+  governmentTransparencyDocumentsIndex
+);
+export const reportsStatisticsPages: Subcategory[] = parsePagesSync(
+  governmentReportsAndStatisticsIndex
+);
+
 export interface CategoryIndex {
   title?: string;
   description?: string;
