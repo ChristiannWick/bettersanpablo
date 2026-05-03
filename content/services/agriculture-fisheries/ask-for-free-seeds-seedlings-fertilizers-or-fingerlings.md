@@ -26,4 +26,4 @@ San Pablo has rural barangays, agricultural areas, and lake communities. Farm an
 
 ## Local Context
 
-San Pablo's official history page identifies it as the City of Seven Lakes, including Sampaloc, Palakpakin, Mohicap, Yambo, Pandin, Calibato, and Bunot.
+San Pablo City's seven lakes — **Sampaloc, Pandin, Bunot, Inya, Palakpakin, Calibato, and Mabini** — support active fisheries and aquaculture communities. Residents in lakeside barangays should ask their barangay and the City Agriculture Office about fingerling distribution and lake-related livelihood programs.

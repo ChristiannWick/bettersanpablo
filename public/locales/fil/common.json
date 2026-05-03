@@ -35,7 +35,12 @@
     "government": "Pamahalaan",
     "services": "Mga Serbisyo",
     "hotlines": "Hotlines",
-    "holidays": "Holidays"
+    "holidays": "Holidays",
+    "departmentsandofficials": "Mga Departamento at Opisyal",
+    "legislativecitycouncil": "Lehislatibo (Sangguniang Panlungsod)",
+    "localofficialsdirectory": "Direktoryo ng mga Lokal na Opisyal",
+    "transparency": "Transparency",
+    "statistics": "Estadistika"
   },
   "joinUs": {
     "stripTitle": "Sumali sa #CivicTech Revolution",

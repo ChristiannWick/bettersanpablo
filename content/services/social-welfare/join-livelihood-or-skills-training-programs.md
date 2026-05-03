@@ -1,30 +1,39 @@
-# Join Livelihood or Skills Training Programs - San Pablo City
+# Join Livelihood or Skills Training Programs — San Pablo City
 
-Livelihood and skills programs may be announced through city offices, barangays, PESO, DTI Laguna, TESDA, schools, cooperatives, or partner organizations.
+San Pablo City, through the City Social Welfare and Development Office (CSWDO), Public Employment Service Office (PESO), and partner agencies, offers livelihood and skills training programs for residents who want to start a small business, improve their skills, or find employment.
 
-## Programs to Watch For
+## Types of Programs Available
 
-- job placement and employment services
-- skills training
-- livelihood starter kits or microenterprise support
-- women and marginalized-sector financial inclusion activities
-- MSME seminars and trade fair preparation
-- tourism and Seven Lakes-related livelihood opportunities
+| Program | What It Offers | Who Runs It |
+| --- | --- | --- |
+| **Skills Training** | Free short courses: dressmaking, food processing, haircutting, electrical wiring, welding, etc. | TESDA, CSWDO, PESO |
+| **Livelihood Starter Kits** | Tools, equipment, or capital goods for micro-enterprises | CSWDO, DSWD |
+| **MSME Support** | Small business registration, seminars, and trade fair participation | DTI Laguna, City |
+| **Employment Referral** | Job matching, referrals to local and national employers | PESO San Pablo City |
+| **Tourism Livelihood Programs** | Lake-based livelihood (bamboo raft guiding, fishing, eco-tourism) | City Tourism Office |
+| **Women's Livelihood Programs** | Skills and enterprise programs for women and marginalized sectors | CSWDO, DSWD |
+| **4Ps Livelihood Component** | Livelihood support for 4Ps beneficiary households | DSWD, CSWDO |
 
-## What to Prepare
+## Key Agencies to Contact
 
-- valid ID
-- proof of San Pablo City residency
-- contact number
-- resume or biodata for employment programs
-- business profile for livelihood or MSME programs
-- certificate of indigency if required
+| Agency | What They Offer | Contact |
+| --- | --- | --- |
+| **CSWDO** | AICS, livelihood kits, community-based programs | (049) 562-1234 |
+| **PESO San Pablo City** | Employment referral, job fairs, skills listing | (049) 562-1234 via City Hall |
+| **TESDA Laguna** | Free TVET (Technical Vocational Education and Training) | www.tesda.gov.ph |
+| **DTI Laguna** | MSME support, Negosyo Center | Regional DTI office |
+| **City Hall / Information** | Program schedules and referrals | (049) 561-1483 |
 
-## Where to Check
+## How to Apply
 
-- City services portal: https://www.sanpablocity.gov.ph/services
-- City Information Office: (049) 561-1483
-- barangay hall announcements
-- DTI Laguna, TESDA, and PESO announcements
+1. **Watch for announcements** — Programs open for specific windows. Monitor barangay halls, City Hall bulletin boards, and official city channels.
+2. **Contact CSWDO or PESO** — Ask which programs are currently open for enrollment.
+3. **Prepare documents** — Commonly required: valid ID, proof of San Pablo City residency, barangay clearance, and for livelihood programs, a household profile or certificate of indigency.
+4. **Submit your application** through the office running the program.
+5. **Attend orientation** if scheduled before training or kit release.
 
-The official city services portal lists **Employment Services** and **Gender and Development** entries, with some entries still marked Coming Soon.
+## Tips
+
+- TESDA-offered training is typically free for qualified residents. Check https://www.tesda.gov.ph for available courses and schedules.
+- Do not pay fixers or intermediaries. All legitimate programs are free to apply for through official channels.
+- For tourism-related livelihood (lake guiding, boat operation), coordinate with the **City Tourism Office** at San Pablo City Hall.

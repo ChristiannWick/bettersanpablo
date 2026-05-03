@@ -1,22 +1,54 @@
-# Join Disaster Drills and Evacuation Planning - San Pablo City
+# Join Disaster Drills and Evacuation Planning — San Pablo City
 
-San Pablo residents should join barangay disaster drills and evacuation planning activities, especially households near flood-prone roads, lake areas, slopes, and major transport corridors.
+San Pablo City residents are encouraged to join barangay disaster drills and evacuation planning activities. The city's 80 barangays, many located near the Seven Lakes, river systems, and hillside areas, face risks from flooding, typhoons, and earthquakes. Being prepared can save lives.
 
-## Contacts
+## Why Participate
 
-- Emergency hotline: 911
-- CDRRMO emergency: 0998 540 7171
-- CDRRM Office: (049) 800-0405
-- City Information Office: (049) 561-1483
+- Know your evacuation route **before** a disaster happens
+- Understand which areas are flood-prone or landslide-prone in your barangay
+- Learn how to help elderly, children, PWDs, and neighbors during evacuation
+- Practice with your family so everyone knows what to do
 
-## How to Join
+## Types of Drills in San Pablo City
 
-1. Ask your barangay hall for the next evacuation drill, earthquake drill, or flood preparedness briefing.
-2. Confirm the assigned evacuation site for your purok or sitio.
-3. Prepare a family go-bag with IDs, medicines, water, phone charger, flashlight, and basic supplies.
-4. Save the CDRRMO and barangay contact numbers on every household phone.
-5. Attend drills and note route changes, pick-up points, and instructions for children, seniors, PWDs, and pets.
+| Drill Type | Purpose |
+| --- | --- |
+| **Flood evacuation drill** | Practice evacuating from low-lying or lake-adjacent areas |
+| **Earthquake drill** | "Duck, Cover, Hold" practice and post-quake evacuation |
+| **Fire drill** | Response to structural fires in homes and public buildings |
+| **Community DRRM orientation** | General preparedness education for barangay residents |
 
-## Source
+## How to Join a Drill
 
-San Pablo City services page: https://www.sanpablocity.gov.ph/services
+1. **Ask your Barangay Hall** for the next scheduled evacuation drill or preparedness activity.
+2. **Confirm the assigned evacuation site** for your purok or sitio.
+3. **Attend the drill** and take note of routes, pick-up points, and instructions for children, seniors, and PWDs.
+4. **Save emergency contacts** on every household phone.
+
+## Prepare a Family Go-Bag
+
+Keep a ready go-bag with:
+
+- valid IDs and important documents (in a waterproof bag)
+- at least 3 days of water and non-perishable food
+- essential medicines and first aid kit
+- phone charger and power bank
+- flashlight and extra batteries
+- extra clothing and blanket
+- cash (small bills)
+- list of emergency contacts
+
+## Know Your Evacuation Center
+
+Contact your **Barangay Hall** or the **CDRRMO** to find out the designated evacuation center for your area. San Pablo City has evacuation centers across its 80 barangays.
+
+## Key Emergency Contacts
+
+| Office | Contact |
+| --- | --- |
+| **CDRRMO Emergency** | **0998 540 7171** |
+| **CDRRM Office** | **(049) 800-0405** |
+| **National Emergency** | **911** |
+| City Information Office | (049) 561-1483 |
+| City Hall | (049) 562-1234 |
+| PAGASA (weather) | https://www.pagasa.dost.gov.ph |
