@@ -3,12 +3,13 @@ import HeroSection from '../components/home/HeroSection';
 import ServicesSection from '../components/home/ServicesSection';
 import SEO from '../components/SEO';
 
+const GovernmentActivitySection = lazy(() => import('../components/home/GovernmentActivitySection'));
 const HighlightsSection = lazy(() => import('../components/home/HighlightsSection'));
+const StatsSection = lazy(() => import('../components/home/StatsSection'));
 const AboutSection = lazy(() => import('../components/home/AboutSection'));
-const HistorySection = lazy(() => import('../components/home/HistorySection'));
 const LeadershipSection = lazy(() => import('../components/home/LeadershipSection'));
 const PlacesSection = lazy(() => import('../components/home/PlacesSection'));
-const StatsSection = lazy(() => import('../components/home/StatsSection'));
+const HistorySection = lazy(() => import('../components/home/HistorySection'));
 
 const HomeSectionLoader = () => (
   <section className="py-12">
@@ -29,25 +30,45 @@ const Home: React.FC = () => {
         keywords="San Pablo City, Laguna, City of Seven Lakes, government services, transparency portal, public services"
       />
       <main className="flex-grow">
+        {/* Hero */}
         <HeroSection />
+
+        {/* Most-requested services */}
         <ServicesSection variant="quick" />
+
+        {/* Government activity overview */}
+        <Suspense fallback={<HomeSectionLoader />}>
+          <GovernmentActivitySection />
+        </Suspense>
+
+        {/* Visual city showcase */}
         <Suspense fallback={<HomeSectionLoader />}>
           <HighlightsSection />
         </Suspense>
+
+        {/* Key city statistics */}
+        <Suspense fallback={<HomeSectionLoader />}>
+          <StatsSection />
+        </Suspense>
+
+        {/* About the city */}
         <Suspense fallback={<HomeSectionLoader />}>
           <AboutSection />
         </Suspense>
-        <Suspense fallback={<HomeSectionLoader />}>
-          <HistorySection />
-        </Suspense>
+
+        {/* City leadership */}
         <Suspense fallback={<HomeSectionLoader />}>
           <LeadershipSection />
         </Suspense>
+
+        {/* Top places */}
         <Suspense fallback={<HomeSectionLoader />}>
           <PlacesSection />
         </Suspense>
+
+        {/* History timeline */}
         <Suspense fallback={<HomeSectionLoader />}>
-          <StatsSection />
+          <HistorySection />
         </Suspense>
       </main>
     </>

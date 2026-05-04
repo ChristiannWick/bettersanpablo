@@ -1,25 +1,26 @@
 import Section from '../ui/Section';
 import * as LucideIcons from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
-import { useTranslation } from '../../hooks/useTranslation';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Link } from 'react-router-dom';
-
 import { governmentCategories } from '../../data/yamlLoader';
-
-interface Subcategory {
-  name: string;
-  slug: string;
-}
 
 interface Category {
   category: string;
   slug: string;
-  subcategories: Subcategory[];
   description: string;
   icon: string;
 }
+
+// These have their own top-level nav sections — skip in the overview grid
+const EXCLUDED = new Set(['transparency-documents', 'reports-and-statistics']);
+
+const getIcon = (name: string) => {
+  const Icon = LucideIcons[name as keyof typeof LucideIcons] as React.ComponentType<{ className?: string }>;
+  return Icon ? <Icon className="h-6 w-6" /> : null;
+};
 
 interface GovernmentActivitySectionProps {
   title?: string;
@@ -30,49 +31,46 @@ export default function GovernmentActivitySection({
   title,
   description,
 }: GovernmentActivitySectionProps = {}) {
-  const { t } = useTranslation();
-
-  const getIcon = (category: string) => {
-    const IconComponent = LucideIcons[
-      category as keyof typeof LucideIcons
-    ] as React.ComponentType<{ className?: string }>;
-    return IconComponent ? <IconComponent className="h-6 w-6" /> : null;
-  };
-
-  const displayedCategories = governmentCategories.categories as Category[];
+  const displayedCategories = (governmentCategories.categories as Category[])
+    .filter(cat => !EXCLUDED.has(cat.slug));
 
   return (
-    <Section id="#government">
-      <Heading level={2}>{title || t('title')}</Heading>
+    <Section id="government">
+      <span className="inline-flex rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-700">
+        Government
+      </span>
+      <Heading level={2} className="mt-3">
+        {title || 'Government Activity'}
+      </Heading>
       <Text className="text-gray-600 mb-6">
-        {description || t('governmentActivity.description')}
+        {description || 'Stay updated with the latest local government activities and announcements.'}
       </Text>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {displayedCategories.map(category => (
-          <Card
+          <Link
             key={category.slug}
-            hoverable
-            className="border-t-4 border-primary-500"
+            to={`/government/${category.slug}`}
+            className="group block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-lg"
           >
-            <Link
-              to={`/government/${category.slug}`}
-              className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
-            >
+            <Card className="h-full border border-gray-200 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-primary-300 group-hover:shadow-md">
               <CardContent className="flex flex-col h-full p-6">
-                <div className="flex gap-2">
-                  <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
-                    {getIcon(category.icon)}
-                  </div>
-
-                  <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
-                    {category.category}
-                  </h3>
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-primary-100 text-primary-600">
+                  {getIcon(category.icon)}
                 </div>
-                <Text className="text-gray-800">{category.description}</Text>
+                <h3 className="text-base font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">
+                  {category.category}
+                </h3>
+                <p className="mt-2 text-sm text-gray-600 flex-1">
+                  {category.description}
+                </p>
+                <span className="mt-4 inline-flex items-center text-sm font-medium text-primary-600 group-hover:text-primary-700">
+                  Explore
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
               </CardContent>
-            </Link>
-          </Card>
+            </Card>
+          </Link>
         ))}
       </div>
     </Section>

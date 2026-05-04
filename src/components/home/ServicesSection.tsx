@@ -98,29 +98,29 @@ export default function ServicesSection({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {displayedCategories.map(category => (
-          <Card
+          <Link
             key={category.slug}
-            hoverable
-            className="border-t-4 border-primary-500"
+            to={`/services/${category.slug}`}
+            className="group block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-lg"
           >
-            <Link
-              to={`/services/${category.slug}`}
-              className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
-            >
+            <Card className="h-full border border-gray-200 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-primary-300 group-hover:shadow-md">
               <CardContent className="flex flex-col h-full p-6">
-                <div className="flex gap-2">
-                  <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
-                    {getIcon(category.icon)}
-                  </div>
-
-                  <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
-                    {category.category}
-                  </h3>
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-primary-100 text-primary-600">
+                  {getIcon(category.icon)}
                 </div>
-                <Text className="text-gray-800">{category.description}</Text>
+                <h3 className="text-base font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">
+                  {category.category}
+                </h3>
+                <Text className="mt-2 text-sm text-gray-600 flex-1">
+                  {category.description}
+                </Text>
+                <span className="mt-4 inline-flex items-center text-sm font-medium text-primary-600 group-hover:text-primary-700">
+                  Explore
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
               </CardContent>
-            </Link>
-          </Card>
+            </Card>
+          </Link>
         ))}
       </div>
     </Section>

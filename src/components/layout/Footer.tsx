@@ -8,7 +8,7 @@ import {
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import sanPabloCitySeal from '../../assets/san-pablo-city-seal.png';
+import betterSanPabloLogo from '../../assets/bettersanpablo-logo2.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation('common');
@@ -33,21 +33,18 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
-              <img
-                src={sanPabloCitySeal}
-                alt="Official seal of San Pablo City, Laguna"
-                className="h-12 w-12 mr-3 object-contain"
-              />
-
-              <div>
-                <div className="font-bold">{t('site_name')}</div>
-                <div className="text-xs text-gray-400">BetterGov.ph Portal</div>
+            <div className="mb-4">
+              <div className="inline-block rounded-lg bg-white px-3 py-2">
+                <img
+                  src={betterSanPabloLogo}
+                  alt="BetterSanPablo.org logo"
+                  className="h-8 w-auto object-contain"
+                />
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              A community portal providing Philippine citizens, businesses, and
-              visitors with information and services.
+              A community-run portal for San Pablo City, Laguna — the City of
+              Seven Lakes. Built by volunteers, for residents.
             </p>
             <div className="flex space-x-4">
               {footerNavigation.socialLinks.map(link => (
