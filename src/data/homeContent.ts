@@ -35,6 +35,7 @@ export interface CityLeadershipEntry {
   name: string;
   note: string;
   priorities: string[];
+  href: string;
 }
 
 export interface CoconutFestivalInfo {
@@ -277,6 +278,7 @@ export const SAN_PABLO_CITY_LEADERSHIP: CityLeadershipEntry[] = [
       'Economic and tourism initiatives tied to local livelihood',
       'Support for environmental and community-based projects',
     ],
+    href: '/government/departments/executive',
   },
   {
     position: 'City Vice Mayor',
@@ -287,5 +289,6 @@ export const SAN_PABLO_CITY_LEADERSHIP: CityLeadershipEntry[] = [
       'Coordination with barangays and local stakeholders',
       'Public service oversight alongside the city council',
     ],
+    href: '/government/departments/executive',
   },
 ];

@@ -278,13 +278,13 @@ const Navbar: React.FC = () => {
               <img
                 src={sanPabloCitySeal}
                 alt="Official seal of San Pablo City, Laguna"
-                className="h-[72px] w-[72px] mr-3 object-contain"
+                className="h-10 w-10 lg:h-[60px] lg:w-[60px] mr-2.5 object-contain flex-shrink-0"
               />
               <div>
-                <div className="text-black font-bold text-lg leading-tight">
-                  {import.meta.env.VITE_GOVERNMENT_NAME}
+                <div className="text-black font-bold text-sm lg:text-base leading-tight">
+                  {import.meta.env.VITE_GOVERNMENT_NAME ?? 'San Pablo City'}
                 </div>
-                <div className="text-xs text-gray-800">
+                <div className="hidden xl:block text-xs text-gray-500 max-w-[200px] truncate leading-snug">
                   {t('site_description')}
                 </div>
               </div>
@@ -292,7 +292,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop navigation */}
-          <div className="hidden lg:flex items-center space-x-8 pr-24">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {mainNavigation.map(item => (
               <div key={item.label} className="relative group">
                 <a
@@ -330,7 +330,7 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <Link
               to="/about"
-              className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="flex items-center whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
               About San Pablo
             </Link>
