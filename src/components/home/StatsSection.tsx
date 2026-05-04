@@ -1,33 +1,41 @@
 import Section from '../ui/Section';
-import { Heading } from '../ui/Heading';
-import { Text } from '../ui/Text';
 import { SAN_PABLO_CITY_STATS } from '../../data/homeContent';
+
+// Icon numbers or symbols mapped to each stat by index
+const STAT_ACCENTS = ['👥', '🏘️', '🌊', '🗺️', '🏙️', '⭐'];
 
 export default function StatsSection() {
   return (
-    <Section className="bg-gradient-to-br from-blue-950 to-blue-800 text-white">
-      <Heading level={2} className="text-white">
-        San Pablo at a Glance
-      </Heading>
-      <Text className="text-blue-200 mb-8">
-        Key facts and figures for the City of Seven Lakes.
-      </Text>
+    <section className="bg-blue-950 py-14">
+      <div className="container mx-auto px-4">
+        <div className="mb-10 text-center">
+          <h2 className="text-2xl font-bold text-white sm:text-3xl">
+            San Pablo at a Glance
+          </h2>
+          <p className="mt-2 text-blue-300 text-sm">
+            Key facts and figures for the City of Seven Lakes.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-        {SAN_PABLO_CITY_STATS.map(stat => (
-          <div
-            key={stat.label}
-            className="rounded-xl border border-white/20 bg-white/10 p-5 text-center backdrop-blur-sm"
-          >
-            <p className="text-2xl font-extrabold text-white leading-tight">
-              {stat.value}
-            </p>
-            <p className="mt-1.5 text-xs font-medium text-blue-200 leading-snug">
-              {stat.label}
-            </p>
-          </div>
-        ))}
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
+          {SAN_PABLO_CITY_STATS.map((stat, idx) => (
+            <div
+              key={stat.label}
+              className="flex flex-col items-center text-center"
+            >
+              <span className="mb-2 text-2xl" role="img" aria-hidden="true">
+                {STAT_ACCENTS[idx] ?? '📌'}
+              </span>
+              <p className="text-2xl font-extrabold text-white leading-tight sm:text-3xl">
+                {stat.value}
+              </p>
+              <p className="mt-1.5 text-xs font-medium text-blue-300 leading-snug">
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

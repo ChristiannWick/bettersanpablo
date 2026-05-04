@@ -5,34 +5,50 @@ import { Link } from 'react-router-dom';
 import betterSanPabloLogo from '../../assets/bettersanpablo-logo2.png';
 
 // ── Project transparency data ─────────────────────────────────────────────────
+// Cost to the people of San Pableños = ₱0
 const PROJECT_COSTS = [
   { label: 'Hosting', value: '₱0 / yr', note: 'Cloudflare Pages (free tier)' },
   { label: 'Domain', value: '₱840 / yr', note: 'bettersanpablo.org (~$15/yr)' },
-  { label: 'Backend', value: '₱0 / yr', note: 'No server — static site' },
-  { label: 'Total', value: '₱840 / yr', note: 'Funded by volunteers', highlight: true },
+  { label: 'To the Public', value: '₱0', note: 'Free for all San Pableños', highlight: true },
 ];
 
-// ── Visit counter hook (countapi.xyz — free, CORS-enabled) ───────────────────
+// ── Visit counter — counterapi.dev (free, no signup, CORS-enabled) ────────────
 function useVisitCounter() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    // Session guard — only hit the counter once per browser session
     const sessionKey = 'bsp_counted';
-    const hitEndpoint = 'https://api.countapi.xyz/hit/bettersanpablo.org/visits';
-    const getEndpoint = 'https://api.countapi.xyz/get/bettersanpablo.org/visits';
 
     const fetchCount = async () => {
       try {
         const alreadyCounted = sessionStorage.getItem(sessionKey);
-        const url = alreadyCounted ? getEndpoint : hitEndpoint;
-        const res = await fetch(url);
+        // counterapi.dev: /up increments, /get just reads
+        const endpoint = alreadyCounted
+          ? 'https://api.counterapi.dev/v1/bettersanpablo/visits'
+          : 'https://api.counterapi.dev/v1/bettersanpablo/visits/up';
+
+        const res = await fetch(endpoint, { mode: 'cors' });
         if (!res.ok) throw new Error('counter unavailable');
         const data = await res.json();
-        setCount(data.value ?? null);
+        // counterapi.dev returns { count: N }
+        const value = data.count ?? data.value ?? null;
+        setCount(value);
         if (!alreadyCounted) sessionStorage.setItem(sessionKey, '1');
       } catch {
-        setCount(null);
+        // Fallback: try countapi.xyz
+        try {
+          const alreadyCounted = sessionStorage.getItem(sessionKey);
+          const fallback = alreadyCounted
+            ? 'https://api.countapi.xyz/get/bettersanpablo.org/visits'
+            : 'https://api.countapi.xyz/hit/bettersanpablo.org/visits';
+          const res2 = await fetch(fallback);
+          if (!res2.ok) throw new Error();
+          const d2 = await res2.json();
+          setCount(d2.value ?? null);
+          if (!alreadyCounted) sessionStorage.setItem(sessionKey, '1');
+        } catch {
+          setCount(null);
+        }
       }
     };
 
@@ -141,14 +157,18 @@ const Footer: React.FC = () => {
 
             {/* Project cost table */}
             <div>
-              <p className="mb-3 flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-gray-500">
+              <p className="mb-1 flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-gray-500">
                 <Code2 className="h-3.5 w-3.5" />
                 Project Cost &amp; Transparency
               </p>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-1.5 sm:grid-cols-4">
+              {/* Headline: Cost to the People */}
+              <p className="mb-3 text-lg font-extrabold text-emerald-400">
+                Cost to San Pableños = <span className="text-white">₱0</span>
+              </p>
+              <div className="grid grid-cols-2 gap-x-8 gap-y-1.5 sm:grid-cols-3">
                 {PROJECT_COSTS.map(item => (
                   <div key={item.label}>
-                    <p className={`text-sm font-bold ${item.highlight ? 'text-blue-400' : 'text-white'}`}>
+                    <p className={`text-sm font-bold ${item.highlight ? 'text-emerald-400' : 'text-white'}`}>
                       {item.value}
                     </p>
                     <p className="text-xs text-gray-500">{item.label}</p>

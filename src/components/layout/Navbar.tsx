@@ -327,12 +327,6 @@ const Navbar: React.FC = () => {
           </div>
           <div className="hidden lg:flex items-center space-x-4">
             <Link
-              to="/about"
-              className="flex items-center whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            >
-              About San Pablo
-            </Link>
-            <Link
               to="/search"
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
@@ -436,13 +430,6 @@ const Navbar: React.FC = () => {
               )}
             </div>
           ))}
-          <Link
-            to="/about"
-            onClick={closeMenu}
-            className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
-          >
-            About San Pablo
-          </Link>
           <Link
             to="/search"
             onClick={closeMenu}
