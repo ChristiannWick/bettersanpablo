@@ -12,7 +12,7 @@ import { mainNavigation } from '../../data/navigation';
 import type { LanguageType } from '../../types/index';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import sanPabloCitySeal from '../../assets/san-pablo-city-seal.png';
+import betterSanPabloLogo from '../../assets/bettersanpablo-logo.png';
 
 const NAVBAR_LANGUAGES: LanguageType[] = ['en', 'fil'];
 
@@ -276,18 +276,10 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img
-                src={sanPabloCitySeal}
-                alt="Official seal of San Pablo City, Laguna"
-                className="h-10 w-10 lg:h-[60px] lg:w-[60px] mr-2.5 object-contain flex-shrink-0"
+                src={betterSanPabloLogo}
+                alt="BetterSanPablo.org logo"
+                className="h-8 sm:h-10 lg:h-12 w-auto max-w-[160px] lg:max-w-[200px] mr-2.5 object-contain flex-shrink-0"
               />
-              <div>
-                <div className="text-black font-bold text-sm lg:text-base leading-tight">
-                  {import.meta.env.VITE_GOVERNMENT_NAME ?? 'San Pablo City'}
-                </div>
-                <div className="hidden xl:block text-xs text-gray-500 max-w-[200px] truncate leading-snug">
-                  {t('site_description')}
-                </div>
-              </div>
             </Link>
           </div>
 
