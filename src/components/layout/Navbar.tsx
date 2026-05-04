@@ -278,7 +278,7 @@ const Navbar: React.FC = () => {
               <img
                 src={betterSanPabloLogo}
                 alt="BetterSanPablo.org logo"
-                className="h-10 lg:h-12 w-auto mr-3 object-contain flex-shrink-0"
+                className="h-12 lg:h-16 w-auto mr-3 object-contain flex-shrink-0"
               />
             </Link>
           </div>
