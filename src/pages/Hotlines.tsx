@@ -28,11 +28,30 @@ const SAN_PABLO_HOTLINES: HotlineEntry[] = [
     urgent: true,
   },
   {
-    label: 'Ambulance / CDRRMO',
-    number: '(049) 562-0119',
+    label: 'CDRRMO Emergency Hotline',
+    number: '0998 540 7171',
     note: 'City Disaster Risk Reduction and Management Office',
     icon: <Heart className="h-5 w-5" />,
     urgent: true,
+  },
+  {
+    label: 'CDRRMO Office Line',
+    number: '(049) 800-0405',
+    note: 'CDRRMO — Non-emergency coordination line',
+    icon: <Heart className="h-5 w-5" />,
+    urgent: true,
+  },
+  {
+    label: 'City Information Office',
+    number: '(049) 561-1483',
+    note: 'City Information Office — Official press and announcements',
+    icon: <Building2 className="h-5 w-5" />,
+  },
+  {
+    label: 'City Administrator\'s Office',
+    number: '(049) 521-0307',
+    note: 'City Administrator — Administrative concerns',
+    icon: <Building2 className="h-5 w-5" />,
   },
   {
     label: 'San Pablo City Hall Main',
@@ -42,8 +61,14 @@ const SAN_PABLO_HOTLINES: HotlineEntry[] = [
   },
   {
     label: 'SPCWD (Water District)',
-    number: '(049) 562-2601',
-    note: 'San Pablo City Water District',
+    number: '(049) 562-9955',
+    note: 'San Pablo City Water District — Maharlika Highway, San Gabriel',
+    icon: <Phone className="h-5 w-5" />,
+  },
+  {
+    label: 'Records Office (FOI)',
+    number: '(049) 562-1234 loc 205',
+    note: 'Freedom of Information document requests',
     icon: <Phone className="h-5 w-5" />,
   },
   {

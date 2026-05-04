@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
 import HeroSection from '../components/home/HeroSection';
 import ServicesSection from '../components/home/ServicesSection';
+import OnlineServicesSection from '../components/home/OnlineServicesSection';
 import ContactSection from '../components/home/ContactSection';
 import SEO from '../components/SEO';
 
@@ -36,6 +37,9 @@ const Home: React.FC = () => {
 
         {/* Most-requested services */}
         <ServicesSection variant="quick" />
+
+        {/* Official city online portals — sourced from sanpablocity.gov.ph */}
+        <OnlineServicesSection />
 
         {/* Government activity overview */}
         <Suspense fallback={<HomeSectionLoader />}>

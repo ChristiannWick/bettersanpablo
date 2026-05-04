@@ -88,20 +88,31 @@ export const footerNavigation = {
       ],
     },
     {
-      title: 'Government',
+      title: 'Official Links',
       links: [
         {
-          label: 'San Pablo City Website',
+          label: 'sanpablocity.gov.ph',
           href: 'https://www.sanpablocity.gov.ph',
+        },
+        {
+          label: 'Real Property Tax',
+          href: 'https://realpropertytax.sanpablocity.gov.ph',
+        },
+        {
+          label: 'Business Permits (BPLO)',
+          href: 'https://bplo.sanpablocity.gov.ph',
+        },
+        {
+          label: 'eLGU San Pablo',
+          href: 'https://elgu-city-of-san-pablo-laguna.e.gov.ph',
+        },
+        {
+          label: 'Water District (SPCWD)',
+          href: 'https://www.spcwd.org.ph',
         },
         {
           label: 'Disclosure Portal',
           href: 'https://www.sanpablocity.gov.ph/disclosure-portal',
-        },
-        { label: 'Forms', href: 'https://www.sanpablocity.gov.ph/forms' },
-        {
-          label: 'eGov PH',
-          href: 'https://egov.ph',
         },
       ],
     },
