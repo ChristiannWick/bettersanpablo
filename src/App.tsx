@@ -9,6 +9,10 @@ import Document from './pages/Document';
 import Government from './pages/Government';
 import About from './pages/About';
 import SearchPage from './pages/Search';
+import Sitemap from './pages/Sitemap';
+import Accessibility from './pages/Accessibility';
+import Hotlines from './pages/Hotlines';
+import Holidays from './pages/Holidays';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -25,6 +29,10 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/about" element={<About />} />
               <Route path="/search" element={<SearchPage />} />
+              <Route path="/sitemap" element={<Sitemap />} />
+              <Route path="/accessibility" element={<Accessibility />} />
+              <Route path="/philippines/hotlines" element={<Hotlines />} />
+              <Route path="/philippines/holidays" element={<Holidays />} />
               <Route
                 path="/services/:category/:documentSlug"
                 element={<Document categoryType="service" />}

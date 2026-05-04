@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
 import HeroSection from '../components/home/HeroSection';
 import ServicesSection from '../components/home/ServicesSection';
+import ContactSection from '../components/home/ContactSection';
 import SEO from '../components/SEO';
 
 const GovernmentActivitySection = lazy(() => import('../components/home/GovernmentActivitySection'));
@@ -70,6 +71,9 @@ const Home: React.FC = () => {
         <Suspense fallback={<HomeSectionLoader />}>
           <HistorySection />
         </Suspense>
+
+        {/* Contact city hall */}
+        <ContactSection />
       </main>
     </>
   );
