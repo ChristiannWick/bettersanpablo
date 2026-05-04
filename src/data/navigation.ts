@@ -1,6 +1,7 @@
 import type { NavigationItem } from '../types';
 import {
   serviceCategories as servicesData,
+  governmentCategories as govData,
   transparencyDocumentPages,
   reportsStatisticsPages,
 } from './yamlLoader';
@@ -16,6 +17,12 @@ interface Category {
   subcategories: Subcategory[];
 }
 
+// Slugs handled by their own top-level nav items — exclude from Government dropdown
+const GOV_NAV_EXCLUDED = new Set([
+  'transparency-documents',
+  'reports-and-statistics',
+]);
+
 export const mainNavigation: NavigationItem[] = [
   {
     label: 'Services',
@@ -28,20 +35,12 @@ export const mainNavigation: NavigationItem[] = [
   {
     label: 'Government',
     href: '/government/departments',
-    children: [
-      {
-        label: 'Departments and Officials',
-        href: '/government/departments',
-      },
-      {
-        label: 'Legislative City Council',
-        href: '/government/departments/legislative',
-      },
-      {
-        label: 'Local Officials Directory',
-        href: '/government/departments/local-officials-directory',
-      },
-    ],
+    children: (govData.categories as Category[])
+      .filter(cat => !GOV_NAV_EXCLUDED.has(cat.slug))
+      .map(cat => ({
+        label: cat.category,
+        href: `/government/${cat.slug}`,
+      })),
   },
   {
     label: 'Transparency',
