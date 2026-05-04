@@ -170,28 +170,22 @@ export const SAN_PABLO_ABOUT_PARAGRAPHS: string[] = [
 
 export const SAN_PABLO_HISTORY_TIMELINE: HistoryTimelineEntry[] = [
   {
-    year: '1571',
-    title: 'Spanish Contact in Sampalok',
-    description:
-      'Spanish troops under Captain Juan de Salcedo reached the village of Sampalok, an early settlement of present-day San Pablo.',
-  },
-  {
     year: '1586',
-    title: 'Parish Establishment',
+    title: 'Parish Founding',
     description:
-      "Sampalok became a separate parish, helping shape the city's religious and civic core.",
+      'San Pablo de los Montes was established as a parish, forming the religious and civic foundation of the city.',
   },
   {
     year: '1647',
-    title: 'Municipality and Renaming',
+    title: 'Elevated to Municipality',
     description:
-      'Sampalok was separated as a municipality and renamed San Pablo de los Montes in honor of St. Paul the First Hermit.',
+      'The settlement was formally elevated to a municipality, beginning centuries of local governance.',
   },
   {
     year: '1940',
     title: 'City Charter Approved',
     description:
-      'Commonwealth Act No. 520 was approved on May 7, 1940, granting San Pablo its city charter.',
+      'Commonwealth Act No. 520 was signed on May 7, 1940, granting San Pablo its city charter — one of the oldest cities in the Philippines.',
   },
   {
     year: '1941',
@@ -200,16 +194,28 @@ export const SAN_PABLO_HISTORY_TIMELINE: HistoryTimelineEntry[] = [
       'San Pablo City was inaugurated on March 30, 1941, marking the formal start of city governance.',
   },
   {
-    year: '2025',
-    title: '30th Coco Festival and Trade Fair',
+    year: '1967',
+    title: 'Diocese of San Pablo Established',
     description:
-      'The city celebrated the 30th Coco Festival, with a Coco Trade Fair that promoted coconut farmers, MSMEs, and local products.',
+      'The Roman Catholic Diocese of San Pablo was established on November 28, 1967, with the Cathedral of St. Paul the First Hermit as its seat.',
+  },
+  {
+    year: '1996',
+    title: 'First Coconut Festival',
+    description:
+      "The Coco Festival was launched to celebrate the 400th anniversary of the parish and to promote the city's coconut heritage and local industry.",
+  },
+  {
+    year: '2023',
+    title: 'City Central Terminal Opened',
+    description:
+      'The San Pablo City Central Terminal was inaugurated, modernizing public transport and improving connectivity for residents.',
   },
   {
     year: '2025',
-    title: 'Guinness Coconut Planting Record',
+    title: 'New Administration Begins',
     description:
-      'Thousands of volunteers in San Pablo joined a large-scale coconut planting activity recognized as a Guinness World Record event.',
+      'Arcadio "Najie" B. Gapangada Jr. was elected City Mayor with 70,822 votes, beginning a new chapter for San Pablo City governance.',
   },
 ];
 
@@ -260,11 +266,12 @@ export const SAN_PABLO_CITY_STATS: CityStat[] = [
 export const SAN_PABLO_COCONUT_FESTIVAL: CoconutFestivalInfo = {
   title: 'Coco Festival of San Pablo',
   description:
-    "The Coco Festival is one of San Pablo City's signature cultural events, celebrating local heritage and the coconut industry.",
+    "Held every January 9–15, the Coco Festival culminates on January 15 — the Feast Day of St. Paul the First Hermit, the city's patron saint. First held in 1996, it is a DOT and ATOP award-winning tourism event.",
   highlights: [
-    'The 30th Coco Festival formally opened in January 2025 with a city trade fair.',
-    'Festival activities highlight local products, entrepreneurship, and community participation.',
-    'Recent city programs linked coconut planting and livelihood with environmental goals.',
+    'Street dancing competition with elaborate coconut-themed costumes and floats.',
+    'Mutya at Lakan ng San Pablo — the city\'s signature beauty pageant.',
+    'Coco Trade Fair showcasing coconut farmers, MSMEs, and local products.',
+    'Recognized as a Guinness World Record event for mass coconut planting in 2025.',
   ],
 };
 

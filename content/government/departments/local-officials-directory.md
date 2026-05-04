@@ -1,48 +1,66 @@
-# Local Officials Directory
+# Local Officials Directory — San Pablo City
 
-This directory summarizes San Pablo City's key elected officials and local leadership for the 2025-2028 term, including citywide officers and barangay-level representation.
+Official directory of elected and appointed officials of the City Government of San Pablo for the **2025–2028 term**.
 
-## Citywide Elected Officials
-- **Mayor:** Najie Gapangada
-- **Vice Mayor:** Justin Colago
+---
 
-The Mayor is the chief executive of San Pablo City, and the Vice Mayor presides over the Sangguniang Panlungsod.
+## Elected Officials
 
-## Sangguniang Panlungsod Members
-San Pablo City is governed by the Sangguniang Panlungsod, which includes 10 elected councilors and the Vice Mayor as presiding officer.
+### Executive
 
-- Carmela A. Acebedo
-- Barbie Diaz
-- Gel Adriano
-- John Edgar C. Adajar
-- Leonardo C. Villanueva
-- Dandi Medina
-- Richard C. Pavico
-- Ambo Amante
-- Konsi Dok Ticzon
-- Francis Nap Calatraba
+| Position | Name | Party |
+| -------- | ---- | ----- |
+| City Mayor | Hon. Arcadio "Najie" B. Gapangada Jr. | Reform PH |
+| City Vice Mayor | Hon. Justin G. Colago | Nacionalista Party |
 
-## Legislative leadership and duties
-The Sangguniang Panlungsod drafts local ordinances, adopts resolutions, approves the city budget, and provides oversight on city programs.
+### Legislative — Sangguniang Panlungsod (City Council)
 
-The Vice Mayor presides over council sessions and ensures that legislative proceedings comply with local government rules.
+| Rank | Name | Party | Votes (May 2025) |
+| ---- | ---- | ----- | ---------------- |
+| 1 | Hon. Carmela A. Acebedo | Nacionalista Party | 86,085 |
+| 2 | Hon. Barbie Diaz | Nacionalista Party | 81,183 |
+| 3 | Hon. Gel Adriano | Nacionalista Party | 61,628 |
+| 4 | Hon. John Edgar Adajar | NPC | 60,557 |
+| 5 | Hon. Leonardo Villanueva | Independent | 57,209 |
+| 6 | Hon. Dandi Medina | Nacionalista Party | 55,751 |
+| 7 | Hon. Richard Pavico | Nacionalista Party | 53,546 |
+| 8 | Hon. Ambo Amante | Nacionalista Party | 52,856 |
+| 9 | Hon. Konsi Dok Ticzon | Nacionalista Party | — |
+| 10 | Hon. Francis Nap Calatrava | Nacionalista Party | — |
+| 11 | Hon. Tibor Amante | Nacionalista Party | — |
+| 12 | Hon. Roberto Villanueva | Independent | — |
 
-## Barangay leadership
-San Pablo City has 80 barangays, each led by a Barangay Captain (Punong Barangay) and supported by a Barangay Council (Sangguniang Barangay).
+*Data from COMELEC Media Server, 100% precinct reporting, May 2025.*
 
-Barangay captains are responsible for:
+### National Representatives
 
-- barangay peace and order
-- local development planning
-- carrying out health and social welfare outreach programs
-- responding to community emergency needs
+| Position | Name | Party |
+| -------- | ---- | ----- |
+| Representative, 3rd District of Laguna | Hon. Loreto S. Amante | Lakas-CMD |
 
-For barangay-specific concerns, residents should contact their barangay hall or the City Government of San Pablo's official channels.
+---
 
-## Where to find official information
-For updates on city officials, elected representatives, and local service announcements, use:
+## Key City Offices
 
-- Official website: https://www.sanpablocity.gov.ph
-- City Hall main line: (049) 562-1234
-- City Information Office: (049) 561-1483
-- City Admin's Office: (049) 521-0307
+| Office | Phone |
+| ------ | ----- |
+| City Administrator's Office | (049) 521-0307 |
+| City Information Office | (049) 561-1483 |
+| CDRRMO (Emergency) | 0998-540-7171 |
+| CDRRMO (Office) | (049) 800-0405 |
+| City Hall Main | (049) 562-1234 |
+
+**City Hall Address:** Mabini Extension, San Pablo City, Laguna 4000
+**Official Website:** [www.sanpablocity.gov.ph](https://www.sanpablocity.gov.ph)
+
+---
+
+## Department Heads
+
+*The City Government of San Pablo is in the process of finalizing department head appointments under the Gapangada administration (2025–2028). This directory will be updated as official appointments are confirmed.*
+
+For the most current directory, visit [www.sanpablocity.gov.ph](https://www.sanpablocity.gov.ph) or contact the City Administrator's Office at **(049) 521-0307**.
+
+---
+
+*Sources: COMELEC 2025 Election Results (Rappler), Official City of San Pablo Website, Wikipedia — 2025 Laguna Local Elections.*

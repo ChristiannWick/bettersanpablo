@@ -12,7 +12,7 @@ import { mainNavigation } from '../../data/navigation';
 import type { LanguageType } from '../../types/index';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import betterSanPabloLogo from '../../assets/bettersanpablo-logo.png';
+import betterSanPabloLogo from '../../assets/bettersanpablo-logo2.png';
 
 const NAVBAR_LANGUAGES: LanguageType[] = ['en', 'fil'];
 
@@ -278,13 +278,19 @@ const Navbar: React.FC = () => {
               <img
                 src={betterSanPabloLogo}
                 alt="BetterSanPablo.org logo"
-                className="h-8 sm:h-10 lg:h-12 w-auto max-w-[160px] lg:max-w-[200px] mr-2.5 object-contain flex-shrink-0"
+                className="h-10 lg:h-12 w-auto mr-3 object-contain flex-shrink-0"
               />
             </Link>
           </div>
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <Link
+              to="/"
+              className="flex items-center text-gray-700 hover:text-primary-600 font-medium text-base transition-colors whitespace-nowrap"
+            >
+              Home
+            </Link>
             {mainNavigation.map(item => (
               <div key={item.label} className="relative group">
                 <a
@@ -382,6 +388,13 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="container mx-auto px-2 pt-2 pb-4 space-y-1 border-t border-gray-200 bg-white">
+          <Link
+            to="/"
+            onClick={closeMenu}
+            className="block w-full px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
+          >
+            Home
+          </Link>
           {mainNavigation.map(item => (
             <div key={item.label}>
               {item.children ? (

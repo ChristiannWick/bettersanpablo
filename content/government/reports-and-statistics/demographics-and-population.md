@@ -1,126 +1,156 @@
-# Demographics and Population
+# Demographics and Population — San Pablo City
 
-This page provides demographic and population data for San Pablo City, Laguna.
+San Pablo City is a **1st Class Component City** in Laguna Province, CALABARZON (Region IV-A). As the largest city in Laguna by land area (197.56 km²), it is home to **80 barangays** and a population of **300,166** as of the 2024 POPCEN.
 
-## Key demographic facts about San Pablo City
+---
 
-### City profile
+## Population Census History
 
-| Detail | Information |
-| --- | --- |
-| **City Name** | City of San Pablo, Laguna |
-| **Province** | Laguna, CALABARZON Region (Region IV-A) |
-| **Income Classification** | 1st-class component city |
-| **Cityhood** | Established May 7, 1940 |
-| **Known As** | "City of Seven Lakes" |
-| **Land Area** | 197.56 square kilometers |
-| **Number of Barangays** | 80 barangays |
+| Census Year | Population | Growth Rate |
+| ----------- | ---------- | ----------- |
+| 2000 | 207,927 | — |
+| 2010 | 248,890 | 1.82% |
+| 2015 | 266,068 | 1.33% |
+| 2020 | 285,348 | 1.48% |
+| 2024 | 300,166 | ~1.3% (est.) |
 
-### Population statistics
+- **Registered Voters (2025):** 169,231
+- **Poverty Incidence (2021):** 6.61%
+- **Population Density:** ~1,519 persons per km² (2024)
 
-| Data Point | Figure | Year |
-| --- | --- | --- |
-| **Total Population** | 300,166 | 2024 POPCEN (Census) |
-| **Population Density** | ~1,520 persons per km² | 2024 |
-| **Growth Rate** | Variable (per census) | Latest census |
+---
 
-## Administrative divisions
+## Geographic Profile
 
-San Pablo City is divided into **80 barangays**. This structure reflects the city's large geographic area and diverse communities. Each barangay has its own:
+| Item | Data |
+| ---- | ---- |
+| Land Area | 197.56 km² (76.28 sq mi) |
+| Coordinates | 14°04′12″N 121°19′30″E |
+| Elevation (Average) | 237 m above sea level |
+| Highest Point | 2,173 m |
+| Distance from Manila | ~82 km southeast |
+| Distance from Santa Cruz (Provincial Capital) | ~37 km southwest |
+| ZIP Code | 4000 |
+| Area Code | (049) |
 
-- **Barangay Captain (Punong Barangay)** — Local executive
-- **Barangay Council (Sangguniang Barangay)** — Local legislative body
-- **Community services** — Health centers, day-care facilities, multi-purpose halls
+---
 
-Major barangays include urban centers and agricultural areas that contribute to the city's diverse economy.
+## All 80 Barangays
 
-## Population distribution
+San Pablo City is divided into 80 barangays — 26 urban-core barangays with alphanumeric names (I-A through VII-E) and 54 named barangays.
 
-San Pablo's population is distributed across:
+### Urban Core Barangays (Alphanumeric)
 
-- **Urban areas** — Commercial and residential zones around the city center
-- **Lakeshore communities** — Areas around the seven lakes (Sampaloc, Pandin, Bunot, Inya, Palakpakin, Calibato, and Mabini)
-- **Agricultural zones** — Farming and rural communities in the outskirts
-- **Industrial zones** — Manufacturing and commercial establishments
+| Barangay | 2020 Population | 2024 Population |
+| -------- | --------------- | --------------- |
+| Barangay I-A | 577 | 584 |
+| Barangay I-B | 4,002 | 3,816 |
+| Barangay II-A | 2,896 | 2,962 |
+| Barangay II-B | 1,853 | 1,828 |
+| Barangay II-C | 1,056 | 1,022 |
+| Barangay II-D | 979 | 976 |
+| Barangay II-E (San Anton) | 2,148 | 2,197 |
+| Barangay II-F | 2,185 | 2,207 |
+| Barangay III-A | 217 | 168 |
+| Barangay III-B | 891 | 890 |
+| Barangay III-C | 2,773 | 2,701 |
+| Barangay III-D | 1,231 | 1,283 |
+| Barangay III-E | 591 | 593 |
+| Barangay III-F | 213 | 201 |
+| Barangay IV-A | 720 | 704 |
+| Barangay IV-B | 415 | 395 |
+| Barangay IV-C | 584 | 555 |
+| Barangay V-A | 461 | 451 |
+| Barangay V-B | 845 | 1,032 |
+| Barangay V-C | 313 | 267 |
+| Barangay V-D | 269 | 247 |
+| Barangay VI-A | 529 | 548 |
+| Barangay VI-B | 880 | 888 |
+| Barangay VI-D | 1,531 | 1,485 |
+| Barangay VI-E | 2,617 | 2,613 |
+| Bagong Bayan II-A | 6,471 | 6,623 |
+| Bagong Pook VI-C | 1,859 | 1,835 |
 
-## Demographic characteristics
+### Named Barangays
 
-San Pablo City's population includes:
+| Barangay | 2020 Population | 2024 Population |
+| -------- | --------------- | --------------- |
+| Atisan | 1,271 | 1,291 |
+| Bautista | 3,208 | 2,589 |
+| Concepcion | 8,292 | 9,352 |
+| Del Remedio | 17,871 | 19,878 |
+| Dolores | 2,321 | 2,347 |
+| San Antonio 1 | 6,081 | 6,188 |
+| San Antonio 2 | 4,693 | 5,121 |
+| San Bartolome | 3,572 | 4,123 |
+| San Buenaventura | 4,396 | 4,424 |
+| San Crispin | 5,067 | 5,112 |
+| San Cristobal | 5,682 | 5,781 |
+| San Diego | 5,068 | 5,085 |
+| San Francisco | 14,916 | 14,920 |
+| San Gabriel | 8,875 | 9,030 |
+| San Gregorio | 8,720 | 10,407 |
+| San Ignacio | 6,025 | 6,724 |
+| San Isidro | 4,262 | 4,786 |
+| San Joaquin | 1,670 | 1,693 |
+| San Jose | 10,720 | 12,496 |
+| San Juan | 3,356 | 3,317 |
+| San Lorenzo | 1,901 | 1,907 |
+| San Lucas 1 | 6,127 | 6,228 |
+| San Lucas 2 | 6,474 | 6,654 |
+| San Marcos | 2,756 | 3,332 |
+| San Mateo | 3,141 | 3,243 |
+| San Miguel | 3,513 | 3,737 |
+| San Nicolas | 7,255 | 9,209 |
+| San Pedro | 3,120 | 3,244 |
+| San Rafael | 4,672 | 4,966 |
+| San Roque | 3,313 | 3,403 |
+| San Vicente | 3,505 | 3,631 |
+| Santa Ana | 2,926 | 2,905 |
+| Santa Catalina | 2,553 | 2,594 |
+| Santa Cruz | 2,823 | 2,927 |
+| Santa Elena | 4,606 | 4,792 |
+| Santa Felomina | 3,567 | 3,624 |
+| Santa Isabel | 3,830 | 3,906 |
+| Santa Maria | 4,022 | 4,143 |
+| Santa Maria Magdalena | 2,778 | 2,935 |
+| Santa Monica | 10,088 | 10,580 |
+| Santa Veronica | 1,920 | 1,989 |
+| Santiago I | 2,739 | 2,755 |
+| Santiago II | 3,445 | 3,642 |
+| Santisimo Rosario | 5,397 | 5,518 |
+| Santo Angel | 8,574 | 8,640 |
+| Santo Cristo | 3,240 | 3,253 |
+| Santo Niño | 5,682 | 6,121 |
+| Soledad | 3,760 | 4,257 |
+| Barangay VII-A | 1,432 | 1,340 |
+| Barangay VII-B | 620 | 635 |
+| Barangay VII-C | 85 | 72 |
+| Barangay VII-D | 135 | 61 |
+| Barangay VII-E | 177 | 188 |
 
-- **Age distribution** — Diverse age groups from infants to elderly
-- **Household composition** — Various family structures and household sizes
-- **Livelihood** — Agriculture, commerce, manufacturing, services, and informal sectors
-- **Education** — Students from elementary through higher education institutions
+*Source: Philippine Statistics Authority (PSA) Census of Population and Housing. 2024 figures from the 2024 POPCEN.*
 
-## The Seven Lakes
+---
 
-A distinctive feature of San Pablo City is its **seven natural freshwater lakes**:
+## Largest Barangays by Population (2024)
 
-1. **Sampaloc Lake** — Largest lake, popular for water activities
-2. **Pandin Lake** — Known for its deep blue waters
-3. **Bunot Lake** — Scenic and environmentally significant
-4. **Inya Lake** — Historic and culturally important
-5. **Palakpakin Lake** — Rural character and agricultural surroundings
-6. **Calibato Lake** — Community use and livelihood
-7. **Mabini Lake** — Smallest of the lakes
+| Rank | Barangay | Population |
+| ---- | -------- | ---------- |
+| 1 | Del Remedio | 19,878 |
+| 2 | San Francisco | 14,920 |
+| 3 | San Jose | 12,496 |
+| 4 | Santa Monica | 10,580 |
+| 5 | San Gregorio | 10,407 |
+| 6 | Concepcion | 9,352 |
+| 7 | San Nicolas | 9,209 |
+| 8 | San Gabriel | 9,030 |
+| 9 | Santo Angel | 8,640 |
+| 10 | San Cristobal | 5,781 |
 
-These lakes are central to the city's identity as the "City of Seven Lakes" and are important for:
+---
 
-- Fisheries and aquaculture
-- Tourism and recreation
-- Water supply
-- Environmental conservation
-
-## Population growth and trends
-
-San Pablo City has experienced population growth over recent decades due to:
-
-- **Urbanization** — Expansion of commercial and residential areas
-- **Migration** — People moving to the city for employment and opportunities
-- **Natural increase** — Birth rate trends and mortality rates
-- **Regional development** — Growth in the CALABARZON region
-
-Current demographic trends reflect the city's role as a growing urban center in Laguna Province.
-
-## Education and literacy
-
-San Pablo City has a strong education profile with:
-
-- **Public schools** — Elementary, high schools, and technical-vocational schools
-- **Higher education institutions** — Colleges and universities
-- **Literacy rate** — High percentage of population with basic education
-- **Skills development** — Vocational training and community learning centers
-
-## Economic demographics
-
-San Pablo's population participates in various economic activities:
-
-- **Agriculture and fisheries** — Farming, fishing, and aquaculture
-- **Commerce and trade** — Retail, wholesale, and market activities
-- **Manufacturing** — Light and medium industries
-- **Services** — Government, healthcare, education, transportation
-- **Tourism** — Lake-based tourism and hospitality
-
-## Data sources and census information
-
-Population data comes from official Philippine government sources:
-
-- **Philippine Statistics Authority (PSA)** — Official census and demographic data
-- **2024 POPCEN** — Latest national population and housing census
-- **PSA Classification System (PSGC)** — Official administrative divisions and classifications
-- **BirthCertification System** — Vital statistics registration
-
-For more demographic information:
-
-- **PSA San Pablo Page:** https://psa.gov.ph/classification/psgc/
-- **San Pablo City Official Website:** https://www.sanpablocity.gov.ph
-- **City Planning and Development Office:** (049) 562-1234
-- **City Statistics Office:** Contact through City Hall
-
-## Community profiles
-
-Detailed community-specific demographic information is available through:
-
-- **Barangay offices** — Local demographic data and community profiles
-- **San Pablo City Government** — Integrated city statistics
-- **Philippine Statistics Authority** — National and local data
+## Data Sources
+- Philippine Statistics Authority (PSA) — 2020 and 2024 Census of Population and Housing
+- citypopulation.de (PSA-derived data)
+- COMELEC 2025 Election Results
