@@ -12,7 +12,7 @@ import { mainNavigation } from '../../data/navigation';
 import type { LanguageType } from '../../types/index';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import betterSanPabloLogo from '../../assets/bettersanpablo-logo2.png';
+import betterSanPabloLogo from '../../assets/bettersanpablo-logo3.png';
 
 const NAVBAR_LANGUAGES: LanguageType[] = ['en', 'fil'];
 

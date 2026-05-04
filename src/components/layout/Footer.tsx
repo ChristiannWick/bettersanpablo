@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Facebook, Github, ExternalLink, Eye, Heart, Code2, Globe } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
-import betterSanPabloLogo from '../../assets/bettersanpablo-logo2.png';
+import betterSanPabloLogo from '../../assets/bettersanpablo-logo3.png';
 
 // ── Project transparency data ─────────────────────────────────────────────────
 // Cost to the people of San Pableños = ₱0
