@@ -272,13 +272,13 @@ const Navbar: React.FC = () => {
 
       {/* Main navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-2.5 md:py-3">
+        <div className="flex justify-between items-center py-2 md:py-3 lg:py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img
                 src={betterSanPabloLogo}
                 alt="BetterSanPablo.org logo"
-                className="h-12 lg:h-16 w-auto mr-3 object-contain flex-shrink-0"
+                className="h-16 sm:h-20 lg:h-28 w-auto max-w-[200px] lg:max-w-[320px] mr-4 object-contain flex-shrink-0"
               />
             </Link>
           </div>
