@@ -1,4 +1,3 @@
-import Section from '../ui/Section';
 import { SAN_PABLO_CITY_STATS } from '../../data/homeContent';
 
 // Icon numbers or symbols mapped to each stat by index
