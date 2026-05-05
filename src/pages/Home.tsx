@@ -1,6 +1,5 @@
 import { Suspense, lazy } from 'react';
 import HeroSection from '../components/home/HeroSection';
-import ServicesSection from '../components/home/ServicesSection';
 import OnlineServicesSection from '../components/home/OnlineServicesSection';
 import ContactSection from '../components/home/ContactSection';
 import SEO from '../components/SEO';
@@ -32,11 +31,8 @@ const Home: React.FC = () => {
         keywords="San Pablo City, Laguna, City of Seven Lakes, government services, transparency portal, public services"
       />
       <main className="flex-grow">
-        {/* Hero */}
+        {/* Hero with integrated search and popular services */}
         <HeroSection />
-
-        {/* Most-requested services */}
-        <ServicesSection variant="quick" />
 
         {/* Official city online portals — sourced from sanpablocity.gov.ph */}
         <OnlineServicesSection />
