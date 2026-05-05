@@ -17,10 +17,11 @@ interface Category {
   subcategories: Subcategory[];
 }
 
-// Slugs handled by their own top-level nav items — exclude from Government dropdown
+// Slugs that appear as separate top-level nav items — exclude from Government dropdown
 const GOV_NAV_EXCLUDED = new Set([
-  'transparency-documents',
-  'reports-and-statistics',
+  'transparency-documents',    // Has its own "Transparency" top-level nav item
+  'reports-and-statistics',    // Has its own "Statistics" top-level nav item
+  'public-consultations',      // Optional: exclude if it should be separate
 ]);
 
 export const mainNavigation: NavigationItem[] = [
