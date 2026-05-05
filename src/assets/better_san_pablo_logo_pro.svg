@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ICON -->
+  <g transform="translate(60,90)">
+
+    <!-- Waves (7 lakes concept simplified) -->
+    <path d="M0 140 Q110 110 220 140" stroke="#2D9CDB" stroke-width="6" fill="none"/>
+    <path d="M10 120 Q110 90 210 120" stroke="#56CCF2" stroke-width="4" fill="none"/>
+
+    <!-- Coconut (clean, modern) -->
+    <g transform="translate(110,150)">
+      <circle r="22" fill="#2F855A"/>
+      <ellipse cx="-6" cy="0" rx="10" ry="14" fill="#F5F5F5"/>
+      <path d="M-24 6 Q0 -18 24 6" stroke="#1B5E20" stroke-width="2" fill="none"/>
+    </g>
+
+  </g>
+
+  <!-- TEXT -->
+  <g font-family="Inter, Arial, sans-serif">
+
+    <!-- Better -->
+    <text x="320" y="150" font-size="64" fill="#2E7D32" font-weight="500" letter-spacing="1">
+      Better
+    </text>
+
+    <!-- Leaf accent -->
+    <path d="M565 120 Q585 95 615 120 Q590 145 565 120Z" fill="#2E7D32"/>
+
+    <!-- San Pablo -->
+    <text x="320" y="240" font-size="90" fill="#0D47A1" font-weight="600" letter-spacing="1">
+      San Pablo
+    </text>
+
+    <!-- .org -->
+    <text x="320" y="290" font-size="28" fill="#2E7D32" letter-spacing="2">
+      .ORG
+    </text>
+
+  </g>
+
+</svg>
