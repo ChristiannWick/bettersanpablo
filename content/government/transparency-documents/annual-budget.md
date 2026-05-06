@@ -1,30 +1,68 @@
-# Annual Budget (San Pablo City)
+# Annual Budget — San Pablo City
 
-This page explains how the City of San Pablo prepares, publishes, and makes available its annual budget documents.
+This page explains how the City Government of San Pablo prepares, approves, and publishes its annual budget, and how residents can access budget documents.
 
-## What is the Annual Budget?
-The Annual Budget is the City Government's plan for revenues and expenditures for the fiscal year. It covers personnel costs, maintenance and operations, capital outlay, and other program allocations.
+## San Pablo City — Recent budget snapshot
 
-## Typical budget documents
-- **Proposed Annual Budget** — Presented by the Mayor for review by the City Council
-- **Approved Annual Budget** — Ordinance or resolution adopting the budget
-- **Budget Execution Reports** — Periodic reports comparing actual spending to budget
-- **Supporting annexes** — Project lists, programs, and spending breakdowns
+Based on the latest available Commission on Audit (COA) Annual Audit Reports:
 
-## How to access San Pablo's budget
-- Visit the San Pablo City official website: https://www.sanpablocity.gov.ph
-- Check the Financial Reports / Budget section or Disclosure Portal
-- Contact the City Budget Office or City Accounting Office at City Hall: (049) 562-1234
+- **FY 2022 Total Revenue:** ₱1.96 billion
+- **FY 2022 Total Expenditure:** ₱1.747 billion
+- **Largest revenue source:** National Tax Allotment (NTA, formerly IRA), supplemented by local business and real property taxes
+- **City classification:** 1st Class Component City, Province of Laguna
+- **Population served (2024 POPCEN):** 300,166 across 80 barangays
+- **Land area covered:** 197.56 km²
 
-## Using the budget documents
-- Look for the approved budget ordinance for legal authority to spend
-- Use budget execution reports to track program spending and results
-- Review capital outlay annexes to understand infrastructure priorities
+> Figures sourced from the COA Annual Audit Report on the City Government of San Pablo. For the most recent FY data, check https://www.coa.gov.ph and search "San Pablo City."
 
-## Where to request copies
-If the budget document you need is not online, request a copy from:
-- City Budget Office: (049) 562-1234
-- City Accounting Office: (049) 562-1234
-- City Secretary's Office for official ordinance texts
+## How San Pablo's budget is prepared
 
-For more financial transparency materials, see `Financial Records and Audit Reports` and `Full Disclosure Policy` pages.
+The annual budget cycle generally follows these steps:
+
+1. **Budget call** — Issued by the Mayor's Office to all city departments and offices
+2. **Departmental proposals** — Each office submits its program budget to the City Budget Office
+3. **Executive Budget** — Mayor Arcadio "Najie" B. Gapangada Jr. submits the proposed annual budget to the Sangguniang Panlungsod
+4. **Legislative review** — The 10-member City Council, presided over by Vice Mayor Justin G. Colago, deliberates and amends the budget
+5. **Appropriation Ordinance** — The approved budget is enacted as a city ordinance
+6. **Budget execution** — Departments implement programs; quarterly reports are submitted
+
+## Documents typically published
+
+- **Proposed Annual Budget** — Executive submission to the Sangguniang Panlungsod
+- **Approved Annual Budget Ordinance** — Adopted appropriations for the fiscal year
+- **Quarterly Budget Execution Reports (BERs)** — Actual vs. budgeted spending
+- **Annual Procurement Plan (APP)** — Required under RA 9184
+- **Statement of Receipts and Expenditures (SRE)** — Submitted to BLGF
+
+## How to access San Pablo's budget documents
+
+| Source | Link / Contact |
+|---|---|
+| Official city website | [sanpablocity.gov.ph](https://www.sanpablocity.gov.ph) |
+| Disclosure Portal | [sanpablocity.gov.ph/disclosure-portal](https://www.sanpablocity.gov.ph/disclosure-portal) |
+| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph) — search SRE for San Pablo |
+| Commission on Audit | [coa.gov.ph](https://www.coa.gov.ph) — Local Government audit reports |
+| City Budget Office | City Hall, Mabini Extension, San Pablo City |
+
+## Office contacts
+
+- **City Hall main line:** (049) 562-0111
+- **City Administrator's Office:** (049) 521-0307
+- **City Information Office:** (049) 561-1483
+- **Records Office (FOI requests):** (049) 562-1234 loc 205
+
+## Legal framework
+
+San Pablo City's budget process complies with:
+
+- **Local Government Code of 1991** (RA 7160) — Books II & III on local fiscal administration
+- **DILG Memorandum Circular 2010-83** — Full Disclosure Policy
+- **Government Procurement Reform Act** (RA 9184)
+- **COA Auditing Standards** for local government units
+
+## Related pages
+
+- [Full Disclosure Policy](full-disclosure-policy)
+- [Financial Records and Audit Reports](financial-records-and-audit-reports)
+- [Bids and Awards](bids-and-awards)
+- [Freedom of Information](freedom-of-information)

@@ -1,19 +1,98 @@
-# Statement of Assets, Liabilities, and Net Worth (SALN)
+# Statement of Assets, Liabilities, and Net Worth (SALN) — San Pablo City
 
-The SALN is a public official document that records the assets, liabilities, and net worth of public officers and employees. It is meant to promote transparency and detect potential conflicts of interest.
+The SALN is a public document filed annually by Philippine government officials and employees, declaring their assets, liabilities, and net worth. It promotes transparency, deters corruption, and detects potential conflicts of interest.
 
-## Who files a SALN?
-Public officials and employees are required by law to file SALNs annually. This helps maintain public accountability for government officials.
+## Legal basis
 
-## Accessing SALNs in San Pablo City
-SALN access rules vary. In many cases, SALNs are covered by ethics laws and may be obtained through formal requests to the Office handling personnel records (City Human Resources or City Secretary) or through Freedom of Information channels.
+- **Republic Act No. 6713** — Code of Conduct and Ethical Standards for Public Officials and Employees
+- **Republic Act No. 3019** — Anti-Graft and Corrupt Practices Act
+- **Article XI Section 17 of the 1987 Constitution** — Public officers must submit a SALN
+- **CSC Memorandum Circular No. 3 (s. 2015)** — Revised SALN Form
 
-To request a SALN or related disclosure:
-- Contact the City Human Resources Office or City Secretary's Office: City Hall main line (049) 562-1234
-- If the SALN is not publicly available, submit a formal FOI request explaining purpose and scope (see Freedom of Information page)
+## Who must file in San Pablo City
 
-## Notes and privacy
-- SALNs contain personal financial information; access may be restricted and processed according to laws and internal policies.
-- When requesting SALNs, specify the official's name, position, and the filing year to speed up retrieval.
+All elected and appointed officials and employees of the City Government of San Pablo file a SALN, including:
 
-For general guidance on SALNs and ethical disclosure obligations, contact the City Legal Office or City Human Resources Office.
+### Elected officials
+- **City Mayor** — Arcadio "Najie" B. Gapangada Jr. (2025–2028)
+- **City Vice Mayor** — Justin G. Colago
+- **10 Sangguniang Panlungsod Members** (City Councilors)
+- **Punong Barangay** of each of the 80 barangays
+- **Sangguniang Barangay Members and SK Chairpersons**
+
+### Appointed officials
+- **City Administrator**
+- **Department heads** (City Health Officer, City Treasurer, City Engineer, etc.)
+- **Coterminous officials** of the Mayor's Office
+
+### Career employees
+- All regular city government employees, regardless of position
+
+## Filing schedule
+
+| Filing type | When |
+|---|---|
+| **Joining (Initial) SALN** | Within 30 days of assumption to office |
+| **Annual SALN** | On or before **April 30** of each year, covering Dec 31 of prior year |
+| **Separation SALN** | Within 30 days of separation from service |
+
+## Where SALNs are filed in San Pablo City
+
+| Filer | Filing office |
+|---|---|
+| City Mayor & Vice Mayor | Office of the President / Office of the Ombudsman |
+| Sangguniang Panlungsod | Civil Service Commission |
+| City department heads | CSC and the City Administrator's Office |
+| Career employees | City Human Resource Management Office (HRMO) |
+| Barangay officials | DILG / CSC Field Office |
+
+## Accessing SALNs of San Pablo officials
+
+SALNs are public documents under RA 6713 Section 8. Access procedures vary by repository:
+
+### For elected city officials
+- Submit a **written request** to the Office of the Ombudsman or Civil Service Commission
+- Cite the official's name, position, and filing year
+- Some SALNs are uploaded to the official agency's website
+
+### For city department heads and employees
+- File a request with the **City Human Resource Management Office** at City Hall
+- Use the FOI process if direct access is denied (see [Freedom of Information](freedom-of-information))
+
+## Office contacts
+
+- **City Hall main line:** (049) 562-0111
+- **City Administrator's Office:** (049) 521-0307
+- **City HRMO** — request SALNs of city employees
+- **City Legal Office** — for legal questions on SALN access
+- **Records Office (FOI):** (049) 562-1234 loc 205
+
+## What's in a SALN
+
+The standardized SALN form (CSC Form No. 212, Revised 2015) includes:
+
+1. **Personal information** — Name, position, agency, spouse, unmarried children below 18
+2. **Real properties** — Land, buildings (location, kind, year acquired, mode, assessed value)
+3. **Personal properties** — Vehicles, jewelry, investments, cash on hand/in bank
+4. **Liabilities** — Loans, mortgages, other obligations
+5. **Business interests and financial connections**
+6. **Relatives in government service** — Up to 4th civil degree
+
+## Privacy and access notes
+
+- SALNs contain personal financial data; access is controlled by RA 6713 and the Data Privacy Act (RA 10173)
+- Requesting parties may be required to state purpose of the request
+- Information cannot be used for **commercial purposes** or to **harass** the official
+- Misuse of SALN information is punishable under RA 6713
+
+## Related pages
+
+- [Local Officials Directory](../departments/local-officials-directory)
+- [Freedom of Information](freedom-of-information)
+- [Full Disclosure Policy](full-disclosure-policy)
+
+## External resources
+
+- **Civil Service Commission:** [csc.gov.ph](https://www.csc.gov.ph)
+- **Office of the Ombudsman:** [ombudsman.gov.ph](https://www.ombudsman.gov.ph)
+- **Republic Act 6713 full text:** [officialgazette.gov.ph](https://www.officialgazette.gov.ph)

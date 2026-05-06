@@ -1,221 +1,87 @@
-# Financial Records and Audit Reports
+# Financial Records and Audit Reports — San Pablo City
 
-This page provides access to San Pablo City's financial statements, audit reports, and fiscal accountability records.
+This page covers San Pablo City's financial records and the Commission on Audit (COA) reports that independently verify the city's accounts.
 
-## What are financial records and audit reports?
+## Latest available figures (FY 2022, COA)
 
-**Financial records** document how San Pablo City collects and spends public funds. **Audit reports** are independent reviews by the Commission on Audit (COA) that verify the accuracy of financial records and ensure compliance with laws.
+| Item | Amount |
+|---|---|
+| Total Revenue | **₱1.96 billion** |
+| Total Expenditure | **₱1.747 billion** |
+| Operating Surplus | ~₱213 million |
+| Population served | 300,166 (2024 POPCEN) |
+| Per capita expenditure | ~₱5,820 |
 
-Together, they demonstrate:
+> Source: COA Annual Audit Report on the City Government of San Pablo, accessible at https://www.coa.gov.ph
 
-- **Fiscal accountability** — How effectively public funds are managed
-- **Legal compliance** — Adherence to budget laws and accounting standards
-- **Transparency** — Full disclosure of city finances to the public
-- **Good governance** — Responsible stewardship of public resources
+## Where San Pablo's revenues come from
 
-## Components of financial records
+- **National Tax Allotment (NTA)** — formerly IRA; the largest single revenue source
+- **Local Business Tax (LBT)** — from BPLO permit and renewal collections
+- **Real Property Tax (RPT)** — collected by the City Treasurer's Office (online portal: [realpropertytax.sanpablocity.gov.ph](https://realpropertytax.sanpablocity.gov.ph))
+- **Service fees and other income** — Civil registry, market stall rentals, regulatory fees
+- **Special allocations** — Bayanihan, BARMM transitions, disaster funding
 
-### Revenue records
+## Where San Pablo spends
 
-San Pablo City's financial records include:
+Typical categories in the budget execution reports:
 
-- **Tax collections** — Local business tax (LBT), property tax, and other local taxes
-- **National government share** — Internal Revenue Allotment (IRA) and special allocations
-- **Service fees** — Income from city-issued permits, licenses, and services
-- **Miscellaneous revenues** — Rentals, fines, donations, and other sources
+- **Personnel Services (PS)** — Salaries and benefits for city employees
+- **Maintenance and Other Operating Expenses (MOOE)** — Day-to-day operations
+- **Capital Outlay (CO)** — Roads, drainage, public buildings, equipment
+- **20% Development Fund** — Mandated for local infrastructure & livelihood programs
+- **5% Local Disaster Risk Reduction Fund (LDRRF)** — CDRRMO-managed
 
-### Expenditure records
+## How San Pablo is audited
 
-City spending records show allocations for:
+The Commission on Audit (COA) Provincial Office for Laguna conducts annual audits and issues:
 
-- **Personnel services** — Salaries and benefits for city employees
-- **Maintenance and operating expenses** — Day-to-day costs of government operations
-- **Capital outlay** — Infrastructure projects and equipment purchases
-- **Debt service** — Payments on loans and financial obligations
+1. **Audit Observation Memoranda (AOMs)** — Issued during fieldwork
+2. **Annual Audit Report (AAR)** — Comprehensive yearly report covering financial position, compliance, and value-for-money observations
+3. **Audit Opinion** on financial statements:
+   - **Unqualified (Clean)** — No material misstatement
+   - **Qualified** — Some specific exceptions
+   - **Adverse / Disclaimer** — Significant issues
 
-### Balance sheet information
+## How to access San Pablo's financial records
 
-Financial records include:
+| Source | Link / Contact |
+|---|---|
+| COA Annual Audit Reports | [coa.gov.ph](https://www.coa.gov.ph) → Local Government → Region IV-A → San Pablo City |
+| BLGF SRE Portal | [blgf.gov.ph](https://blgf.gov.ph) → Statement of Receipts and Expenditures |
+| Disclosure Portal | [sanpablocity.gov.ph/disclosure-portal](https://www.sanpablocity.gov.ph/disclosure-portal) |
+| City Accounting Office | San Pablo City Hall, Mabini Extension |
+| City Treasurer's Office | (049) 562-0111 (main line) |
 
-- **Assets** — City property, equipment, cash, and receivables
-- **Liabilities** — Debts, payables, and obligations
-- **Equity** — Net worth of the city government
+## How to read a COA audit report
 
-## The audit process
+A typical AAR has three parts:
 
-The Commission on Audit conducts annual audits that include:
+1. **Part I — Audited Financial Statements** with audit opinion
+2. **Part II — Observations and Recommendations** (audit findings)
+3. **Part III — Status of Implementation of Prior Year's Recommendations**
 
-### Phase 1: Planning and fieldwork
+Citizens can use Part II to check compliance issues and Part III to track whether the city has acted on past audit findings.
 
-- Review city budget and operations
-- Verify transactions and documents
-- Test controls and procedures
-- Conduct interviews with city officials and staff
+## Requesting financial records
 
-### Phase 2: Analysis and findings
+If a record isn't published online, file a request through:
 
-- Evaluate financial records for accuracy and compliance
-- Identify any irregularities or issues
-- Assess effectiveness of internal controls
-- Develop recommendations for improvement
+- **Records Office / FOI desk:** (049) 562-1234 loc 205
+- **City Information Office:** (049) 561-1483
+- **City Administrator's Office:** (049) 521-0307
 
-### Phase 3: Reporting
+For the FOI process, see the [Freedom of Information](freedom-of-information) page.
 
-- Issue audit opinion on financial statements
-- Document findings and observations
-- Present recommendations for corrective action
-- Communicate results to city officials and the public
+## Legal framework
 
-## Audit findings and recommendations
+- **Local Government Code of 1991** (RA 7160)
+- **Government Auditing Code** (PD 1445)
+- **COA Auditing Standards**
+- **Government Accounting Manual** for LGUs
 
-### Types of audit observations
+## Related pages
 
-COA audit reports may include:
-
-- **Findings** — Specific issues with significant impact
-- **Recommendations** — Suggested corrective actions
-- **Best practices** — Positive observations and good examples
-- **Compliance notes** — Areas of strong legal adherence
-
-### City response to audit findings
-
-San Pablo City responds to audit findings by:
-
-- **Developing action plans** — Specific steps to address identified issues
-- **Assigning responsibilities** — Designating officials to implement corrections
-- **Setting timelines** — Establishing deadlines for completion
-- **Monitoring progress** — Tracking implementation of corrective measures
-- **Reporting status** — Informing the COA of actions taken
-
-## Types of audits
-
-### Regular/Annual audit
-
-**Annual audits** examine:
-
-- Compliance with budget laws
-- Accuracy of financial statements
-- Effectiveness of internal controls
-- Accomplishment of audit objectives
-
-### Special audits
-
-**Special audits** may address:
-
-- Specific programs or transactions
-- Contracts and procurement
-- Disaster relief spending
-- Grant utilization
-
-### Post-audit
-
-**Post-audits** review completed projects:
-
-- Infrastructure project completion
-- Program accomplishment and results
-- Cost-benefit analysis
-- Recommendations for similar future projects
-
-## Accessing financial records and audit reports
-
-### Official sources
-
-Financial records and audit reports are available through:
-
-- **San Pablo City Official Website:** https://www.sanpablocity.gov.ph
-- **Financial Records Database:** https://www.sanpablocity.gov.ph/financial-records
-- **Audit Reports Library:** https://www.sanpablocity.gov.ph/audit-reports
-
-### National government sources
-
-- **Commission on Audit (COA):** https://www.coa.gov.ph
-- **Bureau of Local Government Finance (BLGF):** https://blgf.gov.ph
-- **COA audit reports database:** Search for San Pablo City audit results
-
-### Contact information
-
-To request financial records or audit reports:
-
-- **City Finance Office:** (049) 562-1234
-- **City Accounting Office:** (049) 562-1234
-- **Email:** finance@sanpablocity.gov.ph
-- **City Hall:** Open during business hours
-
-## Understanding audit findings
-
-### How to read an audit report
-
-Audit reports typically include:
-
-1. **Audit opinion** — Professional assessment of financial statement accuracy
-2. **Findings section** — Details of issues discovered
-3. **Recommendations** — Suggested improvements
-4. **Management's response** — City's planned corrective actions
-5. **Appendices** — Supporting documents and schedules
-
-### Favorable and qualified opinions
-
-- **Unqualified (Clean) Opinion** — Positive assessment with no significant issues
-- **Qualified Opinion** — Generally favorable with some specific exceptions
-- **Adverse Opinion** — Significant issues indicating financial problems
-- **Disclaimer Opinion** — Insufficient information for opinion
-
-## Fiscal responsibility and public trust
-
-San Pablo City's commitment to transparent financial reporting includes:
-
-- **Regular publication** of financial statements and audit reports
-- **Public accessibility** of records and reports
-- **Compliance programs** ensuring adherence to laws and regulations
-- **Internal controls** safeguarding public funds
-- **Accountability mechanisms** for financial management
-
-## How citizens can use financial information
-
-Residents and stakeholders can use financial data to:
-
-- **Monitor government spending** — Track how tax money is used
-- **Assess financial health** — Evaluate the city's financial position
-- **Evaluate priorities** — Compare budget allocations to community needs
-- **Participate in governance** — Provide informed input on budget and policies
-- **Request accountability** — Ask questions about spending decisions
-
-## Asking questions about San Pablo's finances
-
-### Submit inquiries to:
-
-- **City Finance Office** — For financial data and budget information
-- **City Accounting Office** — For detailed transaction information
-- **City Treasurer's Office** — For revenue and collection data
-- **City Planning Office** — For development investment information
-
-### Information you can request:
-
-- Budget allocation for specific programs
-- Actual spending for completed projects
-- Contract details and supplier information
-- Audit findings and city responses
-- Financial performance indicators
-
-## Feedback and accountability
-
-For questions, concerns, or feedback on San Pablo City finances:
-
-- **Contact the Mayor's Office** — (049) 562-1234
-- **File a complaint** — With the Commission on Audit or Ombudsman
-- **Participate in hearings** — Attend public budget consultations
-- **Request audit** — Request COA investigation of specific concerns
-- **Provide suggestions** — Offer input on fiscal management
-
-## Related resources
-
-- **Republic Act No. 9135** — Government Accounting and Auditing Manual
-- **Commission on Audit Auditing Standards** — Professional audit standards
-- **Local Government Code** — Laws governing local finance
-- **Philippine Financial Reporting Standards** — Accounting standards
-
-For more information on San Pablo City financial records and audits:
-
-- **San Pablo City Official Website:** https://www.sanpablocity.gov.ph
-- **City Finance Office:** (049) 562-1234
-- **Commission on Audit:** https://www.coa.gov.ph
+- [Annual Budget](annual-budget)
+- [Bids and Awards](bids-and-awards)
+- [Full Disclosure Policy](full-disclosure-policy)
