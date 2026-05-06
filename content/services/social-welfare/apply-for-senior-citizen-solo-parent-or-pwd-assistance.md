@@ -1,59 +1,118 @@
 # Apply for Senior Citizen, Solo Parent, or PWD Assistance — San Pablo City
 
-San Pablo City provides assistance programs and benefits for senior citizens, persons with disability (PWD), and solo parents through the City Social Welfare and Development Office (CSWDO) and partner agencies.
+A complete guide to applying for Senior Citizen, PWD, or Solo Parent IDs and benefits in San Pablo City.
 
-## Programs and Benefits by Sector
+## What
 
-### Senior Citizens (60 years old and above)
+San Pablo City issues **government-mandated IDs and processes assistance** for three priority sectors:
 
-| Benefit | Details |
-| --- | --- |
-| **Senior Citizen ID** | Issued by the city; entitles holders to 20% discount on medicines, food, transport, and other goods |
-| **Social Pension (DSWD)** | Monthly stipend for indigent senior citizens; managed through DSWD |
-| **Centenarian Cash Gift** | PHP 100,000 cash gift for residents turning 100 years old (Republic Act 10868) |
-| **Priority in government transactions** | Priority lanes, express service at government offices |
-| **PhilHealth coverage** | Senior citizens are automatically covered by PhilHealth |
+- **Senior Citizen ID** — for residents aged 60+
+- **PWD ID** — for persons with disability
+- **Solo Parent ID** — for solo parents under RA 11861 (expanded benefits)
 
-### Persons with Disability (PWD)
+Each ID grants legally mandated **discounts, priority lanes, and welfare benefits** under specific national laws.
 
-| Benefit | Details |
-| --- | --- |
-| **PWD ID** | Issued by the city; entitles holders to 20% discount on medicines, medical services, and transport |
-| **AICS assistance** | Assistance to Individuals in Crisis Situations through CSWDO |
-| **Livelihood support** | Referrals to livelihood and employment programs |
-| **Disability benefits (SSS/GSIS)** | Social insurance benefits; apply at SSS or GSIS offices |
+## Who can apply
 
-### Solo Parents
+| ID | Eligibility |
+|---|---|
+| **Senior Citizen** | Filipino citizens aged 60+ residing in San Pablo City |
+| **PWD** | Persons with permanent or temporary disabilities (medical certification required) |
+| **Solo Parent** | Mothers/fathers raising children alone due to death, separation, abandonment, or other RA 11861 grounds |
 
-| Benefit | Details |
-| --- | --- |
-| **Solo Parent ID** | Issued by the city; provides access to benefits under RA 8972 (Solo Parents' Welfare Act) |
-| **Flexible work arrangements** | Entitlement to flexible work under law |
-| **Educational benefits** | Priority for educational assistance programs |
-| **Parental leave** | 7-day parental leave for solo parent employees |
+## When to apply
 
-## How to Apply
+- **Senior Citizen** — Apply at age 60 or anytime after
+- **PWD** — Apply once medically diagnosed; valid for **5 years** then renewable
+- **Solo Parent** — Apply when you become a solo parent; renewable annually
 
-### For Senior Citizen ID
-1. Go to your **Barangay Hall** with a valid ID and proof of age (birth certificate or passport).
-2. The barangay will process the application and coordinate with the **Office for Senior Citizens Affairs (OSCA)** at City Hall.
+## Where to apply
 
-### For PWD ID
-1. Secure a **Medical Assessment Form** completed by a licensed physician stating your disability.
-2. Go to the **CSWDO** at San Pablo City Hall with: medical assessment, valid ID, 1x1 and 2x2 photos.
-3. The CSWDO will process and issue the PWD ID.
+| ID | Office |
+|---|---|
+| **Senior Citizen ID** | OSCA (Office for Senior Citizens Affairs) at City Hall — start at your **Barangay Hall** |
+| **PWD ID** | CSWDO (City Social Welfare and Development Office) at City Hall |
+| **Solo Parent ID** | CSWDO at City Hall |
 
-### For Solo Parent ID
-1. Go to the **CSWDO** at San Pablo City Hall.
-2. Bring: birth certificate of your child/children, valid ID, proof that you are the sole provider (death certificate of spouse, court documents, etc.).
-3. Submit application and wait for processing.
+**City Hall address:** Mabini Extension, San Pablo City, Laguna 4000
 
-## Key Contacts
+## Why apply
 
-| Office | Contact |
-| --- | --- |
-| CSWDO (City Social Welfare and Development Office) | (049) 562-1234 |
-| OSCA (Office for Senior Citizens Affairs) | (049) 562-1234 via City Hall |
-| City Information Office | (049) 561-1483 |
-| City Hall Main | (049) 562-1234 |
-| Official Website | https://www.sanpablocity.gov.ph |
+### Senior Citizen benefits (RA 9994 / RA 10645)
+- **20% discount + VAT exemption** on medicines, food, transport, hotels, recreation
+- **Free PhilHealth coverage** under PhilHealth (RA 10645)
+- **Social Pension** of ₱500–1,000/month for indigent seniors (DSWD)
+- **Centenarian Cash Gift** of ₱100,000 at age 100 (RA 10868)
+- **Priority lanes** at government offices and establishments
+
+### PWD benefits (RA 10754)
+- **20% discount + VAT exemption** on medicines, medical services, transport, hotels
+- **Income tax exemption** as a dependent
+- **Free PhilHealth coverage** for indigent PWDs
+- **Educational assistance** through DepEd / TESDA
+- **Express lanes and accessibility accommodations**
+
+### Solo Parent benefits (RA 11861)
+- **10% discount + VAT exemption** on baby's milk, food, medicines (children up to 6)
+- **Educational scholarships** for solo parent's children
+- **Flexible work arrangements** (employees)
+- **Solo Parent Leave** — 7 working days yearly for those with at least 1 year service
+- **Priority** in housing, livelihood, and welfare programs
+
+## How to apply
+
+### 🧓 Senior Citizen ID
+
+1. Go to your **Barangay Hall** with valid ID + proof of age (birth certificate, passport, or PSA copy).
+2. Barangay endorses your application to **OSCA** at City Hall.
+3. Submit the OSCA form (filled out at the barangay or City Hall).
+4. Wait for ID printing (usually 1–2 weeks).
+5. Claim your Senior Citizen ID and booklet at OSCA.
+
+### ♿ PWD ID
+
+1. Get a **Medical Assessment Form** signed by a licensed physician (must specify disability type).
+2. Bring to **CSWDO** at San Pablo City Hall:
+   - Filled-out PWD ID application form
+   - Medical certificate
+   - 2 copies of 1×1 photo + 2×2 photo
+   - Valid ID + proof of residency
+3. Submit, undergo verification interview if needed.
+4. Wait for processing (typically 1–2 weeks).
+5. Claim PWD ID at CSWDO.
+
+### 👩‍👧 Solo Parent ID
+
+1. Go to **CSWDO** at San Pablo City Hall.
+2. Bring required documents (depends on solo-parent grounds):
+   - **Birth certificate of children** (PSA)
+   - **Valid ID + proof of residency**
+   - **Death certificate of spouse** (if widowed)
+   - **Court documents** (if separated, abandoned, etc.)
+   - **Affidavit of solo parent status**
+3. CSWDO will conduct an assessment / interview.
+4. Submit application; wait for ID processing.
+5. Claim Solo Parent ID at CSWDO.
+
+## Office contacts
+
+- **City Hall main line:** (049) 562-0111
+- **CSWDO** — through City Hall main line
+- **OSCA** — through City Hall main line
+- **City Information Office:** (049) 561-1483
+- **City Administrator's Office:** (049) 521-0307
+
+## Important notes
+
+- **All applications and IDs are FREE** — never pay fixers
+- **PWD ID needs a medical certificate** — get this before going to CSWDO
+- **Senior Citizen ID** unlocks Social Pension if income-qualified
+- Display your ID for **discounts** at restaurants, pharmacies, transport
+- **PhilHealth coverage** auto-attaches for seniors and indigent PWDs
+- Renewals — PWD every 5 years; Solo Parent annually
+
+## Related services
+
+- [Get Family and Community Welfare Support](get-family-and-community-welfare-support)
+- [Receive Relief Goods or Cash Aid During Disasters](receive-relief-goods-or-cash-aid-during-disasters)
+- [Join Livelihood or Skills Training Programs](join-livelihood-or-skills-training-programs)
