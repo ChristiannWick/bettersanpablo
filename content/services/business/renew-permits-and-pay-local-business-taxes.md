@@ -1,59 +1,107 @@
-# Renew Permits and Pay Local Business Taxes - San Pablo City
+# Renew Business Permits and Pay Local Business Taxes — San Pablo City
 
-All businesses operating in San Pablo City should renew their business permit and pay local business taxes according to the schedule announced by the city government.
+A complete guide to renewing your Mayor's Business Permit and paying local business taxes in San Pablo City, Laguna.
 
-## Official Online Channels
+## What
 
-| Channel | Use |
-| --- | --- |
-| BPLO portal | Apply for business permits, renewals, and licenses |
-| Real Property Information System | Calculate taxes and view property information without an account |
-| eLGU San Pablo | Access LGU automation services through the national eGov platform |
+The **annual business permit renewal** is the yearly re-authorization to legally continue operating your business in San Pablo City. It covers payment of:
+- **Local Business Tax (LBT)** — based on prior year's gross receipts
+- **Regulatory fees** — Mayor's Permit fee, sanitary fee, garbage fee, etc.
+- **Updated clearances** — fire safety, sanitary, barangay clearance
 
-Links:
+## Who must renew
 
-- https://bplo.sanpablocity.gov.ph
-- https://realpropertytax.sanpablocity.gov.ph
-- https://elgu-city-of-san-pablo-laguna.e.gov.ph
+All businesses operating within San Pablo City must renew, including:
 
-## Who Should Renew
+- **Sole proprietors** (DTI-registered)
+- **Partnerships and corporations** (SEC-registered)
+- **Cooperatives and associations** (CDA-registered)
+- **Online sellers and home-based businesses** with a San Pablo address
+- **Professionals or offices** required to secure a local business permit
+- **Branches** of national businesses operating in the city
 
-- sole proprietors
-- partnerships and corporations
-- cooperatives and associations
-- online sellers or home-based businesses with a San Pablo City business address
-- professionals or offices required to secure a local business permit
+## When to renew
 
-## Common Requirements
+| Action | Deadline |
+|---|---|
+| **Annual renewal period** | January 1 – January 20 |
+| **Quarterly LBT (1st)** | January 20 |
+| **Quarterly LBT (2nd)** | April 20 |
+| **Quarterly LBT (3rd)** | July 20 |
+| **Quarterly LBT (4th)** | October 20 |
+| **Late filing penalty** | 25% surcharge + 2% monthly interest after January 20 |
 
-- previous year's Mayor's Permit or business permit
-- official receipts for prior local tax payments
-- barangay business clearance for the current year
-- updated gross sales declaration or financial statement, when required
-- fire safety inspection certificate, sanitary permit, and other clearances required for your business type
+## Where to renew
 
-## Steps
+| Channel | URL / Address |
+|---|---|
+| **BPLO Portal** (online) | [bplo.sanpablocity.gov.ph](https://bplo.sanpablocity.gov.ph) |
+| **Real Property Tax Portal** | [realpropertytax.sanpablocity.gov.ph](https://realpropertytax.sanpablocity.gov.ph) |
+| **eLGU San Pablo** | [elgu-city-of-san-pablo-laguna.e.gov.ph](https://elgu-city-of-san-pablo-laguna.e.gov.ph) |
+| **In-person** | BPLO, San Pablo City Hall, Mabini Extension |
+| **Barangay Clearance** | Your business barangay hall |
 
-1. Watch the official San Pablo City announcements for the renewal period and deadline.
-2. Prepare updated business and tax documents.
-3. Submit the renewal application through BPLO or the official services portal when available.
-4. Wait for assessment of local business tax, regulatory fees, and any required inspection.
-5. Pay at the authorized city payment channel.
-6. Claim your renewed Mayor's Permit and keep copies at your business premises.
+## Why renew on time
 
-## Changes You Must Report
+- **Avoid penalties** — 25% surcharge + 2% monthly interest stacks fast
+- **Maintain business legitimacy** — Lapsed permits invalidate official receipts
+- **Keep contracts and credit lines** — Banks and suppliers verify permit status
+- **Continue government transactions** — Public bids and quotations require active permits
+- **Comply with RA 11032** — Ease of Doing Business Act compliance for renewals
 
-Report any change in:
+## How to renew
 
-- business name or trade name
-- ownership or authorized representative
-- business address
-- line of business
-- floor area or branch location
-- closure, retirement, or temporary suspension of operations
+### Step 1 — Gather required documents
+- Previous year's **Mayor's Permit**
+- **Official receipts** for prior local tax payments
+- **Barangay Business Clearance** (current year)
+- **Updated gross sales declaration** or financial statement
+- **Fire Safety Inspection Certificate** (BFP)
+- **Sanitary Permit** (City Health Office)
+- **DTI / SEC / CDA registration** (for changes)
 
-## Contacts
+### Step 2 — Submit your renewal application
+Go to [bplo.sanpablocity.gov.ph](https://bplo.sanpablocity.gov.ph) or visit BPLO at City Hall. The unified renewal application form will compute your fees automatically.
 
-- City Hall main / forms inquiries: (049) 562-1234
-- City Information Office: (049) 561-1483
-- City Admin's Office: (049) 521-0307
+### Step 3 — Wait for assessment
+BPLO will assess your **Local Business Tax** based on the previous year's gross receipts plus regulatory fees. Inspections may be scheduled if required.
+
+### Step 4 — Pay the assessed amount
+Pay through:
+- City Treasurer's Office (cashier)
+- Authorized partner banks (when available)
+- Online payment channels via the BPLO portal
+
+### Step 5 — Claim your renewed permit
+Pick up at BPLO or download from the portal. Display the new permit prominently at your business.
+
+## Changes you must report
+
+You must report any of the following to BPLO before renewal:
+
+- Change in **business name** or trade name
+- Change in **ownership** or authorized representative
+- Change in **business address**
+- Change in **line of business**
+- Change in **floor area** or branch location
+- **Closure, retirement, or temporary suspension** of operations
+
+## Office contacts
+
+- **City Hall main line:** (049) 562-0111
+- **City Information Office:** (049) 561-1483
+- **City Administrator's Office:** (049) 521-0307
+- **Records Office (FOI):** (049) 562-1234 loc 205
+
+## Important notes
+
+- Renewals filed before January 20 enjoy the highest savings — no penalties
+- Bring **original and photocopies** when applying in person
+- Keep all receipts and permit copies on file for COA / BIR audits
+- Quarterly LBT payments are an option for cash flow management
+
+## Related services
+
+- [Apply for Barangay Clearance and Mayor's Business Permit](apply-for-barangay-clearance-and-mayors-business-permits)
+- [Rent Stalls in Public Markets](rent-stalls-in-public-markets)
+- [Join Trade Fairs, Business Expos, or Tourism Promotions](join-trade-fairs-business-expos-or-tourism-promotions)
