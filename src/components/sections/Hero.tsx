@@ -5,21 +5,14 @@ import useInView from '../../hooks/useInView';
 import { serviceCategories, governmentCategories } from '../../data/yamlLoader';
 import { SAN_PABLO_QUICK_SERVICES } from '../../data/homeContent';
 
-type QuickAccessItem = {
-  label: string;
-  href: string;
-};
-
 interface HeroProps {
   locationLabel?: string;
   heading?: string;
   subtitle?: string;
-  searchPlaceholder?: string;
   primaryCtaLabel?: string;
   primaryCtaHref?: string;
   secondaryCtaLabel?: string;
   secondaryCtaHref?: string;
-  quickAccessItems?: QuickAccessItem[];
 }
 
 interface SearchResult {
@@ -35,29 +28,14 @@ const TYPE_COLORS: Record<SearchResult['type'], string> = {
   Government: 'bg-orange-100 text-orange-700',
 };
 
-const DEFAULT_QUICK_ACCESS: QuickAccessItem[] = [
-  { label: 'National ID', href: '/services?q=National%20ID' },
-  { label: 'Birth Certificate', href: '/services?q=Birth%20Certificate' },
-  {
-    label: 'Business Permit',
-    href: '/services/business/apply-for-barangay-clearance-and-mayors-business-permits',
-  },
-  {
-    label: 'Senior / PWD',
-    href: '/services/social-welfare/apply-for-senior-citizen-solo-parent-or-pwd-assistance',
-  },
-];
-
 export default function Hero({
   locationLabel = 'SAN PABLO CITY, LAGUNA',
   heading = 'BetterSanPablo.org',
   subtitle = 'Access local services, permits, and trusted public information for the City of Seven Lakes.',
-  searchPlaceholder = 'Search services, departments, offices...',
   primaryCtaLabel = 'All Services',
   primaryCtaHref = '/services',
   secondaryCtaLabel = 'Government',
   secondaryCtaHref = '/government',
-  quickAccessItems = DEFAULT_QUICK_ACCESS,
 }: HeroProps) {
   const [query, setQuery] = useState('');
   const [heroReady, setHeroReady] = useState(false);
