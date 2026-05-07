@@ -333,20 +333,22 @@ const Navbar: React.FC = () => {
               <Search className="h-4 w-4 mr-1" />
               Search
             </Link>
-            <div className="ml-1 flex items-center gap-2">
+            {/* Minimalist language toggle (desktop) — EN | FIL */}
+            <div className="ml-1 inline-flex items-center rounded-full border border-gray-200 bg-white text-xs">
               {NAVBAR_LANGUAGES.map(code => {
                 const isActive = isLanguageActive(code);
-                const label = code === 'en' ? 'English' : 'Filipino';
-
+                const label = code === 'en' ? 'EN' : 'FIL';
                 return (
                   <button
                     key={code}
                     type="button"
                     onClick={() => changeLanguage(code)}
-                    className={`px-2.5 py-1 text-xs rounded-md border transition-colors ${
+                    aria-pressed={isActive}
+                    aria-label={code === 'en' ? 'Switch to English' : 'Switch to Filipino'}
+                    className={`px-3 py-1 font-semibold tracking-wide transition-colors first:rounded-l-full last:rounded-r-full ${
                       isActive
-                        ? 'bg-primary-600 text-white border-primary-600'
-                        : 'bg-white text-gray-700 border-gray-300 hover:border-primary-500 hover:text-primary-700'
+                        ? 'bg-primary-600 text-white'
+                        : 'text-gray-600 hover:text-primary-600'
                     }`}
                   >
                     {label}
@@ -354,16 +356,34 @@ const Navbar: React.FC = () => {
                 );
               })}
             </div>
-            {/* <Link
-              to="/sitemap"
-              className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            >
-              Sitemap
-            </Link> */}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden flex items-center">
+          {/* Mobile right side — compact language toggle + hamburger */}
+          <div className="lg:hidden flex items-center gap-2">
+            {/* Minimalist language toggle (mobile/tablet) */}
+            <div className="inline-flex items-center rounded-full border border-gray-200 bg-white text-xs">
+              {NAVBAR_LANGUAGES.map(code => {
+                const isActive = isLanguageActive(code);
+                const label = code === 'en' ? 'EN' : 'FIL';
+                return (
+                  <button
+                    key={code}
+                    type="button"
+                    onClick={() => changeLanguage(code)}
+                    aria-pressed={isActive}
+                    aria-label={code === 'en' ? 'Switch to English' : 'Switch to Filipino'}
+                    className={`px-2.5 py-1 font-semibold tracking-wide transition-colors first:rounded-l-full last:rounded-r-full ${
+                      isActive
+                        ? 'bg-primary-600 text-white'
+                        : 'text-gray-600 hover:text-primary-600'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
@@ -444,29 +464,6 @@ const Navbar: React.FC = () => {
           >
             Sitemap
           </Link>
-          <div className="px-4 py-3 border-t border-gray-200">
-            <div className="flex items-center gap-2">
-              {NAVBAR_LANGUAGES.map(code => {
-                const isActive = isLanguageActive(code);
-                const label = code === 'en' ? 'English' : 'Filipino';
-
-                return (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => changeLanguage(code)}
-                    className={`px-3 py-1.5 text-sm rounded-md border transition-colors ${
-                      isActive
-                        ? 'bg-primary-600 text-white border-primary-600'
-                        : 'bg-white text-gray-700 border-gray-300 hover:border-primary-500 hover:text-primary-700'
-                    }`}
-                  >
-                    {label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
         </div>
       </div>
     </nav>
