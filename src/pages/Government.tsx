@@ -10,6 +10,7 @@ import * as LucideIcons from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
+import StatsDashboard from '../components/government/StatsDashboard';
 import SEO from '../components/SEO';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
@@ -94,6 +95,9 @@ const Government: React.FC = () => {
 
       <Section className="mb-12">
         <Breadcrumbs className="mb-8" />
+
+        {/* Stats dashboard — only on reports-and-statistics category */}
+        {category === 'reports-and-statistics' && <StatsDashboard />}
 
         {/* Header — matches Transact Online / Services style */}
         <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
