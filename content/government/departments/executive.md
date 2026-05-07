@@ -1,61 +1,115 @@
-# Mayor and Vice Mayor — San Pablo City
+# Departments & Officials — San Pablo City
 
-**San Pablo City Hall**
-Mabini Extension, San Pablo City, Laguna 4000
-City Administrator's Office: **(049) 521-0307**
-City Information Office: **(049) 561-1483**
-Official Website: [www.sanpablocity.gov.ph](https://www.sanpablocity.gov.ph)
+The City Government of San Pablo, Laguna is a **1st Class Component City** serving **300,166 residents** across **80 barangays**. The executive branch is led by Mayor Arcadio "Najie" B. Gapangada Jr. (2025–2028).
 
 ---
 
-## Executive Leadership (2025–2028)
+## City Hall
 
-| Position | Name | Party | Votes |
-| -------- | ---- | ----- | ----- |
-| **City Mayor** | Hon. Arcadio "Najie" B. Gapangada Jr. | Reform PH | 70,822 |
-| **City Vice Mayor** | Hon. Justin G. Colago | Nacionalista Party | 66,289 |
+**Address:** Mabini Extension, San Pablo City, Laguna 4000
+**Main line:** (049) 562-0111
+**Website:** [sanpablocity.gov.ph](https://www.sanpablocity.gov.ph)
+**Office hours:** Monday – Friday, 8:00 AM – 5:00 PM (closed on public holidays)
 
-**About the Mayor:** Hon. Arcadio "Najie" B. Gapangada Jr. was elected as Mayor of San Pablo City during the **2025 National and Local Elections**, receiving **70,822 votes** (51.63%). A former barangay councilor of Barangay San Francisco and former Laguna provincial board member, Mayor Gapangada ended a two-decade political dynasty to begin a new era of governance for San Pablo City. The Mayor serves as the chief executive of the City Government of San Pablo, overseeing all city departments, programs, and development initiatives. His inaugural ceremony was held at the San Pablo City Central Gymnasium.
+---
 
-**About the Vice Mayor:** Hon. Justin G. Colago was re-elected as Vice Mayor during the **2025 National and Local Elections**, receiving **66,289 votes** (51.70%). The Vice Mayor presides over the **Sangguniang Panlungsod** (City Council) and assumes the responsibilities of Acting Mayor when the Mayor is unavailable.
+## City Mayor
+
+### Hon. Arcadio "Najie" B. Gapangada Jr.
+
+**Position:** City Mayor of San Pablo, Laguna
+**Term:** 2025 – 2028
+**Party:** Reform PH
+**Votes received:** 70,822 (51.63%)
+
+**Background**
+A former barangay councilor of Barangay San Francisco and former Laguna Provincial Board Member, Mayor Gapangada was elected as Mayor of San Pablo City in the 2025 National and Local Elections. He ended a two-decade political dynasty in San Pablo to begin a new chapter for the city. His inaugural ceremony was held at the **San Pablo City Central Gymnasium**.
+
+**Responsibilities**
+- Chief executive of the City Government of San Pablo
+- Oversees all city departments, programs, and development initiatives
+- Approves annual budget submitted to the Sangguniang Panlungsod
+- Signs ordinances, resolutions, and executive orders
+- Represents the city in regional, national, and international affairs
+
+**Contact**
+- Office of the Mayor — through City Hall main line: **(049) 562-0111**
+- City Administrator's Office: **(049) 521-0307**
+
+---
+
+## City Vice Mayor
+
+### Hon. Justin G. Colago
+
+**Position:** City Vice Mayor of San Pablo, Laguna
+**Term:** 2025 – 2028 (re-elected)
+**Party:** Nacionalista Party
+**Votes received:** 66,289 (51.70%)
+
+**Responsibilities**
+- Presides over the **Sangguniang Panlungsod** (City Council)
+- Assumes responsibilities of Acting Mayor when the Mayor is unavailable
+- Oversees legislative agenda and ordinance drafting
+- Represents the city in council and inter-agency meetings
+
+**Contact**
+- Office of the Vice Mayor — through City Hall main line: **(049) 562-0111**
 
 ---
 
 ## Congressional Representative
 
-**3rd District of Laguna:** Hon. Loreto S. Amante (Lakas-CMD)
+### Hon. Loreto S. Amante
+
+**Position:** Representative, 3rd District of Laguna (covers San Pablo City)
+**Party:** Lakas-CMD
+
+**Role:** Sponsors and votes on national legislation affecting San Pablo City; secures national budget allocations and infrastructure for the district.
 
 ---
 
-## Sangguniang Panlungsod (City Council) — 2025–2028 Term
+## Key Executive Offices
 
-| Rank | Member | Party | Votes |
-| ---- | ------ | ----- | ----- |
-| 1 | Hon. Carmela A. Acebedo | Nacionalista Party | 86,085 |
-| 2 | Hon. Barbie Diaz | Nacionalista Party | 81,183 |
-| 3 | Hon. Gel Adriano | Nacionalista Party | 61,628 |
-| 4 | Hon. John Edgar Adajar | NPC | 60,557 |
-| 5 | Hon. Leonardo Villanueva | Independent | 57,209 |
-| 6 | Hon. Dandi Medina | Nacionalista Party | 55,751 |
-| 7 | Hon. Richard Pavico | Nacionalista Party | 53,546 |
-| 8 | Hon. Ambo Amante | Nacionalista Party | 52,856 |
-| 9 | Hon. Konsi Dok Ticzon | Nacionalista Party | — |
-| 10 | Hon. Francis Nap Calatrava | Nacionalista Party | — |
-| 11 | Hon. Tibor Amante | Nacionalista Party | — |
-| 12 | Hon. Roberto Villanueva | Independent | — |
-
-*Vote counts for ranks 9–12 are from 100% precinct reporting per COMELEC Media Server, May 2025.*
+| Office | Phone | Role |
+|---|---|---|
+| **City Mayor's Office** | (049) 562-0111 | Chief executive office |
+| **Office of the Vice Mayor** | (049) 562-0111 | Council presiding office |
+| **City Administrator's Office** | (049) 521-0307 | Administrative coordination |
+| **City Information Office** | (049) 561-1483 | Press releases, public info |
+| **Records Office (FOI requests)** | (049) 562-1234 loc 205 | Document requests |
+| **City Hall Main Line** | (049) 562-0111 | General inquiries |
 
 ---
 
-## Office Contacts
+## Emergency Hotlines
 
-| Office | Phone |
-| ------ | ----- |
-| City Administrator's Office | (049) 521-0307 |
-| City Information Office | (049) 561-1483 |
-| CDRRMO (Disaster Risk Reduction) | (049) 800-0405 |
-| CDRRMO Emergency Hotline | 0998-540-7171 |
-| City Hall Main | (049) 562-1234 |
+| Service | Number |
+|---|---|
+| **National Emergency** | **911** |
+| **CDRRMO Emergency** | **0998 540 7171** |
+| **CDRRM Office** | **(049) 800-0405** |
+| **PNP San Pablo (Police)** | **(049) 562-8765** |
+| **BFP San Pablo (Fire)** | **(049) 562-4321** |
 
-For a complete directory of city departments and offices, see [City Departments and Local Offices](/government/departments/city-departments-and-local-offices).
+---
+
+## How to Reach the Mayor or Vice Mayor
+
+1. **In person** — Visit City Hall on Mabini Extension during office hours (Mon–Fri, 8 AM – 5 PM).
+2. **By phone** — Call the City Hall main line at **(049) 562-0111**.
+3. **By letter** — Address correspondence to the Office of the Mayor, San Pablo City Hall, Mabini Extension, San Pablo City, Laguna 4000.
+4. **For official press / public info** — Contact the **City Information Office at (049) 561-1483**.
+5. **For administrative concerns** — Contact the **City Administrator's Office at (049) 521-0307**.
+
+---
+
+## Related Pages
+
+- [Legislative (City Council)](legislative)
+- [Local Officials Directory](local-officials-directory)
+- [City Departments & Local Offices](city-departments-and-local-offices)
+- [City Health Office](city-health-office)
+- [CDRRMO](city-disaster-risk-reduction-and-management-office)
+
+*Sources: COMELEC Media Server (May 2025), Official City of San Pablo Website, Wikipedia 2025 Laguna Local Elections.*

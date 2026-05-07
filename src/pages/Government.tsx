@@ -1,7 +1,5 @@
 import Section from '../components/ui/Section';
 import { useParams, Link } from 'react-router-dom';
-import { Heading } from '../components/ui/Heading';
-import { Text } from '../components/ui/Text';
 import {
   governmentCategories,
   getCategorySubcategories,
@@ -9,12 +7,24 @@ import {
   type CategoryIndex,
 } from '../data/yamlLoader';
 import * as LucideIcons from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
 import SEO from '../components/SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
+
+// Color rotation for cards — matches OnlineServicesSection / Services design
+const CARD_ACCENTS = [
+  { badge: 'bg-blue-100 text-blue-700', iconBg: 'bg-blue-50 text-blue-600' },
+  { badge: 'bg-emerald-100 text-emerald-700', iconBg: 'bg-emerald-50 text-emerald-600' },
+  { badge: 'bg-orange-100 text-orange-700', iconBg: 'bg-orange-50 text-orange-600' },
+  { badge: 'bg-purple-100 text-purple-700', iconBg: 'bg-purple-50 text-purple-600' },
+  { badge: 'bg-cyan-100 text-cyan-700', iconBg: 'bg-cyan-50 text-cyan-600' },
+  { badge: 'bg-pink-100 text-pink-700', iconBg: 'bg-pink-50 text-pink-600' },
+  { badge: 'bg-amber-100 text-amber-700', iconBg: 'bg-amber-50 text-amber-600' },
+  { badge: 'bg-red-100 text-red-700', iconBg: 'bg-red-50 text-red-600' },
+];
 
 const Government: React.FC = () => {
   const { category } = useParams();
@@ -48,17 +58,18 @@ const Government: React.FC = () => {
     return (
       <>
         <SEO
-          title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
-          keywords="government services, public services, local government, civic services"
+          title="Government"
+          description={`All government information for the ${import.meta.env.VITE_GOVERNMENT_NAME} — departments, officials, council, and contacts.`}
+          keywords="government, public officials, local government, departments, contacts"
         />
         <GovernmentActivitySection
-          title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          title={`San Pablo City Government`}
+          description={`Departments, officials, council, and contact directory for the City Government of San Pablo, Laguna.`}
         />
       </>
     );
   }
+
   if (!categoryData) {
     return (
       <Section className="p-3 mb-12">
@@ -78,82 +89,105 @@ const Government: React.FC = () => {
       <SEO
         title={categoryData.category || category}
         description={categoryData.description}
-        keywords={`${categoryData.category}, government services, public services, local government`}
+        keywords={`${categoryData.category}, San Pablo City government, public officials, local government`}
       />
-      <Section className="p-3 mb-12">
+
+      <Section className="mb-12">
         <Breadcrumbs className="mb-8" />
-        <Icon className="h-8 w-8 mb-4 text-primary-600 rounded-md" />
-        <Heading>{categoryData.category || category}</Heading>
-        <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
+
+        {/* Header — matches Transact Online / Services style */}
+        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-700">
+              {Icon && <Icon className="h-3.5 w-3.5" />}
+              {categoryData.category || category}
+            </span>
+            <h1 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
+              {categoryData.category || category}
+            </h1>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">
+              {categoryData.description}
+            </p>
+          </div>
+          <Link
+            to="/government"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-primary-400 hover:text-primary-600"
+          >
+            All government
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
 
         {loading ? (
-          <div className="flex justify-center items-center p-8">
-            <Text>Loading services...</Text>
+          <div className="flex animate-pulse flex-col items-center justify-center gap-3 py-16">
+            <div className="h-3 w-32 rounded-full bg-gray-200" />
+            <p className="text-sm text-gray-400">Loading…</p>
+          </div>
+        ) : subcategories.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-10 text-center">
+            <p className="text-sm text-gray-500">
+              No pages have been published yet for this category. Please check back soon.
+            </p>
           </div>
         ) : (
           <>
             {categoryIndex.title && (
-              <Heading level={3}>{categoryIndex.title}</Heading>
+              <h2 className="mb-2 text-xl font-bold text-gray-900">
+                {categoryIndex.title}
+              </h2>
             )}
             {categoryIndex.description && (
-              <Text className="text-gray-600 mb-4">
+              <p className="mb-6 max-w-2xl text-sm text-gray-500">
                 {categoryIndex.description}
-              </Text>
+              </p>
             )}
-            {categoryIndex.layout === 'grid' ? (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {subcategories.map(subcategory => (
+
+            {/* Cards — matches Services style */}
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {subcategories.map((subcategory, idx) => {
+                const accent = CARD_ACCENTS[idx % CARD_ACCENTS.length];
+                return (
                   <Link
-                    key={subcategory.slug}
-                    to={`/government/${category}/${subcategory.slug}`}
+                    key={subcategory.slug ?? subcategory.name}
+                    to={`/government/${category}/${subcategory.slug ?? ''}`}
+                    className="group flex flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary-200 hover:shadow-md"
                   >
-                    <Card
-                      hoverable
-                      className="h-full border-t-4 border-primary-500"
-                    >
-                      <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
-                          {subcategory.name}
-                        </h4>
-                        {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </p>
+                    {/* Icon + badge row */}
+                    <div className="mb-3 flex items-center justify-between">
+                      <span
+                        className={`flex h-10 w-10 items-center justify-center rounded-lg ${accent.iconBg}`}
+                        aria-hidden="true"
+                      >
+                        {Icon ? (
+                          <Icon className="h-5 w-5" />
+                        ) : (
+                          <LucideIcons.Building2 className="h-5 w-5" />
                         )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || category}
-                        </span>
-                      </CardContent>
-                    </Card>
+                      </span>
+                      <span
+                        className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${accent.badge}`}
+                      >
+                        {categoryData.category}
+                      </span>
+                    </div>
+
+                    <h3 className="text-sm font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+                      {subcategory.name}
+                    </h3>
+                    {subcategory.description && (
+                      <p className="mt-1.5 flex-1 text-xs leading-relaxed text-gray-500">
+                        {subcategory.description}
+                      </p>
+                    )}
+
+                    <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-primary-600">
+                      View details
+                      <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                    </div>
                   </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
-                    to={`/government/${category}/${subcategory.slug}`}
-                  >
-                    <Card hoverable className="mb-4">
-                      <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
-                          {subcategory.name}
-                        </h4>
-                        {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </p>
-                        )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || category}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            )}
+                );
+              })}
+            </div>
           </>
         )}
       </Section>

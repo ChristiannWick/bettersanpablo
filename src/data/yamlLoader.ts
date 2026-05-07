@@ -44,7 +44,7 @@ import disasterPreparednessIndex from '../../content/services/disaster-preparedn
 import housingLandUseIndex from '../../content/services/housing-land-use/index.yaml?raw';
 import tourismIndex from '../../content/services/tourism/index.yaml?raw';
 import governmentDepartmentsIndex from '../../content/government/departments/index.yaml?raw';
-import governmentDepartmentsLegislativeIndex from '../../content/government/departments/legislative/index.yaml?raw';
+// Legislative now renders as a single markdown page (legislative.md) — no nested index needed.
 import governmentTransparencyDocumentsIndex from '../../content/government/transparency-documents/index.yaml?raw';
 import governmentReportsAndStatisticsIndex from '../../content/government/reports-and-statistics/index.yaml?raw';
 import governmentNewsIndex from '../../content/government/news/index.yaml?raw';
@@ -65,7 +65,6 @@ const categoryIndexMap: { [key: string]: string } = {
   'housing-land-use': housingLandUseIndex,
   tourism: tourismIndex,
   departments: governmentDepartmentsIndex,
-  legislative: governmentDepartmentsLegislativeIndex,
   'transparency-documents': governmentTransparencyDocumentsIndex,
   'reports-and-statistics': governmentReportsAndStatisticsIndex,
   news: governmentNewsIndex,

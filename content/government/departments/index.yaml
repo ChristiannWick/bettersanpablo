@@ -2,18 +2,18 @@
 # This file contains the pages/governments available under Departments.
 
 pages:
-  - name: 'Executive'
+  - name: 'Departments & Officials'
     slug: 'executive'
-    description: "Find out about the Mayor and Vice Mayor of San Pablo City, including current roles, City Hall offices, emergency hotlines, and contact information."
-  - name: 'Legislative'
+    description: "Mayor Arcadio 'Najie' B. Gapangada Jr., Vice Mayor Justin G. Colago, and key executive officials of San Pablo City. Contact numbers, office addresses, and responsibilities."
+  - name: 'Legislative (City Council)'
     slug: 'legislative'
-    description: 'As of the 2025-2028 term, the Sangguniang Panlungsod of San Pablo City has 10 elected councilors, with the Vice Mayor as the presiding officer of the council.'
-  - name: 'City Departments & Local Offices'
-    slug: 'city-departments-and-local-offices'
-    description: 'Overview of city departments, local service offices, and how San Pablo residents can access public programs and assistance.'
+    description: 'The Sangguniang Panlungsod (City Council) of San Pablo City for 2025-2028 — 10 elected councilors presided over by Vice Mayor Justin G. Colago. Names, parties, and contact details.'
   - name: 'Local Officials Directory'
     slug: 'local-officials-directory'
-    description: 'Key elected officials and barangay-level leadership serving San Pablo City for the current term.'
+    description: 'Complete directory of elected officials, department heads, and key office contacts for San Pablo City residents — who to call for what concern.'
+  - name: 'City Departments & Local Offices'
+    slug: 'city-departments-and-local-offices'
+    description: 'Overview of all city departments, local service offices, and how San Pablo residents can access public programs and assistance.'
   - name: 'City Health Office (CHO)'
     slug: 'city-health-office'
     description: 'Public health programs, vaccinations, maternal care, disease surveillance, and health services across San Pablo City.'
