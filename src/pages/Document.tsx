@@ -23,6 +23,7 @@ import {
   type CategoryIndex,
 } from '../data/yamlLoader';
 import SEO from '../components/SEO';
+import StatsPageCharts from '../components/government/StatsPageCharts';
 
 interface DocumentProps {
   theme?: string;
@@ -214,6 +215,12 @@ export default function Document({
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" items={breadcrumbs} />
+
+        {/* Inject relevant charts at top of statistics detail pages */}
+        {category === 'reports-and-statistics' && documentSlug && (
+          <StatsPageCharts documentSlug={documentSlug} />
+        )}
+
         <Card className="mb-8 markdown-content">
           <CardHeader>
             {markdownContent.description && (
