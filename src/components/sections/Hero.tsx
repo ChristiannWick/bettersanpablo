@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useRef, useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, ArrowRight, X } from 'lucide-react';
+import { Search, ArrowRight, X, Briefcase, HeartPulse, Trash2, GraduationCap } from 'lucide-react';
 import useInView from '../../hooks/useInView';
 import { serviceCategories, governmentCategories } from '../../data/yamlLoader';
 import { SAN_PABLO_QUICK_SERVICES } from '../../data/homeContent';
@@ -282,20 +282,25 @@ export default function Hero({
                 <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Popular Services</p>
                 <div className="mt-3 grid grid-cols-2 gap-3">
                   {[
-                    { icon: '🏢', label: 'Business & Livelihood', href: '/services/business' },
-                    { icon: '❤️', label: 'Health Services', href: '/services/health-services' },
-                    { icon: '🗑️', label: 'Waste Disposal', href: '/services/environment' },
-                    { icon: '🎓', label: 'Education', href: '/services/education' },
-                  ].map(item => (
-                    <Link
-                      key={item.label}
-                      to={item.href}
-                      className="flex flex-col items-center gap-2 rounded-lg border border-gray-200 px-3 py-3 text-center transition hover:border-blue-300 hover:bg-blue-50"
-                    >
-                      <span className="text-2xl">{item.icon}</span>
-                      <span className="text-xs font-medium text-gray-700">{item.label}</span>
-                    </Link>
-                  ))}
+                    { Icon: Briefcase, label: 'Business & Livelihood', href: '/services/business', color: 'text-blue-600 bg-blue-50' },
+                    { Icon: HeartPulse, label: 'Health Services', href: '/services/health-services', color: 'text-rose-600 bg-rose-50' },
+                    { Icon: Trash2, label: 'Waste Disposal', href: '/services/environment', color: 'text-emerald-600 bg-emerald-50' },
+                    { Icon: GraduationCap, label: 'Education', href: '/services/education', color: 'text-amber-600 bg-amber-50' },
+                  ].map(item => {
+                    const ItemIcon = item.Icon;
+                    return (
+                      <Link
+                        key={item.label}
+                        to={item.href}
+                        className="group flex flex-col items-center gap-2 rounded-lg border border-gray-200 px-3 py-3 text-center transition hover:border-blue-300 hover:bg-blue-50/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                      >
+                        <span className={`flex h-9 w-9 items-center justify-center rounded-lg ${item.color}`}>
+                          <ItemIcon className="h-5 w-5" />
+                        </span>
+                        <span className="text-xs font-medium text-gray-700 group-hover:text-blue-700">{item.label}</span>
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
 

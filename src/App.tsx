@@ -4,6 +4,8 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import ScrollToTop from './components/ui/ScrollToTop';
+import SkipToContent from './components/ui/SkipToContent';
+import BackToTop from './components/ui/BackToTop';
 import Services from './pages/Services';
 import Document from './pages/Document';
 import Government from './pages/Government';
@@ -21,32 +23,36 @@ function App() {
       <Router>
         <NuqsAdapter>
           <div className="min-h-screen flex flex-col">
+            <SkipToContent />
             <Navbar />
             <ScrollToTop />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services/:category" element={<Services />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/search" element={<SearchPage />} />
-              <Route path="/sitemap" element={<Sitemap />} />
-              <Route path="/accessibility" element={<Accessibility />} />
-              <Route path="/philippines/hotlines" element={<Hotlines />} />
-              <Route path="/philippines/holidays" element={<Holidays />} />
-              <Route
-                path="/services/:category/:documentSlug"
-                element={<Document categoryType="service" />}
-              />
-              <Route path="/government/:category" element={<Government />} />
-              <Route path="/government" element={<Government />} />
-              <Route
-                path="/government/:category/:documentSlug"
-                element={<Document categoryType="government" />}
-              />
-              <Route path="/:lang/:documentSlug" element={<Document />} />
-              <Route path="/:documentSlug" element={<Document />} />
-            </Routes>
+            <div id="main-content" className="flex flex-1 flex-col">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/services/:category" element={<Services />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/search" element={<SearchPage />} />
+                <Route path="/sitemap" element={<Sitemap />} />
+                <Route path="/accessibility" element={<Accessibility />} />
+                <Route path="/philippines/hotlines" element={<Hotlines />} />
+                <Route path="/philippines/holidays" element={<Holidays />} />
+                <Route
+                  path="/services/:category/:documentSlug"
+                  element={<Document categoryType="service" />}
+                />
+                <Route path="/government/:category" element={<Government />} />
+                <Route path="/government" element={<Government />} />
+                <Route
+                  path="/government/:category/:documentSlug"
+                  element={<Document categoryType="government" />}
+                />
+                <Route path="/:lang/:documentSlug" element={<Document />} />
+                <Route path="/:documentSlug" element={<Document />} />
+              </Routes>
+            </div>
             <Footer />
+            <BackToTop />
           </div>
         </NuqsAdapter>
       </Router>

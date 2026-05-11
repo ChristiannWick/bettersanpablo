@@ -142,3 +142,60 @@
 .sticky-table tbody tr:hover td:first-child {
   background-color: #f3f4f6;
 }
+
+/* ── Print styles ──────────────────────────────────────────────────────
+   Citizens may want to print hotlines, contacts, or service guides.
+   Hide nav, weather, hero blobs, animations, etc. Keep content readable. */
+@media print {
+  /* Hide non-essential elements */
+  nav.bg-white,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Remove backgrounds for ink-friendly printing */
+  body,
+  section,
+  .bg-gradient-to-br,
+  .bg-blue-950,
+  .bg-blue-800 {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Make sure text is black for legibility */
+  *,
+  h1, h2, h3, h4, h5, h6,
+  p, li, td, th, span, a {
+    color: black !important;
+  }
+
+  /* Ensure links are recognizable in print */
+  a {
+    text-decoration: underline;
+  }
+
+  /* Avoid breaking inside cards */
+  .rounded-2xl, .rounded-lg, .rounded-xl, table {
+    page-break-inside: avoid;
+  }
+
+  /* Smaller margins for print */
+  @page {
+    margin: 1.5cm;
+  }
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
