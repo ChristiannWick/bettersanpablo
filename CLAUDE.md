@@ -68,6 +68,7 @@ React 19 · TypeScript · Vite · React Router · Tailwind CSS · i18next · YAM
 | `/accessibility` | `Accessibility` | WCAG 2.1 AA statement |
 | `/philippines/hotlines` | `Hotlines` | Emergency + local numbers |
 | `/philippines/holidays` | `Holidays` | 2025 PH + local holidays |
+| `/attractions` | `Attractions` | Tourism guide — Seven Lakes + heritage + festivals |
 | `/:lang/:documentSlug` | `Document` | Multilingual doc view |
 | `/:documentSlug` | `Document` | Catch-all doc view |
 
@@ -75,18 +76,22 @@ React 19 · TypeScript · Vite · React Router · Tailwind CSS · i18next · YAM
 
 ## Home Page — `src/pages/Home.tsx`
 
-Sections render in this fixed order (lazy-loaded via `Suspense`):
+Sections render in this fixed order (**eagerly imported** — no lazy loading
+to avoid skeleton flash on scroll, matching BetterDasmariñas pattern):
 
-1. `HeroSection` — Headline, CTA buttons, quick chips, live search dropdown
-2. `ServicesSection` (`variant="quick"`) — Top 6 quick-access service cards
-3. `GovernmentActivitySection` — Government category cards grid
-4. `HighlightsSection` — City photo showcase carousel
-5. `StatsSection` — 6 key city statistics
-6. `AboutSection` — Two-column: text + quick-fact cards
-7. `LeadershipSection` — Mayor + Vice Mayor (navigate to `/government/departments/executive`)
-8. `PlacesSection` — Top 4 tourist spots with images
-9. `HistorySection` — Timeline of 8 milestones (1586–2025)
-10. `ContactSection` — City Hall phone, address, hours, official website cards
+1. `HeroSection` — Two-column hero with title/CTAs (left) + Search Services card (right)
+2. `OnlineServicesSection` — 4 official city portals (Real Property Tax, BPLO, eLGU, SPCWD)
+3. `HighlightsSection` — City photo showcase carousel
+4. `StatsSection` — 6 key city statistics
+5. `AboutSection` — Two-column: text + quick-fact cards
+6. `LeadershipSection` — Mayor + Vice Mayor cards
+7. `PlacesSection` — Top 4 tourist spots with images, "View all attractions →" links to `/attractions`
+8. `HistorySection` — Timeline of 8 milestones (1586–2025)
+9. `ContactSection` — City Hall phone, address, hours, official website cards
+
+The old `ServicesSection (variant="quick")` and `GovernmentActivitySection` were
+removed because the hero now contains popular services and the government
+activity items lacked content.
 
 All data lives in **`src/data/homeContent.ts`**. Edit that file to update any section content.
 
@@ -317,6 +322,92 @@ All content must come from verified sources. Accepted references:
 - City Hall main line: **(049) 562-0111**
 - PNP: **(049) 562-8765** · BFP: **(049) 562-4321** · CDRRMO: **0998 540 7171**
 - FY 2022 revenue: **₱1.96 billion** · Expenditure: **₱1.747 billion** (COA)
+
+---
+
+## Document Page Hero — `src/pages/Document.tsx`
+
+Every service or government detail page renders an Attractions-style hero
+above the markdown content:
+
+- Coloured pill badge: green for services, blue for government
+- Section + category label (e.g. "SERVICES · BUSINESS AND LIVELIHOOD")
+- Lucide icon from the parent category's `icon` field in `services.yaml` /
+  `government.yaml`
+- H1 title pulled from the markdown frontmatter (with any "— San Pablo City"
+  suffix stripped)
+- Lead description paragraph
+
+The markdown's own H1 is hidden (`sr-only`) to avoid duplication. H2
+headings get a coloured left bar (`border-l-4 border-primary-500`) so
+the 5 W's & H sections of services pages are easy to scan.
+
+---
+
+## Statistics Dashboard — `src/components/government/`
+
+`StatsDashboard.tsx` exports individual chart components and a full dashboard:
+
+- `KeyFactsCards` — 8 stat cards (Population, Land Area, Barangays, Revenue, etc.)
+- `PopulationGrowthChart` — PSA census line chart (2000–2024)
+- `BudgetAllocationChart` — FY 2022 COA donut chart
+- `RevenueSourcesChart` — FY 2022 horizontal bar (NTA, LBT, RPT, etc.)
+- `SevenLakesChart` — Lake area comparison
+
+`StatsPageCharts.tsx` injects the right charts at the top of each
+Reports & Statistics detail page based on the documentSlug. Built with
+**recharts** (installed dependency).
+
+---
+
+## Tourism — `src/pages/Attractions.tsx`
+
+Dedicated `/attractions` page (linked from `PlacesSection`'s "View all
+attractions") with:
+
+- 4 quick-fact cards (best months, transport, hours)
+- All 7 lakes detailed (barangay, area, highlights, activities, fees)
+- 6 heritage sites (Cathedral, Museo, Mt. Banahaw, Hacienda Escudero, etc.)
+- Annual festivals (Coco Festival Jan 9–15, Holy Week, Charter Day)
+- How to get there (bus + car routes)
+- Tap-to-call emergency hotlines panel
+- City Tourism Office contact card
+
+---
+
+## Accessibility & UX Helpers
+
+- `SkipToContent.tsx` — visually hidden link, appears on Tab focus,
+  jumps to `#main-content` wrapper in `App.tsx`
+- `BackToTop.tsx` — floating circle button after 600px scroll, smooth
+  scrolls to top, hidden in print
+- `index.css` — print stylesheet hides nav/footer/animations; reduced
+  motion preference disables marquees and lift animations
+
+---
+
+## Navbar Language Toggle — `src/components/layout/Navbar.tsx`
+
+Compact `EN | FIL` segmented toggle:
+
+- Visible on desktop (next to Search) AND mobile/tablet (next to hamburger)
+- No need to open the hamburger menu to switch language
+- Active state highlighted with primary blue background
+- `aria-pressed` and `aria-label` for screen readers
+
+---
+
+## Government Dropdown — `src/data/navigation.ts`
+
+The Government dropdown is **curated** (hardcoded) to show 3 priority items:
+
+- Departments & Officials → `/government/departments/executive`
+- Legislative (City Council) → `/government/departments/legislative`
+- Local Officials Directory → `/government/departments/local-officials-directory`
+
+Office pages (CHO, BPLO, CSWDO, CDRRMO, City Departments & Local Offices)
+remain accessible as cards on `/government/departments` because they hold
+unique San Pablo specifics that complement the Services pages.
 
 ---
 

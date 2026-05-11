@@ -37,9 +37,11 @@ export interface TypographyTheme {
 export const defaultTheme: TypographyTheme = {
   name: 'default',
   components: {
-    h1: 'text-3xl font-bold mb-6 mt-2',
-    h2: 'text-2xl font-semibold mb-4 mt-10',
-    h3: 'text-2xl font-medium text-gray-800 mb-4 mt-6 ',
+    // H1 is hidden — the page hero already renders the title.
+    h1: 'sr-only',
+    // H2 gets a colored left bar so 5 W's & H sections are easy to scan.
+    h2: 'text-xl sm:text-2xl font-bold text-gray-900 mb-4 mt-10 pl-4 border-l-4 border-primary-500',
+    h3: 'text-lg sm:text-xl font-semibold text-gray-800 mb-3 mt-6',
     h4: 'text-xl text-gray-800 mb-3 mt-5 ',
     h5: 'text-lg text-gray-800 mb-3 mt-4 ',
     h6: 'text-base text-gray-800 mb-3 mt-4 ',
