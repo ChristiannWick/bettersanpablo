@@ -4,7 +4,6 @@ import OnlineServicesSection from '../components/home/OnlineServicesSection';
 import ContactSection from '../components/home/ContactSection';
 import SEO from '../components/SEO';
 
-const GovernmentActivitySection = lazy(() => import('../components/home/GovernmentActivitySection'));
 const HighlightsSection = lazy(() => import('../components/home/HighlightsSection'));
 const StatsSection = lazy(() => import('../components/home/StatsSection'));
 const AboutSection = lazy(() => import('../components/home/AboutSection'));
@@ -36,11 +35,6 @@ const Home: React.FC = () => {
 
         {/* Official city online portals — sourced from sanpablocity.gov.ph */}
         <OnlineServicesSection />
-
-        {/* Government activity overview */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <GovernmentActivitySection />
-        </Suspense>
 
         {/* Visual city showcase */}
         <Suspense fallback={<HomeSectionLoader />}>
