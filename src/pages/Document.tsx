@@ -5,6 +5,7 @@ import { Text } from '../components/ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import * as LucideIcons from 'lucide-react';
@@ -44,6 +45,7 @@ export default function Document({
   categoryType,
 }: DocumentProps) {
   const { documentSlug, category } = useParams();
+  const { i18n } = useTranslation();
   const [markdownContent, setMarkdownContent] =
     useState<MarkdownContent | null>(null);
   const [nestedIndex, setNestedIndex] = useState<CategoryIndex | null>(null);
@@ -138,7 +140,7 @@ export default function Document({
     };
 
     loadContent();
-  }, [documentSlug, category, categoryType]);
+  }, [documentSlug, category, categoryType, i18n.language]);
 
   if (loading) {
     return (

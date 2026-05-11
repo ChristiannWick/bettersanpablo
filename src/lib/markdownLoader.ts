@@ -25,8 +25,14 @@ export interface MarkdownContent {
 
 /**
  * Loads markdown content from the appropriate content directory.
+ *
+ * Filipino mode (any i18nextLng starting with "fil"):
+ *  1. Try `{slug}-fil.md`
+ *  2. Fallback to `{slug}.md` (English) if Filipino version is missing
+ *
  * Also attempts to load a companion JSON file (same slug) for template
  * variable substitution and structured data.
+ *
  * @param documentSlug - The document slug (filename without .md extension)
  * @param categorySlug - The category slug (parent directory)
  * @param categoryType - Whether this is a 'service' or 'government' document
@@ -39,6 +45,13 @@ export async function loadMarkdownContent(
   try {
     const dir = categoryType === 'government' ? 'government' : 'services';
 
+    // Detect language preference (set by i18next)
+    const lang =
+      typeof window !== 'undefined'
+        ? (localStorage.getItem('i18nextLng') ?? 'en')
+        : 'en';
+    const isFilipino = lang.toLowerCase().startsWith('fil');
+
     // Try to load companion JSON for template data
     let data: Record<string, unknown> = {};
     try {
@@ -50,9 +63,25 @@ export async function loadMarkdownContent(
       // No companion JSON — that's fine
     }
 
-    const module = await import(
-      `../../content/${dir}/${categorySlug}/${documentSlug}.md?raw`
-    );
+    // Try Filipino version first if user selected Filipino, else English
+    let module: { default: string } | undefined;
+    if (isFilipino) {
+      try {
+        module = await import(
+          `../../content/${dir}/${categorySlug}/${documentSlug}-fil.md?raw`
+        );
+      } catch {
+        // Fallback to English if Filipino translation missing
+        module = undefined;
+      }
+    }
+
+    if (!module) {
+      module = await import(
+        `../../content/${dir}/${categorySlug}/${documentSlug}.md?raw`
+      );
+    }
+
     const content = interpolate(module.default, data);
 
     const titleMatch = content.match(/^#\s+(.+)$/m);
