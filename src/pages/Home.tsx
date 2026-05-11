@@ -1,25 +1,13 @@
-import { Suspense, lazy } from 'react';
 import HeroSection from '../components/home/HeroSection';
 import OnlineServicesSection from '../components/home/OnlineServicesSection';
 import ContactSection from '../components/home/ContactSection';
+import HighlightsSection from '../components/home/HighlightsSection';
+import StatsSection from '../components/home/StatsSection';
+import AboutSection from '../components/home/AboutSection';
+import LeadershipSection from '../components/home/LeadershipSection';
+import PlacesSection from '../components/home/PlacesSection';
+import HistorySection from '../components/home/HistorySection';
 import SEO from '../components/SEO';
-
-const HighlightsSection = lazy(() => import('../components/home/HighlightsSection'));
-const StatsSection = lazy(() => import('../components/home/StatsSection'));
-const AboutSection = lazy(() => import('../components/home/AboutSection'));
-const LeadershipSection = lazy(() => import('../components/home/LeadershipSection'));
-const PlacesSection = lazy(() => import('../components/home/PlacesSection'));
-const HistorySection = lazy(() => import('../components/home/HistorySection'));
-
-const HomeSectionLoader = () => (
-  <section className="py-12">
-    <div className="container mx-auto px-4">
-      <div className="h-8 w-56 animate-pulse rounded bg-gray-200" />
-      <div className="mt-4 h-4 w-full max-w-3xl animate-pulse rounded bg-gray-200" />
-      <div className="mt-2 h-4 w-11/12 max-w-2xl animate-pulse rounded bg-gray-200" />
-    </div>
-  </section>
-);
 
 const Home: React.FC = () => {
   return (
@@ -37,34 +25,22 @@ const Home: React.FC = () => {
         <OnlineServicesSection />
 
         {/* Visual city showcase */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <HighlightsSection />
-        </Suspense>
+        <HighlightsSection />
 
         {/* Key city statistics */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <StatsSection />
-        </Suspense>
+        <StatsSection />
 
         {/* About the city */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <AboutSection />
-        </Suspense>
+        <AboutSection />
 
         {/* City leadership */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <LeadershipSection />
-        </Suspense>
+        <LeadershipSection />
 
         {/* Top places */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <PlacesSection />
-        </Suspense>
+        <PlacesSection />
 
         {/* History timeline */}
-        <Suspense fallback={<HomeSectionLoader />}>
-          <HistorySection />
-        </Suspense>
+        <HistorySection />
 
         {/* Contact city hall */}
         <ContactSection />
