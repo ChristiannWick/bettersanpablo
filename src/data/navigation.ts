@@ -17,12 +17,8 @@ interface Category {
   subcategories: Subcategory[];
 }
 
-// Slugs that appear as separate top-level nav items — exclude from Government dropdown
-const GOV_NAV_EXCLUDED = new Set([
-  'transparency-documents',    // Has its own "Transparency" top-level nav item
-  'reports-and-statistics',    // Has its own "Statistics" top-level nav item
-  'public-consultations',      // Optional: exclude if it should be separate
-]);
+// govData is still used elsewhere; suppress unused warning via underscore.
+void govData;
 
 export const mainNavigation: NavigationItem[] = [
   {
@@ -36,12 +32,14 @@ export const mainNavigation: NavigationItem[] = [
   {
     label: 'Government',
     href: '/government/departments',
-    children: (govData.categories as Category[])
-      .filter(cat => !GOV_NAV_EXCLUDED.has(cat.slug))
-      .map(cat => ({
-        label: cat.category,
-        href: `/government/${cat.slug}`,
-      })),
+    // Curated dropdown — only the 3 priority pages.
+    // Office pages (CHO, BPLO, CSWDO, CDRRMO, etc.) remain accessible
+    // as cards on /government/departments.
+    children: [
+      { label: 'Departments & Officials', href: '/government/departments/executive' },
+      { label: 'Legislative (City Council)', href: '/government/departments/legislative' },
+      { label: 'Local Officials Directory', href: '/government/departments/local-officials-directory' },
+    ],
   },
   {
     label: 'Transparency',
