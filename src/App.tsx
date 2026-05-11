@@ -15,6 +15,7 @@ import Sitemap from './pages/Sitemap';
 import Accessibility from './pages/Accessibility';
 import Hotlines from './pages/Hotlines';
 import Holidays from './pages/Holidays';
+import Attractions from './pages/Attractions';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                 <Route path="/accessibility" element={<Accessibility />} />
                 <Route path="/philippines/hotlines" element={<Hotlines />} />
                 <Route path="/philippines/holidays" element={<Holidays />} />
+                <Route path="/attractions" element={<Attractions />} />
                 <Route
                   path="/services/:category/:documentSlug"
                   element={<Document categoryType="service" />}
