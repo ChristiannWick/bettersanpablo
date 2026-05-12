@@ -82,6 +82,10 @@ export async function loadMarkdownContent(
       );
     }
 
+    if (!module) {
+      throw new Error(`Content not found: ${documentSlug}`);
+    }
+
     const content = interpolate(module.default, data);
 
     const titleMatch = content.match(/^#\s+(.+)$/m);

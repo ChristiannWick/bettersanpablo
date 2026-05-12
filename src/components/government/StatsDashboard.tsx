@@ -211,7 +211,7 @@ export function PopulationGrowthChart() {
           />
           <Tooltip
             contentStyle={tooltipStyle}
-            formatter={(v: number) => v.toLocaleString()}
+            formatter={(v) => Number(v).toLocaleString()}
           />
           <Line
             type="monotone"
@@ -253,7 +253,7 @@ export function BudgetAllocationChart() {
           </Pie>
           <Tooltip
             contentStyle={tooltipStyle}
-            formatter={(v: number) => `₱${v}M`}
+            formatter={(v) => `₱${v}M`}
           />
           <Legend
             verticalAlign="bottom"
@@ -291,7 +291,7 @@ export function RevenueSourcesChart() {
           />
           <Tooltip
             contentStyle={tooltipStyle}
-            formatter={(v: number) => `₱${v}M`}
+            formatter={(v) => `₱${v}M`}
           />
           <Bar dataKey="value" radius={[0, 4, 4, 0]}>
             {REVENUE_SOURCES.map((entry, idx) => (
@@ -322,7 +322,7 @@ export function SevenLakesChart() {
           />
           <Tooltip
             contentStyle={tooltipStyle}
-            formatter={(v: number) => `${v} hectares`}
+            formatter={(v) => `${v} hectares`}
           />
           <Bar dataKey="area" fill="#06b6d4" radius={[4, 4, 0, 0]} />
         </BarChart>
