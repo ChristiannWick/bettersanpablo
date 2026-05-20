@@ -143,6 +143,36 @@
   background-color: #f3f4f6;
 }
 
+/* ── Emergency hotline marquee ────────────────────────────────────────
+   CSS-driven scroll so it stays in sync even when the tab is hidden,
+   throttled, or restored. Pauses on hover/focus so users can click
+   tap-to-call links. The track contains two copies of the content;
+   translating -50% creates a seamless loop. */
+.marquee {
+  position: relative;
+}
+.marquee-track {
+  animation: marquee-scroll 40s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
 /* ── Print styles ──────────────────────────────────────────────────────
    Citizens may want to print hotlines, contacts, or service guides.
    Hide nav, weather, hero blobs, animations, etc. Keep content readable. */

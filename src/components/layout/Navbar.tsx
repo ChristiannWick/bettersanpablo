@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   X,
   Menu,
@@ -150,65 +150,18 @@ const Navbar: React.FC = () => {
 
   const weatherLabel = getWeatherLabel(weather.weatherCode);
 
-  // Marquee (auto-scroll) refs and logic for emergency hotlines
-  const marqueeRef = useRef<HTMLDivElement | null>(null);
-  const marqueePauseRef = useRef(false);
-
-  useEffect(() => {
-    const el = marqueeRef.current;
-    if (!el) return;
-
-    let rafId = 0;
-    let lastTime = performance.now();
-    const speed = 60; // pixels per second
-
-    const step = (time: number) => {
-      if (!el) return;
-      if (marqueePauseRef.current) {
-        lastTime = time;
-        rafId = requestAnimationFrame(step);
-        return;
-      }
-
-      const delta = time - lastTime;
-      lastTime = time;
-
-      // If content is not wide enough to scroll, skip movement
-      if (el.scrollWidth <= el.clientWidth) {
-        rafId = requestAnimationFrame(step);
-        return;
-      }
-
-      el.scrollLeft += (speed * delta) / 1000;
-
-      // When scrolled half (we duplicate content), wrap around
-      if (el.scrollLeft >= el.scrollWidth / 2) {
-        el.scrollLeft -= el.scrollWidth / 2;
-      }
-
-      rafId = requestAnimationFrame(step);
-    };
-
-    rafId = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(rafId);
-  }, []);
+  // Marquee uses pure CSS animation (see index.css `.marquee-track`).
+  // Pure CSS is more reliable than a JS rAF loop because it doesn't
+  // accumulate stale time deltas when the tab is hidden.
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
-      {/* Emergency hotline bar (auto-scrolling marquee) */}
+      {/* Emergency hotline bar (auto-scrolling marquee — CSS-driven) */}
       <div className="bg-red-700 text-white">
         <div className="container mx-auto px-4 py-2.5">
           <div className="flex items-center">
-            <div
-              ref={marqueeRef}
-              className="w-full overflow-hidden"
-              onMouseEnter={() => (marqueePauseRef.current = true)}
-              onMouseLeave={() => (marqueePauseRef.current = false)}
-              tabIndex={0}
-              onFocus={() => (marqueePauseRef.current = true)}
-              onBlur={() => (marqueePauseRef.current = false)}
-            >
-              <div className="inline-flex items-center gap-6 whitespace-nowrap">
+            <div className="marquee w-full overflow-hidden">
+              <div className="marquee-track inline-flex items-center gap-6 whitespace-nowrap">
                 <div className="inline-flex items-center gap-3">
                   <span className="inline-flex items-center font-semibold uppercase tracking-wide shrink-0">
                     <Phone className="h-3.5 w-3.5 mr-1.5" />
