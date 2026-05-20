@@ -275,11 +275,39 @@ Always use these instead of raw HTML:
 
 ## Internationalization
 
+The site is **fully bilingual** end-to-end (UI + content).
+
+### UI chrome (navbar, buttons, labels)
+
 - i18next + `HttpBackend` → translation files in `public/locales/{lang}/common.json`
 - Detection order: `localStorage` → `navigator` → `htmlTag`
 - Fallback language: `en`
 - Supported languages defined in `src/types/index.ts` → `LanguageType`
-- Active translations: `en` (complete) · `fil` (partial)
+- Active translations: `en` (complete) · `fil` (complete)
+
+### Markdown content (`content/services/` and `content/government/`)
+
+Every markdown page has a Filipino companion suffixed `-fil.md`:
+
+```
+content/services/health-services/
+  get-free-check-ups-basic-medicines-and-vaccines.md       ← English
+  get-free-check-ups-basic-medicines-and-vaccines-fil.md   ← Filipino
+```
+
+`src/lib/markdownLoader.ts` reads `localStorage.i18nextLng`. When it starts
+with `fil`, the loader tries `{slug}-fil.md` first and falls back to the
+English version if missing. `Document.tsx` includes `i18n.language` in its
+`useEffect` deps so the page re-fetches on language toggle.
+
+**All 67 content pages are translated**: 41 service pages across 11 categories
++ 26 government pages across 6 categories.
+
+### Compact EN | FIL toggle
+
+The `EN | FIL` segmented toggle (`Navbar.tsx`) is visible on every breakpoint
+— desktop next to Search, mobile/tablet next to the hamburger button — so
+users can switch language without opening the menu.
 
 ---
 
@@ -425,8 +453,23 @@ VITE_GOVERNMENT_NAME=   # Displayed city name (e.g. "San Pablo City")
 - [ ] Interactive Leaflet.js city map on home page
 - [ ] DTI CMCI / business climate profile page
 - [ ] Infrastructure projects tracker page
-- [ ] Filipino (`fil`) translation completion — `public/locales/fil/common.json`
 - [ ] Self-hosted `/api/visits` counter (replaces third-party countapi.xyz)
 - [ ] Privacy Policy (`/privacy`) and Terms of Use (`/terms`) pages
 - [ ] Community Discord link (`/discord` is currently a placeholder)
 - [ ] Barangay-level pages (individual barangay profiles)
+- [x] **Filipino (`fil`) translation — DONE** (67 markdown files + UI chrome)
+
+---
+
+## Recent Notable Changes
+
+### Filipino bilingual completion (this release)
+- Translated all 67 markdown content pages to Filipino (`-fil.md` companions)
+- `markdownLoader.ts` is language-aware with English fallback
+- Compact `EN | FIL` toggle visible across all breakpoints
+- Native Tagalog with English government/legal terms preserved (RA citations, agency names, ID names)
+
+### TypeScript build hardening
+- `markdownLoader.ts` guards against `undefined` module after both Filipino/English import attempts
+- `StatsDashboard.tsx` removed explicit `(v: number)` type on recharts `Tooltip` formatter (recharts types value as `ValueType | undefined`)
+- Local `npm run build` passes in ~8s; Vercel deploys cleanly
