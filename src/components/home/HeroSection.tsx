@@ -1,16 +1,17 @@
+import { useTranslation } from 'react-i18next';
 import Hero from '../sections/Hero';
-import { SAN_PABLO_HERO } from '../../data/homeContent';
 
 export default function HeroSection() {
+  const { t } = useTranslation('common');
   return (
     <Hero
-      locationLabel={SAN_PABLO_HERO.locationLabel}
-      heading={SAN_PABLO_HERO.heading}
-      subtitle={SAN_PABLO_HERO.subtitle}
-      primaryCtaLabel={SAN_PABLO_HERO.primaryCtaLabel}
-      primaryCtaHref={SAN_PABLO_HERO.primaryCtaHref}
-      secondaryCtaLabel={SAN_PABLO_HERO.secondaryCtaLabel}
-      secondaryCtaHref={SAN_PABLO_HERO.secondaryCtaHref}
+      locationLabel={t('hero.locationLabel')}
+      heading={t('hero.heading')}
+      subtitle={t('hero.subtitle')}
+      primaryCtaLabel={t('hero.primaryCta')}
+      primaryCtaHref="/services"
+      secondaryCtaLabel={t('hero.secondaryCta')}
+      secondaryCtaHref="/government"
     />
   );
 }

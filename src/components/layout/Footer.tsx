@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Facebook, Github, ExternalLink, Eye, Heart, Globe } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import betterSanPabloLogo from '../../assets/bettersanpablo-logo3.png';
 
 // ── Visit counter — counterapi.dev (free, no signup, CORS-enabled) ────────────
@@ -55,6 +56,7 @@ function formatCount(n: number): string {
 
 const Footer: React.FC = () => {
   const visitCount = useVisitCounter();
+  const { t } = useTranslation('common');
 
   return (
     <footer className="bg-gray-950 text-white">
@@ -73,8 +75,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-gray-400">
-              A free, volunteer-built transparency portal for San Pablo City,
-              Laguna — the City of Seven Lakes. Not an official government site.
+              {t('footer.brandDescription')}
             </p>
             <div className="flex items-center gap-3">
               {footerNavigation.socialLinks.map(link => (
@@ -105,11 +106,12 @@ const Footer: React.FC = () => {
           {footerNavigation.mainSections.map(section => (
             <div key={section.title}>
               <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-gray-500">
-                {section.title}
+                {t(`footer.sections.${section.title}`, section.title)}
               </h3>
               <ul className="space-y-2.5">
                 {section.links.map(link => {
                   const isExternal = link.href.startsWith('http');
+                  const label = t(`footer.links.${link.label}`, link.label);
                   return (
                     <li key={link.label}>
                       {isExternal ? (
@@ -119,7 +121,7 @@ const Footer: React.FC = () => {
                           rel="noopener noreferrer"
                           className="flex items-center gap-1 text-sm text-gray-400 transition hover:text-white"
                         >
-                          {link.label}
+                          {label}
                           <ExternalLink className="h-3 w-3 opacity-50" />
                         </a>
                       ) : (
@@ -127,7 +129,7 @@ const Footer: React.FC = () => {
                           to={link.href}
                           className="text-sm text-gray-400 transition hover:text-white"
                         >
-                          {link.label}
+                          {label}
                         </Link>
                       )}
                     </li>
@@ -144,9 +146,9 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-center gap-3 rounded-xl border border-green-800 bg-green-900/20 px-6 py-3">
             <Globe className="h-4 w-4 text-green-400 shrink-0" />
-            <span className="text-sm font-semibold text-green-400">Cost to San Pableños</span>
+            <span className="text-sm font-semibold text-green-400">{t('footer.costLabel')}</span>
             <span className="text-2xl font-black text-yellow-300">₱0</span>
-            <span className="hidden sm:inline text-xs text-gray-500">· Hosted free · Open source · Built by volunteers</span>
+            <span className="hidden sm:inline text-xs text-gray-500">{t('footer.costNote')}</span>
           </div>
         </div>
       </div>
@@ -156,24 +158,24 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
             <p className="text-xs text-gray-600">
-              © {new Date().getFullYear()} BetterSanPablo.org · Public domain content ·{' '}
+              {t('footer.copyright', { year: new Date().getFullYear() })}{' '}
               <span className="inline-flex items-center gap-1">
                 <Heart className="h-3 w-3 text-pink-600" />
-                Built by volunteers
+                {t('footer.builtByVolunteers')}
               </span>
             </p>
             <div className="flex items-center gap-4">
               {visitCount !== null && (
                 <span className="flex items-center gap-1.5 text-xs text-gray-500">
                   <Eye className="h-3.5 w-3.5" />
-                  {formatCount(visitCount)} visits
+                  {formatCount(visitCount)} {t('footer.visits')}
                 </span>
               )}
               <Link to="/sitemap" className="text-xs text-gray-600 transition hover:text-gray-400">
-                Sitemap
+                {t('common.sitemap')}
               </Link>
               <Link to="/accessibility" className="text-xs text-gray-600 transition hover:text-gray-400">
-                Accessibility
+                {t('common.accessibility')}
               </Link>
               <a
                 href="https://www.sanpablocity.gov.ph"
@@ -181,7 +183,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-xs text-gray-600 transition hover:text-gray-400"
               >
-                Official City Site ↗
+                {t('common.officialCitySite')} ↗
               </a>
             </div>
           </div>

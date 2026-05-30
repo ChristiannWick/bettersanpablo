@@ -1,7 +1,18 @@
-import { SAN_PABLO_COCONUT_FESTIVAL, SAN_PABLO_HISTORY_TIMELINE } from '../../data/homeContent';
 import { Star } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-// Assign a color accent per entry to make the timeline visually varied
+interface TimelineEntry {
+  year: string;
+  title: string;
+  description: string;
+}
+
+interface Festival {
+  title: string;
+  description: string;
+  highlights: string[];
+}
+
 const ACCENT_COLORS = [
   'bg-blue-600',
   'bg-indigo-600',
@@ -14,6 +25,10 @@ const ACCENT_COLORS = [
 ];
 
 export default function HistorySection() {
+  const { t } = useTranslation('common');
+  const entries = t('history.items', { returnObjects: true }) as TimelineEntry[];
+  const festival = t('history.festival', { returnObjects: true }) as Festival;
+
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
@@ -21,14 +36,13 @@ export default function HistorySection() {
         {/* Header */}
         <div className="mb-12 max-w-2xl">
           <span className="inline-flex rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-700">
-            History
+            {t('history.badge')}
           </span>
           <h2 className="mt-3 text-2xl font-bold text-gray-900 sm:text-3xl">
-            A City Shaped by Time
+            {t('history.title')}
           </h2>
           <p className="mt-3 text-gray-500 text-sm leading-relaxed">
-            Important milestones that shaped San Pablo City — from its earliest
-            settlement to modern civic life.
+            {t('history.subtitle')}
           </p>
         </div>
 
@@ -37,17 +51,14 @@ export default function HistorySection() {
           {/* Timeline cards — 2/3 width */}
           <div className="lg:col-span-2">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {SAN_PABLO_HISTORY_TIMELINE.map((entry, idx) => (
+              {entries.map((entry, idx) => (
                 <div
                   key={`${entry.year}-${idx}`}
                   className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
-                  {/* Colored accent bar at top */}
                   <div
                     className={`absolute left-0 right-0 top-0 h-1 ${ACCENT_COLORS[idx % ACCENT_COLORS.length]}`}
                   />
-
-                  {/* Year badge */}
                   <span
                     className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold text-white ${ACCENT_COLORS[idx % ACCENT_COLORS.length]}`}
                   >
@@ -71,19 +82,19 @@ export default function HistorySection() {
               <div className="mb-3 flex items-center gap-2">
                 <Star className="h-4 w-4 fill-white text-white" />
                 <span className="text-xs font-bold uppercase tracking-widest text-white/80">
-                  Festival Spotlight
+                  {t('history.festivalSpotlight')}
                 </span>
               </div>
 
               <h3 className="text-xl font-bold leading-snug">
-                {SAN_PABLO_COCONUT_FESTIVAL.title}
+                {festival.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-white/90">
-                {SAN_PABLO_COCONUT_FESTIVAL.description}
+                {festival.description}
               </p>
 
               <ul className="mt-5 space-y-3">
-                {SAN_PABLO_COCONUT_FESTIVAL.highlights.map(item => (
+                {festival.highlights.map(item => (
                   <li key={item} className="flex items-start gap-2 text-sm text-white/90">
                     <span className="mt-0.5 h-2 w-2 flex-shrink-0 rounded-full bg-white/60" />
                     {item}

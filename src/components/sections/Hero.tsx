@@ -1,6 +1,7 @@
 import { FormEvent, useEffect, useRef, useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, ArrowRight, X, Briefcase, HeartPulse, Trash2, GraduationCap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import useInView from '../../hooks/useInView';
 import { serviceCategories, governmentCategories } from '../../data/yamlLoader';
 import { SAN_PABLO_QUICK_SERVICES } from '../../data/homeContent';
@@ -28,6 +29,12 @@ const TYPE_COLORS: Record<SearchResult['type'], string> = {
   Government: 'bg-orange-100 text-orange-700',
 };
 
+const TYPE_LABEL_KEY: Record<SearchResult['type'], string> = {
+  'Quick Service': 'hero.resultTypes.quickService',
+  Services: 'hero.resultTypes.services',
+  Government: 'hero.resultTypes.government',
+};
+
 export default function Hero({
   locationLabel = 'SAN PABLO CITY, LAGUNA',
   heading = 'BetterSanPablo.org',
@@ -37,6 +44,7 @@ export default function Hero({
   secondaryCtaLabel = 'Government',
   secondaryCtaHref = '/government',
 }: HeroProps) {
+  const { t } = useTranslation('common');
   const [query, setQuery] = useState('');
   const [heroReady, setHeroReady] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -198,12 +206,12 @@ export default function Hero({
             <div className="rounded-2xl bg-white p-6 shadow-xl">
 
               {/* Search title */}
-              <h2 className="text-lg font-bold text-gray-900">Search Services</h2>
+              <h2 className="text-lg font-bold text-gray-900">{t('hero.searchTitle')}</h2>
 
               {/* Search input */}
               <form onSubmit={handleSearch} className="mt-4">
                 <label htmlFor="hero-search" className="sr-only">
-                  Search services and departments
+                  {t('hero.searchLabel')}
                 </label>
 
                 <div ref={wrapperRef} className="relative">
@@ -217,7 +225,7 @@ export default function Hero({
                     onChange={handleQueryChange}
                     onKeyDown={handleKeyDown}
                     onFocus={() => query.length >= 2 && setDropdownOpen(true)}
-                    placeholder="Search for a service..."
+                    placeholder={t('hero.searchPlaceholder')}
                     className="w-full rounded-lg border border-gray-300 bg-white py-2.5 pl-10 pr-3 text-sm text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                   />
                   {query.length > 0 && (
@@ -225,7 +233,7 @@ export default function Hero({
                       type="button"
                       onClick={() => { setQuery(''); setDropdownOpen(false); inputRef.current?.focus(); }}
                       className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-                      aria-label="Clear"
+                      aria-label={t('common.clear')}
                     >
                       <X className="h-4 w-4" />
                     </button>
@@ -250,7 +258,7 @@ export default function Hero({
                                     {item.title}
                                   </span>
                                   <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${TYPE_COLORS[item.type]}`}>
-                                    {item.type}
+                                    {t(TYPE_LABEL_KEY[item.type])}
                                   </span>
                                 </div>
                                 <p className="mt-0.5 truncate text-xs text-gray-500">
@@ -267,7 +275,7 @@ export default function Hero({
                             type="submit"
                             className="flex w-full items-center justify-between text-xs font-semibold text-blue-600 hover:text-blue-700"
                           >
-                            <span>View all results</span>
+                            <span>{t('common.viewAllResults')}</span>
                             <ArrowRight className="h-3.5 w-3.5" />
                           </button>
                         </div>
@@ -279,13 +287,13 @@ export default function Hero({
 
               {/* Popular services grid */}
               <div className="mt-6 border-t border-gray-200 pt-4">
-                <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Popular Services</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">{t('hero.popularServices')}</p>
                 <div className="mt-3 grid grid-cols-2 gap-3">
                   {[
-                    { Icon: Briefcase, label: 'Business & Livelihood', href: '/services/business', color: 'text-blue-600 bg-blue-50' },
-                    { Icon: HeartPulse, label: 'Health Services', href: '/services/health-services', color: 'text-rose-600 bg-rose-50' },
-                    { Icon: Trash2, label: 'Waste Disposal', href: '/services/environment', color: 'text-emerald-600 bg-emerald-50' },
-                    { Icon: GraduationCap, label: 'Education', href: '/services/education', color: 'text-amber-600 bg-amber-50' },
+                    { Icon: Briefcase, label: t('hero.popular.business'), href: '/services/business', color: 'text-blue-600 bg-blue-50' },
+                    { Icon: HeartPulse, label: t('hero.popular.health'), href: '/services/health-services', color: 'text-rose-600 bg-rose-50' },
+                    { Icon: Trash2, label: t('hero.popular.waste'), href: '/services/environment', color: 'text-emerald-600 bg-emerald-50' },
+                    { Icon: GraduationCap, label: t('hero.popular.education'), href: '/services/education', color: 'text-amber-600 bg-amber-50' },
                   ].map(item => {
                     const ItemIcon = item.Icon;
                     return (

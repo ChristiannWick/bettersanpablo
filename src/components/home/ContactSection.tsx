@@ -1,39 +1,34 @@
 import { Phone, MapPin, Clock, ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 
-const CONTACT_CARDS = [
+interface ContactCard {
+  title: string;
+  primary: string;
+  secondary: string;
+}
+
+const CARD_META = [
   {
     icon: <Phone className="h-6 w-6" />,
-    title: 'Call City Hall',
-    primary: '(049) 562-0111',
-    secondary: "City Mayor's Office",
     href: 'tel:0495620111',
     external: false,
     color: 'text-primary-600 bg-primary-50',
   },
   {
     icon: <MapPin className="h-6 w-6" />,
-    title: 'Visit Us',
-    primary: 'Mabini Extension, San Pablo City',
-    secondary: 'Laguna, Philippines 4000',
     href: 'https://maps.google.com/?q=San+Pablo+City+Hall,+Laguna',
     external: true,
     color: 'text-green-600 bg-green-50',
   },
   {
     icon: <Clock className="h-6 w-6" />,
-    title: 'Office Hours',
-    primary: 'Mon – Fri, 8:00 AM – 5:00 PM',
-    secondary: 'Closed on public holidays',
-    href: null,
+    href: null as string | null,
     external: false,
     color: 'text-orange-600 bg-orange-50',
   },
   {
     icon: <ExternalLink className="h-6 w-6" />,
-    title: 'Official Website',
-    primary: 'sanpablocity.gov.ph',
-    secondary: 'For official government transactions',
     href: 'https://www.sanpablocity.gov.ph',
     external: true,
     color: 'text-purple-600 bg-purple-50',
@@ -41,28 +36,29 @@ const CONTACT_CARDS = [
 ];
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation('common');
+  const cards = t('contact.cards', { returnObjects: true }) as ContactCard[];
+
   return (
     <section className="bg-gray-50 py-14">
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Contact San Pablo City Hall
+            {t('contact.title')}
           </h2>
-          <p className="mt-2 text-gray-600">
-            Reach us directly or visit during office hours for in-person
-            assistance.
-          </p>
+          <p className="mt-2 text-gray-600">{t('contact.subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {CONTACT_CARDS.map(card => {
+          {cards.map((card, idx) => {
+            const meta = CARD_META[idx];
             const content = (
               <Card className="h-full border border-gray-200 hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
                   <div
-                    className={`mb-4 inline-flex rounded-full p-3 ${card.color}`}
+                    className={`mb-4 inline-flex rounded-full p-3 ${meta.color}`}
                   >
-                    {card.icon}
+                    {meta.icon}
                   </div>
                   <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">
                     {card.title}
@@ -75,13 +71,13 @@ const ContactSection: React.FC = () => {
               </Card>
             );
 
-            if (card.href) {
+            if (meta.href) {
               return (
                 <a
                   key={card.title}
-                  href={card.href}
-                  target={card.external ? '_blank' : undefined}
-                  rel={card.external ? 'noopener noreferrer' : undefined}
+                  href={meta.href}
+                  target={meta.external ? '_blank' : undefined}
+                  rel={meta.external ? 'noopener noreferrer' : undefined}
                   className="block"
                 >
                   {content}
@@ -95,19 +91,19 @@ const ContactSection: React.FC = () => {
 
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">
-            For emergency services, call{' '}
+            {t('contact.emergencyNote')}{' '}
             <a
               href="tel:911"
               className="font-bold text-red-600 hover:underline"
             >
               911
             </a>{' '}
-            or view all{' '}
+            -{' '}
             <a
               href="/philippines/hotlines"
               className="text-primary-600 hover:underline"
             >
-              emergency hotlines →
+              {t('contact.viewAllHotlines')}
             </a>
           </p>
         </div>

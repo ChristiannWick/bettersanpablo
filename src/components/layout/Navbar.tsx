@@ -16,24 +16,35 @@ import betterSanPabloLogo from '../../assets/bettersanpablo-logo3.png';
 
 const NAVBAR_LANGUAGES: LanguageType[] = ['en', 'fil'];
 
-const EMERGENCY_HOTLINES = [
+interface HotlineEntry {
+  labelKey: string;
+  defaultLabel: string;
+  number: string;
+  href: string;
+}
+
+const EMERGENCY_HOTLINES: HotlineEntry[] = [
   {
-    label: 'CDRRMO Emergency',
+    labelKey: 'navbar.hotlinesList.cdrrmo',
+    defaultLabel: 'CDRRMO Emergency',
     number: '0998 540 7171',
     href: 'tel:09985407171',
   },
   {
-    label: 'PNP (Police HQ)',
+    labelKey: 'navbar.hotlinesList.pnp',
+    defaultLabel: 'PNP (Police HQ)',
     number: '(049) 562-8765',
     href: 'tel:+63495628765',
   },
   {
-    label: 'BFP (Fire Department)',
+    labelKey: 'navbar.hotlinesList.bfp',
+    defaultLabel: 'BFP (Fire Department)',
     number: '(049) 562-4321',
     href: 'tel:+63495624321',
   },
   {
-    label: 'Ambulance / Emergency',
+    labelKey: 'navbar.hotlinesList.ambulance',
+    defaultLabel: 'Ambulance / Emergency',
     number: '911',
     href: 'tel:911',
   },
@@ -50,16 +61,16 @@ interface WeatherState {
 const WEATHER_ENDPOINT =
   'https://api.open-meteo.com/v1/forecast?latitude=14.0686&longitude=121.3250&current=temperature_2m,weather_code,wind_speed_10m&timezone=Asia%2FManila&forecast_days=1';
 
-const getWeatherLabel = (code: number | null): string => {
-  if (code === null) return 'Unavailable';
-  if (code === 0) return 'Clear';
-  if ([1, 2, 3].includes(code)) return 'Cloudy';
-  if ([45, 48].includes(code)) return 'Fog';
-  if ([51, 53, 55, 56, 57].includes(code)) return 'Drizzle';
-  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return 'Rain';
-  if ([71, 73, 75, 77, 85, 86].includes(code)) return 'Snow';
-  if ([95, 96, 99].includes(code)) return 'Thunderstorm';
-  return 'Variable';
+const getWeatherKey = (code: number | null): string => {
+  if (code === null) return 'unavailable';
+  if (code === 0) return 'clear';
+  if ([1, 2, 3].includes(code)) return 'cloudy';
+  if ([45, 48].includes(code)) return 'fog';
+  if ([51, 53, 55, 56, 57].includes(code)) return 'drizzle';
+  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return 'rain';
+  if ([71, 73, 75, 77, 85, 86].includes(code)) return 'snow';
+  if ([95, 96, 99].includes(code)) return 'thunderstorm';
+  return 'variable';
 };
 
 const Navbar: React.FC = () => {
@@ -148,7 +159,7 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  const weatherLabel = getWeatherLabel(weather.weatherCode);
+  const weatherLabel = t(`navbar.weather.${getWeatherKey(weather.weatherCode)}`);
 
   // Marquee uses pure CSS animation (see index.css `.marquee-track`).
   // Pure CSS is more reliable than a JS rAF loop because it doesn't
@@ -165,15 +176,15 @@ const Navbar: React.FC = () => {
                 <div className="inline-flex items-center gap-3">
                   <span className="inline-flex items-center font-semibold uppercase tracking-wide shrink-0">
                     <Phone className="h-3.5 w-3.5 mr-1.5" />
-                    San Pablo Emergency Hotlines
+                    {t('navbar.emergencyHotlinesLabel')}
                   </span>
                   {EMERGENCY_HOTLINES.map(hotline => (
                     <a
-                      key={hotline.label}
+                      key={hotline.labelKey}
                       href={hotline.href}
                       className="inline-flex items-center hover:text-red-100 transition-colors shrink-0 ml-3"
                     >
-                      <span className="font-medium">{hotline.label}:</span>
+                      <span className="font-medium">{t(hotline.labelKey, hotline.defaultLabel)}:</span>
                       <span className="ml-1">{hotline.number}</span>
                     </a>
                   ))}
@@ -183,11 +194,11 @@ const Navbar: React.FC = () => {
                 <div className="inline-flex items-center gap-3" aria-hidden>
                   <span className="inline-flex items-center font-semibold uppercase tracking-wide shrink-0">
                     <Phone className="h-3.5 w-3.5 mr-1.5" />
-                    San Pablo Emergency Hotlines
+                    {t('navbar.emergencyHotlinesLabel')}
                   </span>
                   {EMERGENCY_HOTLINES.map(hotline => (
-                    <span key={`${hotline.label}-dup`} className="inline-flex items-center ml-3">
-                      <span className="font-medium">{hotline.label}:</span>
+                    <span key={`${hotline.labelKey}-dup`} className="inline-flex items-center ml-3">
+                      <span className="font-medium">{t(hotline.labelKey, hotline.defaultLabel)}:</span>
                       <span className="ml-1">{hotline.number}</span>
                     </span>
                   ))}
@@ -206,17 +217,20 @@ const Navbar: React.FC = () => {
             {weather.loading ? (
               <span className="inline-flex items-center text-gray-700">
                 <Loader2 className="mr-1 h-4 w-4 animate-spin text-gray-500" />
-                Updating weather...
+                {t('navbar.updatingWeather')}
               </span>
             ) : weather.temperature !== null ? (
               <span>
-                San Pablo: {Math.round(weather.temperature)}°C, {weatherLabel}
+                {t('navbar.weatherFormat', {
+                  temp: Math.round(weather.temperature),
+                  label: weatherLabel,
+                })}
                 {weather.windSpeed !== null && (
                   <span> | {Math.round(weather.windSpeed)} km/h</span>
                 )}
               </span>
             ) : (
-              <span>San Pablo weather unavailable</span>
+              <span>{t('navbar.weatherUnavailable')}</span>
             )}
           </div>
         </div>
@@ -242,7 +256,7 @@ const Navbar: React.FC = () => {
               to="/"
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium text-base transition-colors whitespace-nowrap"
             >
-              Home
+              {t('common.home')}
             </Link>
             {mainNavigation.map(item => (
               <div key={item.label} className="relative group">
@@ -284,7 +298,7 @@ const Navbar: React.FC = () => {
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
               <Search className="h-4 w-4 mr-1" />
-              Search
+              {t('common.search')}
             </Link>
             {/* Minimalist language toggle (desktop) — EN | FIL */}
             <div className="ml-1 inline-flex items-center rounded-full border border-gray-200 bg-white text-xs">
@@ -297,7 +311,7 @@ const Navbar: React.FC = () => {
                     type="button"
                     onClick={() => changeLanguage(code)}
                     aria-pressed={isActive}
-                    aria-label={code === 'en' ? 'Switch to English' : 'Switch to Filipino'}
+                    aria-label={code === 'en' ? t('common.switchToEnglish') : t('common.switchToFilipino')}
                     className={`px-3 py-1 font-semibold tracking-wide transition-colors first:rounded-l-full last:rounded-r-full ${
                       isActive
                         ? 'bg-primary-600 text-white'
@@ -324,7 +338,7 @@ const Navbar: React.FC = () => {
                     type="button"
                     onClick={() => changeLanguage(code)}
                     aria-pressed={isActive}
-                    aria-label={code === 'en' ? 'Switch to English' : 'Switch to Filipino'}
+                    aria-label={code === 'en' ? t('common.switchToEnglish') : t('common.switchToFilipino')}
                     className={`px-2.5 py-1 font-semibold tracking-wide transition-colors first:rounded-l-full last:rounded-r-full ${
                       isActive
                         ? 'bg-primary-600 text-white'
@@ -341,7 +355,7 @@ const Navbar: React.FC = () => {
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t('common.openMainMenu')}</span>
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
               ) : (
@@ -360,7 +374,7 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             className="block w-full px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Home
+            {t('common.home')}
           </Link>
           {mainNavigation.map(item => (
             <div key={item.label}>
@@ -408,14 +422,14 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Search
+            {t('common.search')}
           </Link>
           <Link
             to="/sitemap"
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Sitemap
+            {t('common.sitemap')}
           </Link>
         </div>
       </div>

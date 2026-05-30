@@ -1,23 +1,28 @@
-import { SAN_PABLO_CITY_STATS } from '../../data/homeContent';
+import { useTranslation } from 'react-i18next';
 
-// Icon numbers or symbols mapped to each stat by index
+interface Stat {
+  value: string;
+  label: string;
+}
+
 const STAT_ACCENTS = ['👥', '🏘️', '🌊', '🗺️', '🏙️', '⭐'];
 
 export default function StatsSection() {
+  const { t } = useTranslation('common');
+  const stats = t('stats.items', { returnObjects: true }) as Stat[];
+
   return (
     <section className="bg-blue-950 py-14">
       <div className="container mx-auto px-4">
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            San Pablo at a Glance
+            {t('stats.title')}
           </h2>
-          <p className="mt-2 text-blue-300 text-sm">
-            Key facts and figures for the City of Seven Lakes.
-          </p>
+          <p className="mt-2 text-blue-300 text-sm">{t('stats.subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
-          {SAN_PABLO_CITY_STATS.map((stat, idx) => (
+          {stats.map((stat, idx) => (
             <div
               key={stat.label}
               className="flex flex-col items-center text-center"

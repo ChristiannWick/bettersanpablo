@@ -1,35 +1,24 @@
 {
   "site_name": "San Pablo City Portal",
   "site_description": "A community-run portal for San Pablo City, the City of Seven Lakes",
-  "hero": {
-    "title": "Welcome to BetterSanPablo",
-    "subtitle": "A community-run portal for San Pablo City services, offices, Seven Lakes information, and public records",
-    "nationalId": "National ID",
-    "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Business Registration"
-  },
-  "services": {
-    "title": "Services & Information",
-    "governmentServices": "Government Services",
-    "description": "Access local government services quickly and easily. Find what you need for health, education, business, public safety, and more.",
-    "viewAll": "View All Services",
-    "viewAllCategory": "View All"
-  },
-  "governmentActivity": {
-    "title": "Government Activity",
-    "description": "Stay updated with the latest local government activities and announcements."
-  },
-  "weather": {
-    "title": "Weather Updates"
-  },
-  "forex": {
-    "title": "Foreign Exchange Rates"
-  },
-  "news": {
-    "title": "Latest News & Updates"
-  },
-  "footer": {
-    "copyright": "(c) 2026 BetterSanPablo. All content is public domain unless otherwise specified."
+  "common": {
+    "home": "Home",
+    "search": "Search",
+    "sitemap": "Sitemap",
+    "accessibility": "Accessibility",
+    "officialCitySite": "Official City Site",
+    "viewAll": "View All",
+    "viewDetails": "View details",
+    "viewAllAttractions": "View all attractions",
+    "viewAllResults": "View all results",
+    "viewFullProfile": "View full profile",
+    "clear": "Clear",
+    "loading": "Loading...",
+    "next": "Next",
+    "previous": "Previous",
+    "openMainMenu": "Open main menu",
+    "switchToEnglish": "Switch to English",
+    "switchToFilipino": "Switch to Filipino"
   },
   "navbar": {
     "government": "Government",
@@ -40,19 +29,342 @@
     "legislativecitycouncil": "Legislative (City Council)",
     "localofficialsdirectory": "Local Officials Directory",
     "transparency": "Transparency",
-    "statistics": "Statistics"
+    "statistics": "Statistics",
+    "emergencyHotlinesLabel": "San Pablo Emergency Hotlines",
+    "updatingWeather": "Updating weather...",
+    "weatherFormat": "San Pablo: {{temp}}°C, {{label}}",
+    "weatherUnavailable": "San Pablo weather unavailable",
+    "hotlinesList": {
+      "cdrrmo": "CDRRMO Emergency",
+      "pnp": "PNP (Police HQ)",
+      "bfp": "BFP (Fire Department)",
+      "ambulance": "Ambulance / Emergency"
+    },
+    "weather": {
+      "clear": "Clear",
+      "cloudy": "Cloudy",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorm",
+      "variable": "Variable",
+      "unavailable": "Unavailable"
+    }
   },
-  "joinUs": {
-    "stripTitle": "Join the #CivicTech Revolution",
-    "stripSubtitle": "Help build the future of the Philippines and governance through technology",
-    "joinNow": "Join Now",
-    "discord": "Discord",
-    "bannerTitle": "Join the #CivicTech Revolution",
-    "bannerSubtitle": "Help build the future of the Philippines and governance through technology.",
-    "bannerHighlight": "Volunteer-led. Open source. Community-driven.",
-    "joinMovement": "Join Our Movement",
-    "or": "or",
-    "joinDiscord": "Join Discord",
-    "features": "Infrastructure | Mentorship | Community | Office Space"
+  "footer": {
+    "brandDescription": "A free, volunteer-built transparency portal for San Pablo City, Laguna — the City of Seven Lakes. Not an official government site.",
+    "copyright": "© {{year}} BetterSanPablo.org · Public domain content ·",
+    "builtByVolunteers": "Built by volunteers",
+    "visits": "visits",
+    "costLabel": "Cost to San Pableños",
+    "costNote": "· Hosted free · Open source · Built by volunteers",
+    "sections": {
+      "About": "About",
+      "Services": "Services",
+      "Official Links": "Official Links"
+    },
+    "links": {
+      "About the Portal": "About the Portal",
+      "Accessibility": "Accessibility",
+      "Contact Us": "Contact Us",
+      "Community Discord": "Community Discord",
+      "All Services": "All Services",
+      "Hotlines": "Hotlines",
+      "Holidays": "Holidays"
+    }
+  },
+  "hero": {
+    "locationLabel": "SAN PABLO CITY, LAGUNA",
+    "heading": "BetterSanPablo.org",
+    "subtitle": "BetterSanPablo.org helps residents access local services, permits, and trusted public information for the City of Seven Lakes.",
+    "primaryCta": "View All Services",
+    "secondaryCta": "Government",
+    "searchTitle": "Search Services",
+    "searchPlaceholder": "Search for a service...",
+    "searchLabel": "Search services and departments",
+    "popularServices": "Popular Services",
+    "popular": {
+      "business": "Business & Livelihood",
+      "health": "Health Services",
+      "waste": "Waste Disposal",
+      "education": "Education"
+    },
+    "resultTypes": {
+      "quickService": "Quick Service",
+      "services": "Services",
+      "government": "Government"
+    }
+  },
+  "onlinePortals": {
+    "badge": "🌐 Official City Portals",
+    "title": "Transact Online with San Pablo City",
+    "subtitle": "Official government platforms operated by the City of San Pablo. Data sourced from",
+    "allOfficialServices": "All official services",
+    "visitPortal": "Visit portal",
+    "disclaimer": "These are official government websites operated by the City Government of San Pablo, Laguna. BetterSanPablo.org is not affiliated with or responsible for the content of these portals.",
+    "items": [
+      {
+        "title": "Real Property Tax",
+        "description": "Calculate your property taxes and view property information online — no account required.",
+        "badge": "City Treasurer"
+      },
+      {
+        "title": "Business Permits & Licensing",
+        "description": "Apply for new business permits, renewals, and licenses online. Fast-track processing available.",
+        "badge": "BPLO"
+      },
+      {
+        "title": "eLGU San Pablo",
+        "description": "The official e-government platform with LGU system automation and online city services.",
+        "badge": "eGov PH · DICT"
+      },
+      {
+        "title": "Water District (SPCWD)",
+        "description": "Pay bills via GCash or Landbank, apply for new water connections, and check your balance.",
+        "badge": "SPCWD"
+      }
+    ]
+  },
+  "highlights": {
+    "title": "Featured City Highlights",
+    "subtitle": "A visual tour of San Pablo, Laguna with more destinations, stories, and city landmarks.",
+    "locationChip": "San Pablo, Laguna",
+    "items": [
+      {
+        "title": "Seven Lakes and Scenic Landscapes",
+        "description": "San Pablo is nationally known for its cluster of volcanic crater lakes and mountain views across the city."
+      },
+      {
+        "title": "Pandin Lake Eco-Tourism",
+        "description": "Pandin is known for clear waters, bamboo-raft experiences, and community-based tourism."
+      },
+      {
+        "title": "Yambo Lake Viewpoint",
+        "description": "Yambo, the twin lake of Pandin, offers calm waters and panoramic natural scenery."
+      },
+      {
+        "title": "Museo ng San Pablo",
+        "description": "The city museum preserves stories of local governance, heritage, and cultural identity."
+      },
+      {
+        "title": "Historic Cathedral and Plaza",
+        "description": "St. Paul the First Hermit Cathedral and its plaza remain central to faith and civic life."
+      },
+      {
+        "title": "City Hall and Public Spaces",
+        "description": "Government facilities, parks, and public spaces support daily services and community events."
+      },
+      {
+        "title": "Lakeside Community Activities",
+        "description": "Boat rides and lakeside gatherings highlight how tourism and local livelihoods connect."
+      },
+      {
+        "title": "Coco Festival Tradition",
+        "description": "San Pablo's Coco Festival celebrates local culture, coconut-based livelihood, and community creativity each year."
+      }
+    ]
+  },
+  "stats": {
+    "title": "San Pablo at a Glance",
+    "subtitle": "Key facts and figures for the City of Seven Lakes.",
+    "items": [
+      { "value": "300,166", "label": "Population (2024 POPCEN)" },
+      { "value": "80", "label": "Barangays" },
+      { "value": "7", "label": "Crater Lakes" },
+      { "value": "197.56 km²", "label": "Land Area" },
+      { "value": "1940", "label": "Year of Cityhood" },
+      { "value": "1st Class", "label": "City Classification" }
+    ]
+  },
+  "about": {
+    "badge": "About San Pablo",
+    "title": "The City of Seven Lakes",
+    "paragraphs": [
+      "Known as the City of Seven Lakes, San Pablo is a 1st class component city in Laguna with a strong identity shaped by nature, heritage, and community.",
+      "Founded as San Pablo de los Montes and chartered as a city in 1940, it continues to grow as a center for public service, tourism, and local enterprise."
+    ],
+    "quickFacts": [
+      { "label": "Population", "value": "300,166" },
+      { "label": "Province", "value": "Laguna" },
+      { "label": "Barangays", "value": "80" },
+      { "label": "Chartered", "value": "1940" }
+    ]
+  },
+  "leadership": {
+    "title": "City Leadership",
+    "subtitle": "Local executive and legislative leadership profiles for San Pablo City.",
+    "items": [
+      {
+        "position": "City Mayor",
+        "name": "Arcadio \"Najie\" B. Gapangada Jr.",
+        "note": "Won the 2025 local race for mayor in San Pablo City.",
+        "priorities": [
+          "Citywide service delivery and barangay outreach programs",
+          "Economic and tourism initiatives tied to local livelihood",
+          "Support for environmental and community-based projects"
+        ]
+      },
+      {
+        "position": "City Vice Mayor",
+        "name": "Justin G. Colago",
+        "note": "Led the 2025 vice mayoral race in San Pablo City.",
+        "priorities": [
+          "Legislative support for city programs and ordinances",
+          "Coordination with barangays and local stakeholders",
+          "Public service oversight alongside the city council"
+        ]
+      }
+    ]
+  },
+  "places": {
+    "badge": "Tourism",
+    "title": "Top Places to Visit",
+    "subtitle": "Explore the most visited natural and cultural landmarks across San Pablo City.",
+    "items": [
+      {
+        "title": "Sampaloc Lake",
+        "description": "The largest and most accessible lake, popular for lakeside walks and city views."
+      },
+      {
+        "title": "Pandin Lake",
+        "description": "Known for clear water and bamboo-raft experiences managed by local communities."
+      },
+      {
+        "title": "Yambo Lake",
+        "description": "A peaceful twin lake beside Pandin, ideal for quiet nature trips."
+      },
+      {
+        "title": "Museo ng San Pablo",
+        "description": "A local museum that highlights the city's history, institutions, and cultural identity."
+      }
+    ]
+  },
+  "history": {
+    "badge": "History",
+    "title": "A City Shaped by Time",
+    "subtitle": "Important milestones that shaped San Pablo City — from its earliest settlement to modern civic life.",
+    "festivalSpotlight": "Festival Spotlight",
+    "items": [
+      {
+        "year": "1586",
+        "title": "Parish Founding",
+        "description": "San Pablo de los Montes was established as a parish, forming the religious and civic foundation of the city."
+      },
+      {
+        "year": "1647",
+        "title": "Elevated to Municipality",
+        "description": "The settlement was formally elevated to a municipality, beginning centuries of local governance."
+      },
+      {
+        "year": "1940",
+        "title": "City Charter Approved",
+        "description": "Commonwealth Act No. 520 was signed on May 7, 1940, granting San Pablo its city charter — one of the oldest cities in the Philippines."
+      },
+      {
+        "year": "1941",
+        "title": "City Inauguration",
+        "description": "San Pablo City was inaugurated on March 30, 1941, marking the formal start of city governance."
+      },
+      {
+        "year": "1967",
+        "title": "Diocese of San Pablo Established",
+        "description": "The Roman Catholic Diocese of San Pablo was established on November 28, 1967, with the Cathedral of St. Paul the First Hermit as its seat."
+      },
+      {
+        "year": "1996",
+        "title": "First Coconut Festival",
+        "description": "The Coco Festival was launched to celebrate the 400th anniversary of the parish and to promote the city's coconut heritage and local industry."
+      },
+      {
+        "year": "2023",
+        "title": "City Central Terminal Opened",
+        "description": "The San Pablo City Central Terminal was inaugurated, modernizing public transport and improving connectivity for residents."
+      },
+      {
+        "year": "2025",
+        "title": "New Administration Begins",
+        "description": "Arcadio \"Najie\" B. Gapangada Jr. was elected City Mayor with 70,822 votes, beginning a new chapter for San Pablo City governance."
+      }
+    ],
+    "festival": {
+      "title": "Coco Festival of San Pablo",
+      "description": "Held every January 9–15, the Coco Festival culminates on January 15 — the Feast Day of St. Paul the First Hermit, the city's patron saint. First held in 1996, it is a DOT and ATOP award-winning tourism event.",
+      "highlights": [
+        "Street dancing competition with elaborate coconut-themed costumes and floats.",
+        "Mutya at Lakan ng San Pablo — the city's signature beauty pageant.",
+        "Coco Trade Fair showcasing coconut farmers, MSMEs, and local products.",
+        "Recognized as a Guinness World Record event for mass coconut planting in 2025."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact San Pablo City Hall",
+    "subtitle": "Reach us directly or visit during office hours for in-person assistance.",
+    "emergencyNote": "For emergency services, call",
+    "viewAllHotlines": "emergency hotlines →",
+    "cards": [
+      {
+        "title": "Call City Hall",
+        "primary": "(049) 562-0111",
+        "secondary": "City Mayor's Office"
+      },
+      {
+        "title": "Visit Us",
+        "primary": "Mabini Extension, San Pablo City",
+        "secondary": "Laguna, Philippines 4000"
+      },
+      {
+        "title": "Office Hours",
+        "primary": "Mon – Fri, 8:00 AM – 5:00 PM",
+        "secondary": "Closed on public holidays"
+      },
+      {
+        "title": "Official Website",
+        "primary": "sanpablocity.gov.ph",
+        "secondary": "For official government transactions"
+      }
+    ]
+  },
+  "pages": {
+    "services": {
+      "title": "Services",
+      "subtitle": "Find local government services for health, education, business, public safety, and more."
+    },
+    "government": {
+      "title": "Government",
+      "subtitle": "Departments, officials, and offices of the San Pablo City government."
+    },
+    "attractions": {
+      "title": "Attractions in San Pablo City",
+      "subtitle": "Seven Lakes, heritage sites, and festivals — a complete tourism guide."
+    },
+    "about": {
+      "title": "About San Pablo City",
+      "subtitle": "City profile, history, and identity of the City of Seven Lakes."
+    },
+    "sitemap": {
+      "title": "Sitemap",
+      "subtitle": "All pages and resources available on BetterSanPablo.org."
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "subtitle": "Our commitment to WCAG 2.1 AA standards."
+    },
+    "hotlines": {
+      "title": "Emergency Hotlines",
+      "subtitle": "Quick-dial numbers for emergencies in San Pablo City and the Philippines."
+    },
+    "holidays": {
+      "title": "Philippine Holidays 2025",
+      "subtitle": "National and local holidays observed in San Pablo City."
+    },
+    "search": {
+      "title": "Search",
+      "subtitle": "Search across services, departments, and city information.",
+      "placeholder": "Search...",
+      "noResults": "No results found",
+      "results": "Results"
+    }
   }
 }

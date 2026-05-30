@@ -1,58 +1,370 @@
 {
   "site_name": "Portal ng Lungsod ng San Pablo",
   "site_description": "Portal ng komunidad para sa Lungsod ng San Pablo, ang Lungsod ng Pitong Lawa",
-  "hero": {
-    "title": "Welcome to BetterSanPablo",
-    "subtitle": "Portal ng komunidad para sa mga serbisyo, opisina, Pitong Lawa, at pampublikong rekord ng Lungsod ng San Pablo",
-    "nationalId": "National ID",
-    "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Business Registration"
-  },
-  "services": {
-    "title": "Mga Serbisyo at Impormasyon",
-    "governmentServices": "Mga Serbisyo ng Pamahalaan",
-    "description": "Mabilis na hanapin ang mga serbisyo ng lokal na pamahalaan para sa kalusugan, edukasyon, negosyo, kaligtasan, at iba pa.",
-    "viewAll": "Tingnan Lahat ng Serbisyo",
-    "viewAllCategory": "Tingnan Lahat"
-  },
-  "governmentActivity": {
-    "title": "Gawain ng Pamahalaan",
-    "description": "Subaybayan ang mga anunsyo at gawain ng lokal na pamahalaan."
-  },
-  "weather": {
-    "title": "Ulat Panahon"
-  },
-  "forex": {
-    "title": "Palitan ng Pera"
-  },
-  "news": {
-    "title": "Pinakabagong Balita at Anunsyo"
-  },
-  "footer": {
-    "copyright": "(c) 2026 BetterSanPablo. Public domain ang nilalaman maliban kung iba ang nakasaad."
+  "common": {
+    "home": "Tahanan",
+    "search": "Maghanap",
+    "sitemap": "Sitemap",
+    "accessibility": "Accessibility",
+    "officialCitySite": "Opisyal na Website ng Lungsod",
+    "viewAll": "Tingnan Lahat",
+    "viewDetails": "Tingnan ang detalye",
+    "viewAllAttractions": "Tingnan lahat ng atraksyon",
+    "viewAllResults": "Tingnan lahat ng resulta",
+    "viewFullProfile": "Tingnan ang buong profile",
+    "clear": "I-clear",
+    "loading": "Naglo-load...",
+    "next": "Susunod",
+    "previous": "Nakaraan",
+    "openMainMenu": "Buksan ang pangunahing menu",
+    "switchToEnglish": "Lumipat sa Ingles",
+    "switchToFilipino": "Lumipat sa Filipino"
   },
   "navbar": {
     "government": "Pamahalaan",
     "services": "Mga Serbisyo",
-    "hotlines": "Hotlines",
-    "holidays": "Holidays",
+    "hotlines": "Mga Hotline",
+    "holidays": "Mga Pista Opisyal",
     "departmentsandofficials": "Mga Departamento at Opisyal",
     "legislativecitycouncil": "Lehislatibo (Sangguniang Panlungsod)",
     "localofficialsdirectory": "Direktoryo ng mga Lokal na Opisyal",
     "transparency": "Transparency",
-    "statistics": "Estadistika"
+    "statistics": "Estadistika",
+    "emergencyHotlinesLabel": "Mga Hotline ng San Pablo",
+    "updatingWeather": "Ina-update ang panahon...",
+    "weatherFormat": "San Pablo: {{temp}}°C, {{label}}",
+    "weatherUnavailable": "Walang ulat panahon ng San Pablo",
+    "hotlinesList": {
+      "cdrrmo": "CDRRMO Emergency",
+      "pnp": "PNP (Pulisya HQ)",
+      "bfp": "BFP (Bombero)",
+      "ambulance": "Ambulansya / Emergency"
+    },
+    "weather": {
+      "clear": "Maaliwalas",
+      "cloudy": "Maulap",
+      "fog": "Maulap-ulap",
+      "drizzle": "Ambon",
+      "rain": "Maulan",
+      "snow": "Snow",
+      "thunderstorm": "Bagyo",
+      "variable": "Pabagu-bago",
+      "unavailable": "Hindi available"
+    }
   },
-  "joinUs": {
-    "stripTitle": "Sumali sa #CivicTech Revolution",
-    "stripSubtitle": "Tumulong bumuo ng mas bukas at mas mahusay na pamahalaan gamit ang teknolohiya",
-    "joinNow": "Sumali",
-    "discord": "Discord",
-    "bannerTitle": "Sumali sa #CivicTech Revolution",
-    "bannerSubtitle": "Tumulong bumuo ng mas bukas at mas mahusay na pamahalaan gamit ang teknolohiya.",
-    "bannerHighlight": "Volunteer-led. Open source. Community-driven.",
-    "joinMovement": "Sumali sa Kilusan",
-    "or": "o",
-    "joinDiscord": "Sumali sa Discord",
-    "features": "Infrastructure | Mentorship | Community | Office Space"
+  "footer": {
+    "brandDescription": "Libreng portal ng transparency na gawa ng mga boluntaryo para sa Lungsod ng San Pablo, Laguna — ang Lungsod ng Pitong Lawa. Hindi opisyal na website ng pamahalaan.",
+    "copyright": "© {{year}} BetterSanPablo.org · Public domain na nilalaman ·",
+    "builtByVolunteers": "Gawa ng mga boluntaryo",
+    "visits": "na bisita",
+    "costLabel": "Halaga sa mga San Pableño",
+    "costNote": "· Libreng hosting · Open source · Gawa ng mga boluntaryo",
+    "sections": {
+      "About": "Tungkol",
+      "Services": "Mga Serbisyo",
+      "Official Links": "Mga Opisyal na Link"
+    },
+    "links": {
+      "About the Portal": "Tungkol sa Portal",
+      "Accessibility": "Accessibility",
+      "Contact Us": "Makipag-ugnayan",
+      "Community Discord": "Discord ng Komunidad",
+      "All Services": "Lahat ng Serbisyo",
+      "Hotlines": "Mga Hotline",
+      "Holidays": "Mga Pista Opisyal"
+    }
+  },
+  "hero": {
+    "locationLabel": "LUNGSOD NG SAN PABLO, LAGUNA",
+    "heading": "BetterSanPablo.org",
+    "subtitle": "Tumutulong ang BetterSanPablo.org sa mga residente na ma-access ang mga lokal na serbisyo, permit, at mapagkakatiwalaang impormasyon para sa Lungsod ng Pitong Lawa.",
+    "primaryCta": "Tingnan Lahat ng Serbisyo",
+    "secondaryCta": "Pamahalaan",
+    "searchTitle": "Maghanap ng Serbisyo",
+    "searchPlaceholder": "Maghanap ng serbisyo...",
+    "searchLabel": "Maghanap ng mga serbisyo at departamento",
+    "popularServices": "Mga Sikat na Serbisyo",
+    "popular": {
+      "business": "Negosyo at Kabuhayan",
+      "health": "Mga Serbisyong Pangkalusugan",
+      "waste": "Pagtatapon ng Basura",
+      "education": "Edukasyon"
+    },
+    "resultTypes": {
+      "quickService": "Madaliang Serbisyo",
+      "services": "Mga Serbisyo",
+      "government": "Pamahalaan"
+    }
+  },
+  "onlinePortals": {
+    "badge": "🌐 Mga Opisyal na Portal ng Lungsod",
+    "title": "Mag-transact Online sa Lungsod ng San Pablo",
+    "subtitle": "Mga opisyal na platform ng pamahalaan na pinapatakbo ng Lungsod ng San Pablo. Mula sa",
+    "allOfficialServices": "Lahat ng opisyal na serbisyo",
+    "visitPortal": "Bisitahin ang portal",
+    "disclaimer": "Ito ay mga opisyal na website ng pamahalaan na pinapatakbo ng Pamahalaang Lungsod ng San Pablo, Laguna. Ang BetterSanPablo.org ay hindi kaakibat o responsable sa nilalaman ng mga portal na ito.",
+    "items": [
+      {
+        "title": "Real Property Tax",
+        "description": "Kalkulahin ang inyong buwis sa ari-arian at tingnan ang impormasyon nito online — walang kailangang account.",
+        "badge": "City Treasurer"
+      },
+      {
+        "title": "Mga Permit at Lisensya sa Negosyo",
+        "description": "Mag-apply ng bagong business permit, pag-renew, at lisensya online. May fast-track processing.",
+        "badge": "BPLO"
+      },
+      {
+        "title": "eLGU San Pablo",
+        "description": "Ang opisyal na e-government platform na may LGU system automation at online na serbisyo ng lungsod.",
+        "badge": "eGov PH · DICT"
+      },
+      {
+        "title": "Water District (SPCWD)",
+        "description": "Magbayad ng bills sa GCash o Landbank, mag-apply ng bagong koneksyon ng tubig, at tingnan ang balanse.",
+        "badge": "SPCWD"
+      }
+    ]
+  },
+  "highlights": {
+    "title": "Mga Tampok sa Lungsod",
+    "subtitle": "Isang biswal na paglilibot sa San Pablo, Laguna kasama ang mga destinasyon, kwento, at landmark ng lungsod.",
+    "locationChip": "San Pablo, Laguna",
+    "items": [
+      {
+        "title": "Pitong Lawa at Magagandang Tanawin",
+        "description": "Kilala ang San Pablo sa buong bansa dahil sa kanyang grupo ng mga lawa galing sa bulkan at tanawin ng mga bundok."
+      },
+      {
+        "title": "Eco-Tourism sa Lawa ng Pandin",
+        "description": "Kilala ang Pandin sa malinaw na tubig, balsang kawayan, at tourism na pinapatakbo ng komunidad."
+      },
+      {
+        "title": "Tanawin sa Lawa ng Yambo",
+        "description": "Ang Yambo, kambal na lawa ng Pandin, ay may kalmadong tubig at magandang tanawin ng kalikasan."
+      },
+      {
+        "title": "Museo ng San Pablo",
+        "description": "Pinapanatili ng museo ng lungsod ang mga kwento ng lokal na pamamahala, pamana, at kultural na pagkakakilanlan."
+      },
+      {
+        "title": "Makasaysayang Katedral at Plaza",
+        "description": "Ang Katedral ng St. Paul the First Hermit at ang plaza nito ay sentro pa rin ng pananampalataya at sibikong buhay."
+      },
+      {
+        "title": "City Hall at mga Pampublikong Lugar",
+        "description": "Ang mga pasilidad ng pamahalaan, parke, at mga pampublikong espasyo ay sumusuporta sa mga araw-araw na serbisyo at mga kaganapan ng komunidad."
+      },
+      {
+        "title": "Mga Aktibidad sa Tabi ng Lawa",
+        "description": "Ang mga sakayan ng bangka at pagtitipon sa tabi ng lawa ay nagpapakita kung paano nag-uugnay ang turismo at lokal na kabuhayan."
+      },
+      {
+        "title": "Tradisyon ng Coco Festival",
+        "description": "Ang Coco Festival ng San Pablo ay nagdiriwang ng lokal na kultura, kabuhayan mula sa niyog, at pagkamalikhain ng komunidad bawat taon."
+      }
+    ]
+  },
+  "stats": {
+    "title": "Sulyap sa San Pablo",
+    "subtitle": "Mahahalagang impormasyon at datos para sa Lungsod ng Pitong Lawa.",
+    "items": [
+      { "value": "300,166", "label": "Populasyon (2024 POPCEN)" },
+      { "value": "80", "label": "Mga Barangay" },
+      { "value": "7", "label": "Mga Lawa" },
+      { "value": "197.56 km²", "label": "Sukat ng Lupa" },
+      { "value": "1940", "label": "Taon ng Cityhood" },
+      { "value": "1st Class", "label": "Klasipikasyon ng Lungsod" }
+    ]
+  },
+  "about": {
+    "badge": "Tungkol sa San Pablo",
+    "title": "Ang Lungsod ng Pitong Lawa",
+    "paragraphs": [
+      "Kilala bilang Lungsod ng Pitong Lawa, ang San Pablo ay isang 1st class component city sa Laguna na may matibay na pagkakakilanlan na hinubog ng kalikasan, pamana, at komunidad.",
+      "Itinatag bilang San Pablo de los Montes at naging lungsod noong 1940, patuloy itong lumalago bilang sentro ng pampublikong serbisyo, turismo, at lokal na negosyo."
+    ],
+    "quickFacts": [
+      { "label": "Populasyon", "value": "300,166" },
+      { "label": "Lalawigan", "value": "Laguna" },
+      { "label": "Mga Barangay", "value": "80" },
+      { "label": "Naging Lungsod", "value": "1940" }
+    ]
+  },
+  "leadership": {
+    "title": "Pamunuan ng Lungsod",
+    "subtitle": "Mga profile ng lokal na executive at legislative leadership ng Lungsod ng San Pablo.",
+    "items": [
+      {
+        "position": "Punong Lungsod (Mayor)",
+        "name": "Arcadio \"Najie\" B. Gapangada Jr.",
+        "note": "Nagwagi sa karera bilang mayor ng Lungsod ng San Pablo noong 2025.",
+        "priorities": [
+          "Pagbibigay ng serbisyo sa buong lungsod at outreach sa mga barangay",
+          "Mga proyekto sa ekonomiya at turismo na nakaugnay sa lokal na kabuhayan",
+          "Suporta sa mga proyektong pangkalikasan at pang-komunidad"
+        ]
+      },
+      {
+        "position": "Pangalawang Punong Lungsod (Vice Mayor)",
+        "name": "Justin G. Colago",
+        "note": "Nanguna sa karera bilang vice mayor ng Lungsod ng San Pablo noong 2025.",
+        "priorities": [
+          "Suportang lehislatibo sa mga programa at ordinansa ng lungsod",
+          "Koordinasyon sa mga barangay at mga lokal na stakeholder",
+          "Pangangasiwa ng pampublikong serbisyo kasama ang sangguniang panlungsod"
+        ]
+      }
+    ]
+  },
+  "places": {
+    "badge": "Turismo",
+    "title": "Mga Lugar na Dapat Bisitahin",
+    "subtitle": "Tuklasin ang mga pinakabinibisitang likas at kultural na landmark sa buong Lungsod ng San Pablo.",
+    "items": [
+      {
+        "title": "Lawa ng Sampaloc",
+        "description": "Ang pinakamalaki at pinakamadaling marating na lawa, sikat para sa mga lakad sa tabi ng lawa at tanawin ng lungsod."
+      },
+      {
+        "title": "Lawa ng Pandin",
+        "description": "Kilala sa malinaw na tubig at balsang kawayan na pinamamahalaan ng mga lokal na komunidad."
+      },
+      {
+        "title": "Lawa ng Yambo",
+        "description": "Isang tahimik na kambal na lawa katabi ng Pandin, mainam para sa tahimik na biyahe sa kalikasan."
+      },
+      {
+        "title": "Museo ng San Pablo",
+        "description": "Isang lokal na museo na nagtatampok ng kasaysayan, mga institusyon, at kultural na pagkakakilanlan ng lungsod."
+      }
+    ]
+  },
+  "history": {
+    "badge": "Kasaysayan",
+    "title": "Isang Lungsod na Hinubog ng Panahon",
+    "subtitle": "Mga mahahalagang yugto na humubog sa Lungsod ng San Pablo — mula sa pinakaunang pamayanan hanggang sa modernong sibikong buhay.",
+    "festivalSpotlight": "Tampok na Pista",
+    "items": [
+      {
+        "year": "1586",
+        "title": "Pagtatatag ng Parokya",
+        "description": "Itinatag ang San Pablo de los Montes bilang parokya, na siyang relihiyoso at sibikong pundasyon ng lungsod."
+      },
+      {
+        "year": "1647",
+        "title": "Naging Munisipalidad",
+        "description": "Pormal na ginawang munisipalidad ang pamayanan, simula ng daang taon ng lokal na pamamahala."
+      },
+      {
+        "year": "1940",
+        "title": "Naaprubahan ang City Charter",
+        "description": "Nilagdaan ang Commonwealth Act No. 520 noong Mayo 7, 1940, na nagbigay ng city charter sa San Pablo — isa sa mga pinakamatandang lungsod sa Pilipinas."
+      },
+      {
+        "year": "1941",
+        "title": "Inagurasyon ng Lungsod",
+        "description": "Pormal na inaugurasyon ang Lungsod ng San Pablo noong Marso 30, 1941, simula ng pormal na pamamahala bilang lungsod."
+      },
+      {
+        "year": "1967",
+        "title": "Itinatag ang Diocese ng San Pablo",
+        "description": "Itinatag ang Roman Catholic Diocese ng San Pablo noong Nobyembre 28, 1967, kasama ang Katedral ng St. Paul the First Hermit bilang upuan nito."
+      },
+      {
+        "year": "1996",
+        "title": "Unang Coconut Festival",
+        "description": "Inilunsad ang Coco Festival upang ipagdiwang ang ika-400 anibersaryo ng parokya at itaguyod ang pamana ng niyog at lokal na industriya ng lungsod."
+      },
+      {
+        "year": "2023",
+        "title": "Binuksan ang City Central Terminal",
+        "description": "Inaugurasyon ang San Pablo City Central Terminal, ginagawang moderno ang pampublikong transportasyon at pinapabuti ang koneksyon para sa mga residente."
+      },
+      {
+        "year": "2025",
+        "title": "Nagsimula ang Bagong Administrasyon",
+        "description": "Si Arcadio \"Najie\" B. Gapangada Jr. ay nahalal bilang City Mayor na may 70,822 boto, simula ng bagong kabanata para sa pamamahala ng Lungsod ng San Pablo."
+      }
+    ],
+    "festival": {
+      "title": "Coco Festival ng San Pablo",
+      "description": "Ginaganap tuwing Enero 9–15, ang Coco Festival ay nagtatapos sa Enero 15 — ang Kapistahan ni St. Paul the First Hermit, ang patron na santo ng lungsod. Unang ginanap noong 1996, isa itong DOT at ATOP award-winning tourism event.",
+      "highlights": [
+        "Patimpalak ng street dancing na may magagandang costume at floats na may temang niyog.",
+        "Mutya at Lakan ng San Pablo — ang pangunahing beauty pageant ng lungsod.",
+        "Coco Trade Fair na nagtatampok sa mga magsasaka ng niyog, MSME, at lokal na produkto.",
+        "Kinilala bilang Guinness World Record event para sa mass coconut planting noong 2025."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Makipag-ugnayan sa City Hall ng San Pablo",
+    "subtitle": "Tawagan kami direkta o bisitahin sa oras ng opisina para sa personal na tulong.",
+    "emergencyNote": "Para sa emergency, tumawag sa",
+    "viewAllHotlines": "mga emergency hotline →",
+    "cards": [
+      {
+        "title": "Tawagan ang City Hall",
+        "primary": "(049) 562-0111",
+        "secondary": "Tanggapan ng Punong Lungsod"
+      },
+      {
+        "title": "Puntahan Kami",
+        "primary": "Mabini Extension, Lungsod ng San Pablo",
+        "secondary": "Laguna, Pilipinas 4000"
+      },
+      {
+        "title": "Oras ng Opisina",
+        "primary": "Lun – Bye, 8:00 AM – 5:00 PM",
+        "secondary": "Sarado tuwing pista opisyal"
+      },
+      {
+        "title": "Opisyal na Website",
+        "primary": "sanpablocity.gov.ph",
+        "secondary": "Para sa mga opisyal na transaksyon ng pamahalaan"
+      }
+    ]
+  },
+  "pages": {
+    "services": {
+      "title": "Mga Serbisyo",
+      "subtitle": "Hanapin ang mga lokal na serbisyo ng pamahalaan para sa kalusugan, edukasyon, negosyo, kaligtasan, at iba pa."
+    },
+    "government": {
+      "title": "Pamahalaan",
+      "subtitle": "Mga departamento, opisyal, at tanggapan ng Lungsod ng San Pablo."
+    },
+    "attractions": {
+      "title": "Mga Atraksyon sa Lungsod ng San Pablo",
+      "subtitle": "Pitong Lawa, makasaysayang lugar, at mga pista — kumpletong gabay sa turismo."
+    },
+    "about": {
+      "title": "Tungkol sa Lungsod ng San Pablo",
+      "subtitle": "Profile, kasaysayan, at pagkakakilanlan ng Lungsod ng Pitong Lawa."
+    },
+    "sitemap": {
+      "title": "Sitemap",
+      "subtitle": "Lahat ng pahina at mapagkukunan sa BetterSanPablo.org."
+    },
+    "accessibility": {
+      "title": "Pahayag sa Accessibility",
+      "subtitle": "Ang aming pangako sa pamantayan ng WCAG 2.1 AA."
+    },
+    "hotlines": {
+      "title": "Mga Emergency Hotline",
+      "subtitle": "Mga numero para sa emergency sa Lungsod ng San Pablo at sa Pilipinas."
+    },
+    "holidays": {
+      "title": "Mga Pista Opisyal ng Pilipinas 2025",
+      "subtitle": "Mga pambansa at lokal na pista opisyal sa Lungsod ng San Pablo."
+    },
+    "search": {
+      "title": "Maghanap",
+      "subtitle": "Maghanap sa lahat ng serbisyo, departamento, at impormasyon ng lungsod.",
+      "placeholder": "Maghanap...",
+      "noResults": "Walang nahanap na resulta",
+      "results": "Mga Resulta"
+    }
   }
 }
