@@ -49,7 +49,8 @@ const Government: React.FC = () => {
       setLoading(true);
       getCategorySubcategories(category)
         .then(setCategoryIndex)
-        .catch(console.error)
+        // .catch(console.error)
+        .catch(() => {})
         .finally(() => setLoading(false));
     }
   }, [category, categoryData]);
@@ -59,7 +60,7 @@ const Government: React.FC = () => {
       <>
         <SEO
           title="Government"
-          description={`All government information for the ${import.meta.env.VITE_GOVERNMENT_NAME} — departments, officials, council, and contacts.`}
+          description={`All government information for the ${import.meta.env.VITE_GOVERNMENT_NAME ?? 'San Pablo City'} — departments, officials, council, and contacts.`}
           keywords="government, public officials, local government, departments, contacts"
         />
         <GovernmentActivitySection

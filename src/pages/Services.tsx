@@ -49,7 +49,8 @@ const Services: React.FC = () => {
       setLoading(true);
       getCategorySubcategories(category)
         .then(setCategoryIndex)
-        .catch(console.error)
+        // .catch(console.error)
+        .catch(() => {})
         .finally(() => setLoading(false));
     }
   }, [category, categoryData]);
@@ -59,12 +60,12 @@ const Services: React.FC = () => {
       <>
         <SEO
           title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME ?? 'San Pablo City'} government. Find what you need for citizenship, business, education, and more.`}
           keywords="government services, public services, local government, civic services"
         />
         <ServicesSection
           title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME ?? 'San Pablo City'} government. Find what you need for citizenship, business, education, and more.`}
         />
       </>
     );

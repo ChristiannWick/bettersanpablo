@@ -1,50 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Facebook, Github, ExternalLink, Eye, Heart, Globe } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import betterSanPabloLogo from '../../assets/bettersanpablo-logo3.png';
 
-// ── Visit counter — counterapi.dev (free, no signup, CORS-enabled) ────────────
+// ── Visit counter ────────────────────────────────────────────────────────────
+// Disabled: the previously used third-party counters
+//   - api.counterapi.dev → blocked by most ad-blockers
+//   - api.countapi.xyz   → domain no longer resolves
+// Both produced visible errors in DevTools Network/Console. Returning `null`
+// hides the counter chip in the bottom bar until a self-hosted endpoint
+// (`/api/visits`) is implemented. See CLAUDE.md "Pending / Known Gaps".
 function useVisitCounter() {
-  const [count, setCount] = useState<number | null>(null);
-
-  useEffect(() => {
-    const sessionKey = 'bsp_counted';
-
-    const fetchCount = async () => {
-      try {
-        const alreadyCounted = sessionStorage.getItem(sessionKey);
-        const endpoint = alreadyCounted
-          ? 'https://api.counterapi.dev/v1/bettersanpablo/visits'
-          : 'https://api.counterapi.dev/v1/bettersanpablo/visits/up';
-
-        const res = await fetch(endpoint, { mode: 'cors' });
-        if (!res.ok) throw new Error('counter unavailable');
-        const data = await res.json();
-        const value = data.count ?? data.value ?? null;
-        setCount(value);
-        if (!alreadyCounted) sessionStorage.setItem(sessionKey, '1');
-      } catch {
-        try {
-          const alreadyCounted = sessionStorage.getItem(sessionKey);
-          const fallback = alreadyCounted
-            ? 'https://api.countapi.xyz/get/bettersanpablo.org/visits'
-            : 'https://api.countapi.xyz/hit/bettersanpablo.org/visits';
-          const res2 = await fetch(fallback);
-          if (!res2.ok) throw new Error();
-          const d2 = await res2.json();
-          setCount(d2.value ?? null);
-          if (!alreadyCounted) sessionStorage.setItem(sessionKey, '1');
-        } catch {
-          setCount(null);
-        }
-      }
-    };
-
-    fetchCount();
-  }, []);
-
+  const [count] = useState<number | null>(null);
   return count;
 }
 

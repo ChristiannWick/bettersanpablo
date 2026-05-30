@@ -125,10 +125,11 @@ export async function loadCategoryIndex(
       pages: indexData.pages || [],
     };
   } catch (parseError) {
-    console.warn(
-      `Failed to parse YAML content for category ${categorySlug}:`,
-      parseError
-    );
+    // console.warn(
+    //   `Failed to parse YAML content for category ${categorySlug}:`,
+    //   parseError
+    // );
+    void parseError;
     return { layout: 'list', pages: [] };
   }
 }
