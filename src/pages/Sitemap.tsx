@@ -10,9 +10,15 @@ interface Category {
   subcategories?: { name: string; slug: string }[];
 }
 
+// Government categories deliberately hidden from public navigation
+// because they're pointer / explainer pages without live data feeds.
+// Keep in sync with GovernmentActivitySection.tsx EXCLUDED set.
+const GOV_HIDDEN = new Set(['news', 'public-consultations']);
+
 const Sitemap: React.FC = () => {
   const services = (serviceCategories.categories as Category[]) || [];
-  const govCategories = (governmentCategories.categories as Category[]) || [];
+  const govCategories = ((governmentCategories.categories as Category[]) || [])
+    .filter(cat => !GOV_HIDDEN.has(cat.slug));
 
   return (
     <>

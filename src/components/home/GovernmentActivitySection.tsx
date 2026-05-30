@@ -14,8 +14,22 @@ interface Category {
   icon: string;
 }
 
-// These have their own top-level nav sections — skip in the overview grid
-const EXCLUDED = new Set(['transparency-documents', 'reports-and-statistics']);
+// Categories hidden from the /government overview grid:
+//  - transparency-documents + reports-and-statistics have their own
+//    top-level navbar entries (Transparency, Statistics).
+//  - news + public-consultations are explainer / pointer pages without
+//    live data feeds. We hide them from the landing grid (and the nav)
+//    so users don't click into pages that just say "go to the official
+//    site or Facebook page." The markdown files remain in place — direct
+//    URLs still resolve — so we can flip these back on the moment real
+//    news / consultation data is wired up. See CLAUDE.md "Pending /
+//    Known Gaps" for the broader content roadmap.
+const EXCLUDED = new Set([
+  'transparency-documents',
+  'reports-and-statistics',
+  'news',
+  'public-consultations',
+]);
 
 const getIcon = (name: string) => {
   const Icon = LucideIcons[name as keyof typeof LucideIcons] as React.ComponentType<{ className?: string }>;

@@ -96,27 +96,19 @@ const Government: React.FC = () => {
       <Section className="mb-12">
         <Breadcrumbs className="mb-8" />
 
-        {/* Header — same colorful pill style */}
-        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-700">
-              {Icon && <Icon className="h-3.5 w-3.5" />}
-              {categoryData.category || category}
-            </span>
-            <h1 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-              {categoryData.category || category}
-            </h1>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">
-              {categoryData.description}
-            </p>
-          </div>
-          <Link
-            to="/government"
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-primary-400 hover:text-primary-600"
-          >
-            All government
-            <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
+        {/* Header — back-link removed because the breadcrumb above already
+            navigates back to /government. */}
+        <div className="mb-10">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-700">
+            {Icon && <Icon className="h-3.5 w-3.5" />}
+            {categoryData.category || category}
+          </span>
+          <h1 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
+            {categoryData.category || category}
+          </h1>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">
+            {categoryData.description}
+          </p>
         </div>
 
         {loading ? (
@@ -153,7 +145,11 @@ const Government: React.FC = () => {
                     to={`/government/${category}/${subcategory.slug ?? ''}`}
                     className="group flex flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary-200 hover:shadow-md"
                   >
-                    <div className="mb-3 flex items-center justify-between">
+                    {/* Per-card category badge removed: every card on this
+                        listing belongs to the same category, so repeating
+                        the category name was visual noise. The rotating
+                        icon-tile color still gives each card its accent. */}
+                    <div className="mb-3 flex items-center">
                       <span
                         className={`flex h-10 w-10 items-center justify-center rounded-lg ${accent.iconBg}`}
                         aria-hidden="true"
@@ -163,11 +159,6 @@ const Government: React.FC = () => {
                         ) : (
                           <LucideIcons.Building2 className="h-5 w-5" />
                         )}
-                      </span>
-                      <span
-                        className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${accent.badge}`}
-                      >
-                        {categoryData.category}
                       </span>
                     </div>
 
