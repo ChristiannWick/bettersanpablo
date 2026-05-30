@@ -40,6 +40,8 @@ const Footer: React.FC = () => {
               <img
                 src={betterSanPabloLogo}
                 alt="BetterSanPablo.org"
+                loading="lazy"
+                decoding="async"
                 className="h-8 w-auto object-contain"
               />
             </div>

@@ -288,6 +288,7 @@ export default function Attractions() {
                       src={lake.imageUrl}
                       alt={lake.name}
                       loading="lazy"
+                      decoding="async"
                       className="h-full w-full object-cover"
                     />
                     <span className="absolute left-3 top-3 inline-flex items-center justify-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-bold text-gray-900 shadow">

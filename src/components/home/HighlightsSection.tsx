@@ -57,6 +57,7 @@ export default function HighlightsSection() {
                   src={meta?.imageUrl}
                   alt={meta?.imageAlt}
                   loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/35 to-transparent" />

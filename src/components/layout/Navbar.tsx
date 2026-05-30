@@ -245,6 +245,8 @@ const Navbar: React.FC = () => {
               <img
                 src={betterSanPabloLogo}
                 alt="BetterSanPablo.org logo"
+                decoding="async"
+                fetchPriority="high"
                 className="h-16 sm:h-20 lg:h-28 w-auto max-w-[200px] lg:max-w-[320px] mr-4 object-contain flex-shrink-0"
               />
             </Link>
